@@ -1,3 +1,4 @@
+
 # Kanchi-in Manuscript of the *Ruiju Myōgishō* Database
 
 ## Overview
@@ -22,14 +23,13 @@ This explanation aims to provide clarity and respect for both terminologies, ens
 
 ### List and Brief Description
 
-The data from the Kanchi-in manuscript of the *Ruiju Myōgishō*, published at [https://github.com/shikeda/HDIC/tree/master/v1.2](https://github.com/shikeda/HDIC/tree/master/v1.2), is as follows. This includes some files that are currently being prepared for public release.
+The data from the Kanchi-in manuscript of the *Ruiju Myōgishō*, published at [https://github.com/shikeda/krm](https://github.com/shikeda/krm), is as follows. This includes some files that are currently being prepared for public release.
 
 - [krm_main](#krm_main): Basic data. Includes information about head characters, full definitions, locations, etc. TSV and JSON files are available.
 - [krm_notes](#krm_notes): Annotation data. Categorized into head characters, glyph annotations, pronunciation annotations, meaning annotations, *wakun*, and others, with collation and source studies. TSV and JSON files are available.
 - [krm_headword_chars]: Detailed information about all head characters. Includes location in the Kazama edition, location in the Tenri edition, image file names, etc. Currently under preparation for release.
 - [krm_wakun](#krm_wakun): *Wakun* data. Includes information about variant forms of *wakun*, variant forms of hanzi (*itai-ji*), and correspondence with the "Notation" field of the *Nihon Kokugo Daijiten* (Second Edition). TSV and JSON files are available.
-- [krm_definitions](#krm_definitions): Definitions categorized into glyph annotations, pronunciation annotations, meaning annotations, *wakun*, and others. TSV file available. Same as the already published [KRM_definitions.tsv](https://github.com/shikeda/HDIC/KRM_definitions.tsv).
-- [krm_pronunciations](#krm_pronuncitaions): Data for linking with DHSJR regarding pronunciation annotations (under preparation).
+- [krm_pronunciations](#krm_pronuncitaions): Data for linking with DHSJR regarding pronunciation annotations.
 - [krm_ndl](#krm_ndl): Links to the National Diet Library Digital Collections. TSV file available. Same as the already published [KRM_ndl.tsv](https://github.com/shikeda/HDIC/KRM_ndl.tsv).
 
 
@@ -82,9 +82,9 @@ Last modified: May 13, 2025
     Last modified: May 11, 2025
 
 ### krm_headword_chars
-- Version: 1.2.1 (latest, Newly released after the specification change)  
+- Version: 1.2.2 (latest, Newly released after the specification change)  
     Date published: May 11, 2025  
-    Last modified: May 11, 2025
+    Last modified: May 21, 2025
 
 ### krm_pronounciations
 - Version: 1.2.1 (latest, DHSJR format)  
