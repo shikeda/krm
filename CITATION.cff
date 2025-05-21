@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it using the following metadata."
+title: "Kanchi'in-bon Ruiju Myōgishō (KRM) Database"
+authors:
+  - family-names: "Ikeda"
+    given-names: "Shoju"
+    orcid: "https://orcid.org/0009-0002-7213-748X" # ORCIDがあれば記入
+version: "v1.2.2"
+doi: "10.5281/zenodo.15481563" # 画像で確認されたDOI
+date-released: 2025-05-21
+repository-code: "https://github.com/shikeda/krm"
+url: "https://doi.org/10.5281/zenodo.15481563" # DOIの解決先URL
+license: "CC BY-SA 4.0"
+# ... (keywords, abstractなど)
+abstract: |    # <--- パイプを追加
+  This release includes:
+  Character-level data (krm_main.tsv)
+  Annotation data (krm_notes.tsv, krm_wakun.tsv, etc.)
+  Simplified and detailed manuals in both Japanese and English
+  LICENSE and README
+keywords: # 必要に応じて追加
+  - "Ruiju Myōgishō"
+  - "Japanese lexicography" # 「日本の辞書学」など
+  - "Classical Japanese"
+  - "digitized dictionary"  # 「デジタル化された辞書」
+  - "historical Japanese dictionaries"
+  - "historical linguistics" # 「歴史言語学」
+  - "Buddhist studies"      # もし関連が強ければ
+  - "Kanji"                 # 「漢字」
+  - "Hanzi dictionares in Early Japan"     # 「平安時代漢字字書研究」
