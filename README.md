@@ -1,6 +1,9 @@
 
 # Kanchi-in Manuscript of the *Ruiju Myōgishō* Database
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15481563.svg)](https://doi.org/10.5281/zenodo.15481563)
+
+
 ## Overview
 
 This database is a full-text digitization of the Kanchi-in manuscript of the *Ruiju Myōgishō* (abbreviated as KRM), incorporating location information, textual collation, source studies, and more. It is one of the **Hanzi** dictionary databases comprising the **Integrated Database of Hanzi Dictionaries in Early Japan** (abbreviated as HDIC). **The terms 'kanji' and 'hanzi' are explained later.**
