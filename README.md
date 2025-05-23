@@ -1,14 +1,14 @@
 
-# Kanchi-in Manuscript of the *Ruiju Myōgishō* Database
+# KRM: Database of the Kanchiin Manuscript of *Ruijū Myōgishō*
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15481563.svg)](https://doi.org/10.5281/zenodo.15481563)
 
 
 ## Overview
 
-This database is a full-text digitization of the Kanchi-in manuscript of the *Ruiju Myōgishō* (abbreviated as KRM), incorporating location information, textual collation, source studies, and more. It is one of the **Hanzi** dictionary databases comprising the **Integrated Database of Hanzi Dictionaries in Early Japan** (abbreviated as HDIC). **The terms 'kanji' and 'hanzi' are explained later.**
+This database is a full-text digitization of the Kanchiin manuscript of the *Ruiju Myōgishō* (abbreviated as KRM), incorporating location information, textual collation, source studies, and more. It is one of the **Hanzi** dictionary databases comprising the **Integrated Database of Hanzi Dictionaries in Early Japan** (abbreviated as HDIC). **The terms 'kanji' and 'hanzi' are explained later.**
 
-The Kanchi-in manuscript of the *Ruiju Myōgishō* is a **Hanzi** dictionary compiled in the twelfth century by a Shingon Buddhist monk. It has been regarded as an important resource for Japanese historical linguistics research due to its extensive collection of *wakun* indicating accent, detailed annotations on **Hanzi** pronunciations, and annotations on variant characters. Furthermore, its Chinese annotations on **fanqie**, meanings, and glyph forms have also garnered attention as materials for Chinese linguistics.
+The Kanchiin manuscript of the *Ruiju Myōgishō* is a **Hanzi** dictionary compiled in the twelfth century by a Shingon Buddhist monk. It has been regarded as an important resource for Japanese historical linguistics research due to its extensive collection of *wakun* indicating accent, detailed annotations on **Hanzi** pronunciations, and annotations on variant characters. Furthermore, its Chinese annotations on **fanqie**, meanings, and glyph forms have also garnered attention as materials for Chinese linguistics.
 
 It was first published in March 2022, and in March 2025, a revised edition with specification changes and detailed explanations will be released.
 
@@ -22,11 +22,33 @@ Dictionaries of Chinese characters compiled in Japan during the Heian period are
 This explanation aims to provide clarity and respect for both terminologies, ensuring that researchers from different backgrounds can engage with the material without linguistic barriers.
 
 
+## Citation
+
+If you use **KRM** for academic purposes, please cite the following:
+
+**Ikeda, S.** (2025).
+*KRM: Database of the Kanchiin Manuscript of the Ruijū Myōgishō*. Zenodo.
+[https://doi.org/10.5281/zenodo.15481563](https://doi.org/10.5281/zenodo.15481563)
+
+**BibTeX**
+
+```bibtex
+@misc{krm2025,
+  author       = {Ikeda, S.},
+  title        = {KRM: Database of the Kanchiin Manuscript of the Ruijū Myōgishō},
+  year         = 2025,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.15481563},
+  url          = {https://doi.org/10.5281/zenodo.15481563}
+}
+```
+
+
 ## Data Files
 
 ### List and Brief Description
 
-The data from the Kanchi-in manuscript of the *Ruiju Myōgishō*, published at [https://github.com/shikeda/krm](https://github.com/shikeda/krm), is as follows. This includes some files that are currently being prepared for public release.
+The data from the Kanchiin manuscript of the *Ruiju Myōgishō*, published at [https://github.com/shikeda/krm](https://github.com/shikeda/krm), is as follows. This includes some files that are currently being prepared for public release.
 
 - [krm_main](#krm_main): Basic data. Includes information about head characters, full definitions, locations, etc. TSV and JSON files are available.
 - [krm_notes](#krm_notes): Annotation data. Categorized into head characters, glyph annotations, pronunciation annotations, meaning annotations, *wakun*, and others, with collation and source studies. TSV and JSON files are available.
@@ -153,7 +175,7 @@ For each cited reference, the original notation is given first, followed by the 
 
 ### Acknowledgments
 
-We would like to express our gratitude to Tenri Central Library and Yagi Bookstore for granting permission to publish the decipherment text of the Kanchi-in manuscript of the *Ruiju Myōgishō*.  
+We would like to express our gratitude to Tenri Central Library and Yagi Bookstore for granting permission to publish the decipherment text of the Kanchiin manuscript of the *Ruiju Myōgishō*.  
 
 This research is partly supported by JSPS KAKENHI Grant Numbers 16H03422, 19H00526, 23K17500 and 25K00466. We gratefully acknowledge this support.
 
@@ -163,7 +185,7 @@ This research is partly supported by JSPS KAKENHI Grant Numbers 16H03422, 19H005
 ### Overview and file formats
 
 
-This section describes the core files of the database for the Kanchi-in manuscript of the *Ruiju Myōgishō* (hereinafter "*Myōgishō*").
+This section describes the core files of the database for the Kanchiin manuscript of the *Ruiju Myōgishō* (hereinafter "*Myōgishō*").
 
 Previously, the released file was a TSV file named `KRM.tsv`.
 
@@ -436,7 +458,7 @@ Following the specification changes implemented in March 2025, the data and func
 
 ### Overview and file formats
 
-The **`Phonetic Glosses`** in the Kanchi-in manuscript of the *Ruiju Myōgishō* (hereafter *Myōgishō*) include **`Fanqie spellings`** (反切), **`Similar sound notes`** (類音注, *ruion-chū*), and **`Kana glosses`** (仮名注, *kana-chū*). These are often accompanied by **`Tone marks (*shōten*)`**.
+The **`Phonetic Glosses`** in the Kanchiin manuscript of the *Ruiju Myōgishō* (hereafter *Myōgishō*) include **`Fanqie spellings`** (反切), **`Similar sound notes`** (類音注, *ruion-chū*), and **`Kana glosses`** (仮名注, *kana-chū*). These are often accompanied by **`Tone marks (*shōten*)`**.
 As a database for Sino-Japanese character pronunciations, the **"Database of Historical Sino-Japanese Readings"** (abbreviated as DHSJR), developed by Professor Katō Taitsuru and others, offers exceptionally rich content. Its specifications are also publicly available in detail. We are currently considering releasing data aligned with the DHSJR specifications.
 
 The DHSJR defines a data structure with 23 column names.
@@ -492,9 +514,9 @@ Currently, this is under consideration in the case study "[Linkage with DHSJR](/
 
 ## krm_ndl
 
-This file compiles links to the images of the Kanchi-in manuscript of the *Ruiju Myōgishō* that are publicly available in the National Diet Library Digital Collections.
+This file compiles links to the images of the Kanchiin manuscript of the *Ruiju Myōgishō* that are publicly available in the National Diet Library Digital Collections.
 
-This data cross-references the locations within the Kanchi-in manuscript of the *Ruiju Myōgishō* with their corresponding URLs in the National Diet Library Digital Collections. The file name is `KRM_ndl.tsv`.
+This data cross-references the locations within the Kanchiin manuscript of the *Ruiju Myōgishō* with their corresponding URLs in the National Diet Library Digital Collections. The file name is `KRM_ndl.tsv`.
 
 
 
