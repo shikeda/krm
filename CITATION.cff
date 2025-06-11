@@ -1,31 +1,28 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it using the following metadata."
-title: "KRM: Database of the Kanchi-in Manuscript of Ruijū Myōgishō"
 authors:
   - family-names: "Ikeda"
     given-names: "Shoju"
-    orcid: "https://orcid.org/0009-0002-7213-748X" # ORCIDがあれば記入
-version: "v1.2.3"
-doi: "10.5281/zenodo.15481563" # 画像で確認されたDOI
+    orcid: "https://orcid.org/0009-0002-7213-748X"
+title: "KRM: Database of the Kanchi-in Manuscript of Ruijū Myōgishō"
+version: v1.2.3
 date-released: 2025-06-11
 repository-code: "https://github.com/shikeda/krm"
-url: "https://doi.org/10.5281/zenodo.15481563" # DOIの解決先URL
 license: "CC BY-SA 4.0"
-# ... (keywords, abstractなど)
-abstract: |    # <--- パイプを追加
+abstract: |    
   This release includes:
   Character-level data (krm_main.tsv)
   Annotation data (krm_notes.tsv, krm_wakun.tsv, etc.)
   Simplified and detailed manuals in both Japanese and English
   LICENSE and README
-keywords: # 必要に応じて追加
+keywords:
   - "Ruiju Myōgishō"
-  - "Japanese lexicography" # 「日本の辞書学」など
+  - "Japanese lexicography" # 「日本の辞書学」
   - "Classical Japanese"
   - "digitized dictionary"  # 「デジタル化された辞書」
   - "historical Japanese dictionaries"
   - "historical linguistics" # 「歴史言語学」
-  - "Buddhist studies"      # もし関連が強ければ
+  - "Buddhist studies"      # 
   - "Kanji"                 # 「漢字」
   - "Yupian"                # 「玉篇」
   - "Hanzi dictionares in Early Japan"     # 「平安時代漢字字書研究」
