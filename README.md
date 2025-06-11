@@ -94,17 +94,17 @@ Last modified: May 13, 2025
 ### Version History
 
 #### krm_main 
-- Version: 1.2.6 (latest)  
+- Version: 1.2.7 (latest)  
     Date published: March 28, 2025  
-    Last modified: May 11, 2025
+    Last modified: June 11, 2025
 - Version: 1.1.347  
     Date: March 11, 2022  
     Last modified : March 17, 2025
 
 ### krm_notes
-- Version: 1.2.7 (latest, Newly released after the specification change)  
+- Version: 1.2.8 (latest, Newly released after the specification change)  
     Date published: March 28, 2025  
-    Last modified: May 11, 2025
+    Last modified: June 11, 2025
 
 ### krm_headword_chars
 - Version: 1.2.2 (latest, Newly released after the specification change)  

@@ -1329,7 +1329,7 @@
         "volume_radical_index": "v1#1",
         "hanzi_entry": "偱",
         "original_entry": "⿲亻亻百",
-        "definition": "俗⿲彳亻頁字　音巡　シタカフ　メクル　ツフサニ"
+        "definition": "俗⿲彳亻頁〔循〕字　音巡　シタカフ　メクル　ツフサニ"
     },
     {
         "entry_id": "F00112",
@@ -7052,8 +7052,8 @@
         "radical_name": "人",
         "volume_radical_index": "v1#1",
         "hanzi_entry": "侹",
-        "original_entry": "〇",
-        "definition": "俗⿰彳廷字　代也　長也　他頂反　直也"
+        "original_entry": "⿰亻𨑳",
+        "definition": "俗⿰彳𨑳字　代也　長也　他頂反　直也"
     },
     {
         "entry_id": "F00588",
@@ -11241,7 +11241,7 @@
         "volume_radical_index": "v1#2",
         "hanzi_entry": "𢔀",
         "original_entry": "〇",
-        "definition": "俗■字　ヲカス　コロス　ハフ　ヲヒユ　コモヽヽ　フカシ"
+        "definition": "俗■〔侵〕字　ヲカス　コロス　ハフ　ヲヒユ　コモヽヽ　フカシ"
     },
     {
         "entry_id": "F00937",
@@ -12933,7 +12933,7 @@
         "volume_radical_index": "v1#3",
         "hanzi_entry": "𨒴",
         "original_entry": "〇",
-        "definition": "俗□字"
+        "definition": "俗濟字"
     },
     {
         "entry_id": "F01078",
@@ -19017,7 +19017,7 @@
         "volume_radical_index": "v1#5",
         "hanzi_entry": "𧽪",
         "original_entry": "〇",
-        "definition": "俗⿰彳彖字　勅慈反　大走草也"
+        "definition": "俗⿰彳彖〔猭〕字　勅慈反　大走草也"
     },
     {
         "entry_id": "F01585",
@@ -25809,7 +25809,7 @@
         "volume_radical_index": "v1#10",
         "hanzi_entry": "𨊉",
         "original_entry": "〇",
-        "definition": "俗脕（脆?）字"
+        "definition": "俗脕〔脆〕字"
     },
     {
         "entry_id": "F02151",
@@ -139401,7 +139401,7 @@
         "volume_radical_index": "v5#41",
         "hanzi_entry": "汎／泛",
         "original_entry": "〇／〇",
-        "definition": "二正　敷梵反　ウカフ（HHL）　サヽク（LL_）　ニル歟　アカル　*ヤフル　*タヽフ　呉範（RV）　又平　又ハム（LV_）　ヒロシ　コホス（LLV_）　盃也　アサシ　アマネシ　タヽヨフ　ウカス　「下音ハン」"
+        "definition": "二正　敷梵反　ウカフ（HHL）　サヽク（LL_）　ニル歟　アカル　*ヤフル　*タヽフ　呉範（RV）　又平　又ハム（LV_）　ヒロシ　コホス（LLV_）　〈盃也〉　アサシ　アマネシ　タヽヨフ　ウカス　「下音ハン」"
     },
     {
         "entry_id": "F11615",
@@ -184221,7 +184221,7 @@
         "volume_radical_index": "v6#52",
         "hanzi_entry": "玊",
         "original_entry": "〇",
-        "definition": "音夙（T）「シク」　又栗（T）「リク」　又欣救反　琢「ミカク」玉工也"
+        "definition": "音夙（T）「シク」　又栗（T）「リク」　又欣救反　琢「ミカク」玉を工也"
     },
     {
         "entry_id": "F15351",
