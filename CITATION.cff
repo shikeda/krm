@@ -9,20 +9,20 @@ version: v1.2.3
 date-released: 2025-06-11
 repository-code: "https://github.com/shikeda/krm"
 license: "CC BY-SA 4.0"
-abstract: |    
+abstract: |
   This release includes:
-  Character-level data (krm_main.tsv)
-  Annotation data (krm_notes.tsv, krm_wakun.tsv, etc.)
-  Simplified and detailed manuals in both Japanese and English
-  LICENSE and README
+  - Character-level data (krm_main.tsv)
+  - Annotation data (krm_notes.tsv, krm_wakun.tsv, etc.)
+  - Simplified and detailed manuals in both Japanese and English
+  - LICENSE and README
 keywords:
   - "Ruiju Myōgishō"
-  - "Japanese lexicography" # 「日本の辞書学」
+  - "Japanese lexicography"
   - "Classical Japanese"
-  - "digitized dictionary"  # 「デジタル化された辞書」
+  - "digitized dictionary"
   - "historical Japanese dictionaries"
-  - "historical linguistics" # 「歴史言語学」
-  - "Buddhist studies"      # 
-  - "Kanji"                 # 「漢字」
-  - "Yupian"                # 「玉篇」
-  - "Hanzi dictionares in Early Japan"     # 「平安時代漢字字書研究」
+  - "historical linguistics"
+  - "Buddhist studies"
+  - "Kanji"
+  - "Yupian"
+  - "Hanzi dictionares in Early Japan"
