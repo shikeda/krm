@@ -5,9 +5,9 @@ authors:
   - family-names: "Ikeda"
     given-names: "Shoju"
     orcid: "https://orcid.org/0009-0002-7213-748X" # ORCIDがあれば記入
-version: "v1.2.2"
+version: "v1.2.3"
 doi: "10.5281/zenodo.15481563" # 画像で確認されたDOI
-date-released: 2025-05-21
+date-released: 2025-06-11
 repository-code: "https://github.com/shikeda/krm"
 url: "https://doi.org/10.5281/zenodo.15481563" # DOIの解決先URL
 license: "CC BY-SA 4.0"
