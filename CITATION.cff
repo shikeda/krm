@@ -3,9 +3,25 @@ message: "If you use this dataset, please cite it as below."
 authors:
   - family-names: "Ikeda"
     given-names: "Shoju"
-    orcid: "https://orcid.org/0009-0002-7213-748X"
 title: "KRM: Database of the Kanchi-in Manuscript of Ruijū Myōgishō"
-version: 1.2.5
+version: 1.2.6
 date-released: 2025-06-12
 repository-code: "https://github.com/shikeda/krm"
-license: "CC BY-SA 4.0"
+license: "CC-BY-SA-4.0"
+abstract: |
+  This release includes:
+  - Character-level data (krm_main.tsv)
+  - Annotation data (krm_notes.tsv, krm_wakun.tsv, etc.)
+  - Simplified and detailed manuals in both Japanese and English
+  - LICENSE and README
+keywords:
+  - "Ruiju Myōgishō"
+  - "Japanese lexicography"
+  - "Classical Japanese"
+  - "digitized dictionary"
+  - "historical Japanese dictionaries"
+  - "historical linguistics"
+  - "Buddhist studies"
+  - "Kanji"
+  - "Yupian"
+  - "Hanzi dictionares in Early Japan"
