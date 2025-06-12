@@ -1,7 +1,8 @@
 # 観智院本類聚名義抄データベース
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15481563.svg)](https://doi.org/10.5281/zenodo.15481563)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15638843.svg)](https://doi.org/10.5281/zenodo.15638843)
 
+The latest release is v1.2.6 (June 2025). Please cite this version when using the dataset.
 
 ## 概要
 
