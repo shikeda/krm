@@ -8,9 +8,9 @@
 #
 # krm_pronunciations.tsv
 #
-# Version: 1.2.1 (latest, DHSJR format)
+# Version: 1.2.2 (latest, DHSJR format)
 # Date published: May 20, 2025
-# Last modified: May 20, 2025
+# Last modified: June 13, 2025
 #
 #
 # Copyright (c) 2025 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
@@ -35,7 +35,8 @@
 # While DHSJR uses Japanese column names, HDIC employs English ones. Therefore, for data processing convenience within HDIC, English column names have been adopted.
 #
 # KRM format information:
-# dhsjr_id	DHSJR unique ID for each single Hanzi (Chinese character) (integrated data only)
+# dhsjr_id	DHSJR unique ID for each single Hanzi (Chinese character) (integrated data only).
+# 	       (This column is currently empty. The data will be added once the official IDs are finalized by the DHSJR project.)
 # pronunciation_id	ID for each Phonetic Gloss. This is derived from definition_seq_id by extracting only those elements where the type (from definition_type_name in krm_notes) is Phonetic Gloss. Suffixes 'b', 'c', 'd' are appended for variant forms.
 # definition_seq_id	An identifier for each component of the Definition (Original Glosses) or for the Headword itself within an Entry. It is formed by appending a sequential suffix (e.g., "_00" for the Headword, "_01", "_02" for subsequent elements) to the corresponding entry_id.
 # material_id	Material ID
@@ -67,7 +68,7 @@
 #
 # This work was supported by JSPS KAKENHI Grant Number 16H03422, 19H00526, 23K17500 and 25K00466.
 #
-pronunciation_id	definition_seq_id	material_id	material_name	material_character_index	material_word_index	character_headword	character_form	word_headword	word_form	word_alpha	word_type	word_position	character_mora_count	tone_marks	tone_pattern	kana_phonetic_annotation	kana_pattern	fanqie	similar_sound	fushi_hakase	other_phonetic_annotations	material_location	annotation_format	remarks_pronunciation
+pronunciation_id	definition_seq_id	material_id	material_name	material_character_index	material_word_index	character_headword	character_form	word_headword	word_form	word_alpha	word_type	word_position	character_mora_count	tone_marks	tone_pattern	kana_notes	kana_pattern	fanqie	similar_sound	fushi_hakase	other_phonetic_annotations	material_location	annotation_format	remarks_pronunciation
 F00001_01	F00001_01	30-048-02	類聚名義抄_天理図書館_観智院本	1	1	人	人	人	人					平濁	平濁	ニン	ニン		音仁（平濁）「ニン」			K0100131	音注声点有_類音注等	
 F00001_01b	F00001_01	30-048-02	類聚名義抄_天理図書館_観智院本	2	1	仁	仁	仁	仁					平濁	平濁	ニン	ニン		音仁（平濁）「ニン」			K0100131	音注声点有_類音注等	音注字
 F00016_01	F00016_01	30-048-02	類聚名義抄_天理図書館_観智院本	3	3	佛	佛	佛	佛					去	去	ヒ	ヒ		音費（去）「ヒ」			K0100171	音注声点有_類音注等	
