@@ -161369,8 +161369,8 @@
         "kazama_location": "K04029730",
         "hanzi_entry": "象",
         "wakun_elements": "タヽノリ",
-        "wakun_form": "たたのり",
-        "wakun_standard_hanzi": "タタノリ（象）",
+        "wakun_form": "ただのり",
+        "wakun_standard_hanzi": "タダノリ（象）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": ""
@@ -258485,11 +258485,11 @@
         "kazama_location": "K06103330",
         "hanzi_entry": "幅",
         "wakun_elements": "ハタハリノ",
-        "wakun_form": "はたはりの",
-        "wakun_standard_hanzi": "ハタハリノ（幅）",
+        "wakun_form": "はたはり",
+        "wakun_standard_hanzi": "ハタハリ（幅）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": ""
+        "japan_knowledge_id": "20020360b98ak0j6ho6Q"
     },
     {
         "wakun_id": "F17896_02",
@@ -291801,22 +291801,10 @@
         "wakun_standard_hanzi": "サク（宰）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": ""
+        "japan_knowledge_id": "200201b7e58fRwBnPR1h"
     },
     {
         "wakun_id": "F20609_07",
-        "definition_seq_id": "F20609_07",
-        "kazama_location": "K07052140",
-        "hanzi_entry": "宰",
-        "wakun_elements": "クラク",
-        "wakun_form": "くらく",
-        "wakun_standard_hanzi": "クラク（宰）",
-        "wakun_variant_in_hanzi": "クラフ（宰）",
-        "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": "null"
-    },
-    {
-        "wakun_id": "F20609_07b",
         "definition_seq_id": "F20609_07",
         "kazama_location": "K07052140",
         "hanzi_entry": "宰",
@@ -291825,7 +291813,7 @@
         "wakun_standard_hanzi": "クラフ（宰）",
         "wakun_variant_in_hanzi": "クラク（宰）",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": "null"
+        "japan_knowledge_id": "200201473dbd58tLx007"
     },
     {
         "wakun_id": "F20609_08",

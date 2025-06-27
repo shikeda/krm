@@ -103,9 +103,9 @@ Last modified: June 14, 2025
     Last modified : March 17, 2025
 
 ### krm_notes
-- Version: 1.2.8 (latest, Newly released after the specification change)  
+- Version: 1.2.9 (latest, Newly released after the specification change)  
     Date published: March 28, 2025  
-    Last modified: June 11, 2025
+    Last modified: June 28, 2025
 
 ### krm_headword_chars
 - Version: 1.2.2 (latest, Newly released after the specification change)  
@@ -119,9 +119,9 @@ Last modified: June 14, 2025
 
 
 ### krm_wakun
-- Version: 1.2.2 (latest)  
+- Version: 1.2.3 (latest)  
     Date published: March 28, 2025  
-    Last modified: May 12, 2025
+    Last modified: June 28, 2025
 
 - Version: 1.1.97  
     Date published: June 11, 2024  
