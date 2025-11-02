@@ -16,7 +16,6 @@ The latest release is v1.2.6 (June 2025). Please cite this version when using th
 2022年3月から公開していたが、2025年3月に、仕様の変更を行い、詳細な説明を施して改訂版を公開するものである。
 
 
-
 ## データファイル一覧
 
 ### 一覧と簡単な説明
