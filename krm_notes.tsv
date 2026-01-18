@@ -8,12 +8,12 @@
 #
 # krm_notes.tsv
 #
-# Version: 1.2.9 (latest, Newly released after the specification change)
+# Version: 1.2.10 (latest, Newly released after the specification change)
 # Date published: March 28, 2025
-# Last modified: June 28, 2025
+# Last modified: January 17, 2026
 #
 #
-# Copyright (c) 2025 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
+# Copyright (c) 2025-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
 # Contact: ikeda.shoju@gmail.com, liyuansapporo@yahoo.co.jp, toyjack@gmail.com, kleinekuma@gmail.com
 #
 # Data License Information and Access Rights
@@ -101604,7 +101604,7 @@ F27473	F27473_01	K09045531	Tc199531	僧中	欠	v9#101	歔／欷	〇／〇	ムセ
 F27473	F27473_02	K09045531	Tc199531	僧中	欠	v9#101	歔／欷	〇／〇	ナキ	421	和訓	
 F27473	F27473_03	K09045531	Tc199531	僧中	欠	v9#101	歔／欷	〇／〇	*ナケク	421	和訓	
 F27473	F27473_04	K09045531	Tc199531	僧中	欠	v9#101	歔／欷	〇／〇	ナキ-ク（L_-L）	411	和訓声点有	中村文選（366頁・風）「欷ナケキヲ」。
-F27473	F27473_05	K09045531	Tc199531	僧中	欠	v9#101	歔／欷	〇／〇	ハナススヽリシカナシムテ（HH_________）	411	和訓声点有	中村文選（391頁・鸚）「欷ス／（寛文）ス・（ト）カナシフ」。日国未収。
+F27473	F27473_05	K09045531	Tc199531	僧中	欠	v9#101	歔／欷	〇／〇	ハナスヽリシカナシムテ（HH________）	411	和訓声点有	中村文選（391頁・鸚）「欷ス／（寛文）ス・（ト）カナシフ」。日国未収。
 F27473	F27473_06	K09045531	Tc199531	僧中	欠	v9#101	歔／欷	〇／〇	サクリ	421	和訓	新撰字鏡「歔欷」（享和本60ウ欠）に「（略）啼泣皃。泣餘声也。声也。左久利」（天治本に「左久利」なし）。山本秀人「改編本類聚名義抄における新撰字鏡を出典とする和訓の増補について―熟字訓を対象として―」『国語学』144、6頁㉝参照。
 F27473	F27473_07	K09045531	Tc199531	僧中	欠	v9#101	歔／欷	〇／〇	泣餘声	322	義注	
 F27474	F27474_00	K09045621	Tc199621	僧中	欠	v9#101	⿲亻日欠／欱	〇／〇		100	見出し	

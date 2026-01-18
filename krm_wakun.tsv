@@ -7,15 +7,15 @@
 # anonymous Buddhist monk, the latter half of the 12th century.
 #
 # krm_wakun.tsv
-# Version: 1.2.3
+# Version: 1.2.4
 # Date: June 11, 2024
-# Last update : June 28, 2025
+# Last update : January 18, 2026
 #
 # This file is a new version of KRM_wakun.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.97, and it was last updated on March 17, 2025.
 # This new version has been renamed to krm_wakun.tsv and will start with version 1.2.0.
 #
-# Copyright (c) 2024-2025 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
+# Copyright (c) 2024-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
 # Research group of Linguistics, Hokkaido University Faculty of Humanities and Human Siences
 # North 10, West 7, Kita-ku Sapporo, Hokkaido, 060-0810 Japan
 # Contact: ikeda.shoju@gmail.com, liyuansapporo@yahoo.co.jp, toyjack@gmail.com, kleinekuma@gmail.com
@@ -32231,7 +32231,7 @@ F27473_02	F27473_02	K09045531	歔／欷	ナキ	なき	ナキ（歔欷）			20020
 F27473_03	F27473_03	K09045531	歔／欷	*ナケク	なげく	ナゲク（歔欷）			20020320523a2BcR243z
 F27473_04	F27473_04	K09045531	歔／欷	ナキ-ク（L_-L）	なき	ナキ（歔欷）	ナク（歔欷）		2002031f2d13h70A7j1Q
 F27473_04b	F27473_04	K09045531	歔／欷	ナキ-ク（L_-L）	なく	ナク（歔欷）	ナキ（歔欷）		2002031fccec23r2TaNd
-F27473_05	F27473_05	K09045531	歔／欷	ハナススヽリシカナシムテ（HH_________）	はなすすすりしかなしむて	ハナスススリシカナシムテ（歔欷）			null
+F27473_05	F27473_05	K09045531	歔／欷	ハナスヽリシカナシムテ（HH_________）	はなすすりしかなしむて	ハナススリシカナシムテ（歔欷）			null
 F27473_06	F27473_06	K09045531	歔／欷	サクリ	さくり	サクリ（歔欷）			200201b992f7MBbM3I8b
 F27474_03	F27474_03	K09045621	⿲亻日欠／欱	スフ（HL）	すふ	スフ（欱）			200202431db04bcY3aj6
 F27474_04	F27474_04	K09045621	⿲亻日欠／欱	スヽル	すする	ススル（欱）			

@@ -25,19 +25,20 @@ This explanation aims to provide clarity and respect for both terminologies, ens
 
 ## Citation
 
-If you use **KRM** for academic purposes, please cite the following:
+If you use KRM for academic purposes, please cite the following (Chicago Style):
 
-**Ikeda, S.** (2025).
-*KRM: Database of the Kanchi-in Manuscript of the Ruijū Myōgishō*. Zenodo.
-[https://doi.org/10.5281/zenodo.15481563](https://doi.org/10.5281/zenodo.15481563)
+Ikeda, Shōju. (2025). KRM: Database of the Kanchi-in Manuscript of the Ruijū Myōgishō. 
+Version v1.2.6. Zenodo. https://doi.org/10.5281/zenodo.15481563 (Updated January 18, 2026)
 
 **BibTeX**
 
 ```bibtex
 @misc{krm2025,
-  author       = {Ikeda, S.},
-  title        = {KRM: Database of the Kanchi-in Manuscript of the Ruijū Myōgishō},
+  author       = {Ikeda, Shōju},
+  title        = {{KRM: Database of the Kanchi-in Manuscript of the Ruijū Myōgishō}},
   year         = 2025,
+  month        = june,
+  version      = {v1.2.6}
   publisher    = {Zenodo},
   doi          = {10.5281/zenodo.15481563},
   url          = {https://doi.org/10.5281/zenodo.15481563}
@@ -90,22 +91,22 @@ This section describes information common to all data files published here.
 ### Last Updated Date
 
 Date published: March 30, 2025  
-Last modified: June 14, 2025
+Last modified: January 18, 2026
 
 ### Version History
 
 #### krm_main 
-- Version: 1.2.7 (latest)  
+- Version: 1.2.8 (latest)  
     Date published: March 28, 2025  
-    Last modified: June 11, 2025
+    Last modified: January 18, 2026
 - Version: 1.1.347  
     Date: March 11, 2022  
     Last modified : March 17, 2025
 
 ### krm_notes
-- Version: 1.2.9 (latest, Newly released after the specification change)  
+- Version: 1.2.10 (latest, Newly released after the specification change)  
     Date published: March 28, 2025  
-    Last modified: June 28, 2025
+    Last modified: January 18, 2026
 
 ### krm_headword_chars
 - Version: 1.2.2 (latest, Newly released after the specification change)  
@@ -119,9 +120,9 @@ Last modified: June 14, 2025
 
 
 ### krm_wakun
-- Version: 1.2.3 (latest)  
+- Version: 1.2.4 (latest)  
     Date published: March 28, 2025  
-    Last modified: June 28, 2025
+    Last modified: January 18, 2026
 
 - Version: 1.1.97  
     Date published: June 11, 2024  
@@ -136,7 +137,7 @@ Last modified: June 14, 2025
 
 HDIC Project
 Representative: Shoju Ikeda (Professor Emeritus, Hokkaido University)
-Copyright (c) 2022-2025 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
+Copyright (c) 2022-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
 
 Contact:
 ikeda.shoju@gmail.com, liyuansapporo@yahoo.co.jp, toyjack@gmail.com, kleinekuma@gmail.com

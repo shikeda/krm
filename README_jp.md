@@ -66,22 +66,22 @@ krm_main、krm_notes、krm_wakunの三つのテーブルの関係を図示すれ
 ### 最終更新日
 
 初版公開日：2025年3月30日  
-最終更新日：2025年6月13日
+最終更新日：2026年1月18日
 
 ### バージョン履歴
 
 #### krm_main 
 - Version: 1.2.7 (最新)  
     初版公開日：2025年3月30日 
-    最終更新日：2025年6月11日
+    最終更新日：2026年1月18日
 - Version: 1.1.347  
     初版公開日：2022年3月1日 
     最終更新日：2025年3月17日
 
 ### krm_notes
-- Version: 1.2.9 (最新, 仕様変更後に公開)  
+- Version: 1.2.10 (最新, 仕様変更後に公開)  
     初版公開日：2025年3月28日 
-    最終更新日：2025年6月28日
+    最終更新日：2026年1月18日
 
 ### krm_headword_chars
 - Version: 1.2.2 (最新, 仕様変更後に公開) 
@@ -94,9 +94,9 @@ krm_main、krm_notes、krm_wakunの三つのテーブルの関係を図示すれ
     最終更新日：2025年6月13日
 
 ### krm_wakun
-- Version: 1.2.3  (最新)  
+- Version: 1.2.4  (最新)  
     初版公開日：2025年3月30日 
-    最終更新日：2025年6月28日
+    最終更新日：2026年1月18日
 - Version: 1.1.97  
     初版公開日：2024年6月11日 
     最終更新日：2025年3月17日
@@ -112,7 +112,7 @@ HDIC プロジェクト
 
 代表者：池田　証寿（北海道大学名誉教授）
 
-Copyright (c) 2022-2025 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
+Copyright (c) 2022-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
 
 連絡先：
 ikeda.shoju@gmail.com, liyuansapporo@yahoo.co.jp, toyjack@gmail.com, kleinekuma@gmail.com
