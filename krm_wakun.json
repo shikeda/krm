@@ -49337,8 +49337,8 @@
         "kazama_location": "K02001341",
         "hanzi_entry": "屫／耳",
         "wakun_elements": "ワラウツノチ",
-        "wakun_form": "わらうつのち",
-        "wakun_standard_hanzi": "ワラウツノチ（屫耳）",
+        "wakun_form": "わらうづのち",
+        "wakun_standard_hanzi": "ワラウヅノチ（屫耳）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "null"
@@ -89741,8 +89741,8 @@
         "kazama_location": "K02110230",
         "hanzi_entry": "畸",
         "wakun_elements": "キコリノタ",
-        "wakun_form": "きこりのた",
-        "wakun_standard_hanzi": "キコリノタ（畸）",
+        "wakun_form": "のこりのた",
+        "wakun_standard_hanzi": "ノコリノタ（畸）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "null"
@@ -99917,8 +99917,8 @@
         "kazama_location": "K02138720",
         "hanzi_entry": "㬹",
         "wakun_elements": "*キヨスノスチ",
-        "wakun_form": "きよすのすち",
-        "wakun_standard_hanzi": "キヨスノスチ（㬹）",
+        "wakun_form": "きびすのすぢ",
+        "wakun_standard_hanzi": "キビスノスヂ（㬹）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": ""
@@ -112061,8 +112061,8 @@
         "kazama_location": "K03039640",
         "hanzi_entry": "扐",
         "wakun_elements": "オヨユヒノマタ",
-        "wakun_form": "およゆひのまた",
-        "wakun_standard_hanzi": "オヨユヒノマタ（扐）",
+        "wakun_form": "およゆびのまた",
+        "wakun_standard_hanzi": "オヨユビノマタ（扐）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "null"
@@ -146909,8 +146909,8 @@
         "kazama_location": "K03112840",
         "hanzi_entry": "⿰木𦙃",
         "wakun_elements": "木舩ノカチ",
-        "wakun_form": "こぶねのかち",
-        "wakun_standard_hanzi": "コブネノカチ（⿰木𦙃）",
+        "wakun_form": "こぶねのかぢ",
+        "wakun_standard_hanzi": "コブネノカヂ（楫）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": ""
@@ -175913,8 +175913,8 @@
         "kazama_location": "K05014612",
         "hanzi_entry": "洐",
         "wakun_elements": "ミソノ水",
-        "wakun_form": "みそのみづ",
-        "wakun_standard_hanzi": "ミソノミヅ（洐）",
+        "wakun_form": "みぞのみづ",
+        "wakun_standard_hanzi": "ミゾノミヅ（洐）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": ""
@@ -225341,8 +225341,8 @@
         "kazama_location": "K06014231",
         "hanzi_entry": "璅／⿰石巢",
         "wakun_elements": "タマノオヒタマ",
-        "wakun_form": "たまのおひたま",
-        "wakun_standard_hanzi": "タマノオヒタマ（璅）",
+        "wakun_form": "たまのおびだま",
+        "wakun_standard_hanzi": "タマノオビダマ（璅）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "null"
@@ -225833,8 +225833,8 @@
         "kazama_location": "K06018540",
         "hanzi_entry": "琫",
         "wakun_elements": "タチノカサリ",
-        "wakun_form": "たちのかさり",
-        "wakun_standard_hanzi": "タチノカサリ（琫）",
+        "wakun_form": "たちのかざり",
+        "wakun_standard_hanzi": "タチノカザリ（琫）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "null"
@@ -262414,6 +262414,18 @@
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "null"
+    },
+    {
+        "wakun_id": "F18290_04",
+        "definition_seq_id": "F18290_04",
+        "kazama_location": "K06116830",
+        "hanzi_entry": "繪",
+        "wakun_elements": "ヱ",
+        "wakun_form": "ゑ",
+        "wakun_standard_hanzi": "ヱ（繪）",
+        "wakun_variant_in_hanzi": "",
+        "variant_hanzi_for_wakun": "",
+        "japan_knowledge_id": "20020076c416Ag69b6j9"
     },
     {
         "wakun_id": "F18291_02",
@@ -306640,9 +306652,9 @@
         "definition_seq_id": "F21579_01",
         "kazama_location": "K07089121",
         "hanzi_entry": "⿸尸⿰丬𠳮／耳",
-        "wakun_elements": "ワラウツノチヲ（_____LL）",
-        "wakun_form": "わらうつのちを",
-        "wakun_standard_hanzi": "ワラウツノチヲ（屩耳）",
+        "wakun_elements": "ワラウツノチヲ（_____LF）",
+        "wakun_form": "わらうづのちを",
+        "wakun_standard_hanzi": "ワラウヅノチヲ（屩耳）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "null"
@@ -316985,11 +316997,11 @@
         "kazama_location": "K07122730",
         "hanzi_entry": "痔",
         "wakun_elements": "俗云シノヤマヒ（RH___）",
-        "wakun_form": "じのやまひ",
-        "wakun_standard_hanzi": "ジノヤマヒ（痔）",
+        "wakun_form": "しりのやまひ",
+        "wakun_standard_hanzi": "シリノヤマヒ（痔）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": "200201d2ef60ep8PGzXs"
+        "japan_knowledge_id": "2002022cef4335JO0ZxJ"
     },
     {
         "wakun_id": "F22405_03",
@@ -362729,8 +362741,8 @@
         "kazama_location": "K08119240",
         "hanzi_entry": "鑠",
         "wakun_elements": "ノホキリ",
-        "wakun_form": "のほきり",
-        "wakun_standard_hanzi": "ノホキリ（鑠）",
+        "wakun_form": "のほぎり",
+        "wakun_standard_hanzi": "ノホギリ（鑠）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "2002034c57c8U2NVUHHG"
@@ -364745,11 +364757,11 @@
         "kazama_location": "K08123410",
         "hanzi_entry": "䤦",
         "wakun_elements": "ノホキリ",
-        "wakun_form": "のほきり",
-        "wakun_standard_hanzi": "ノホキリ（䤦）",
+        "wakun_form": "のほぎり",
+        "wakun_standard_hanzi": "ノホギリ（䤦）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": ""
+        "japan_knowledge_id": "2002034c57c8U2NVUHHG"
     },
     {
         "wakun_id": "F26044_02",
@@ -398705,8 +398717,8 @@
         "kazama_location": "K09089130",
         "hanzi_entry": "輗",
         "wakun_elements": "ナカエノハシノクサヒ",
-        "wakun_form": "なかえのはしのくさひ",
-        "wakun_standard_hanzi": "ナカエノハシノクサヒ（輗）",
+        "wakun_form": "なかえのはしのくさび",
+        "wakun_standard_hanzi": "ナカエノハシノクサビ（輗）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "null"
@@ -398717,10 +398729,10 @@
         "kazama_location": "K09089221",
         "hanzi_entry": "軏／䡇",
         "wakun_elements": "クルマノクサヒ",
-        "wakun_form": "くるまのくさひ",
-        "wakun_standard_hanzi": "クルマノクサヒ（軏）",
+        "wakun_form": "くるまのくさび",
+        "wakun_standard_hanzi": "クルマノクサビ（軏）",
         "wakun_variant_in_hanzi": "",
-        "variant_hanzi_for_wakun": "クルマノクサヒ（䡇）",
+        "variant_hanzi_for_wakun": "クルマノクサビ（䡇）",
         "japan_knowledge_id": "null"
     },
     {
@@ -415161,7 +415173,7 @@
         "wakun_standard_hanzi": "ノツチ（蝮）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": ""
+        "japan_knowledge_id": "2002034b06fbl18vcr1m"
     },
     {
         "wakun_id": "F30170_02",
