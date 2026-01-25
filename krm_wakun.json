@@ -52293,7 +52293,7 @@
         "wakun_standard_hanzi": "モノネタミ（妬）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": ""
+        "japan_knowledge_id": "2002042b5f7aM4455P5W"
     },
     {
         "wakun_id": "F02398_07",
@@ -92849,22 +92849,10 @@
         "kazama_location": "K02117411",
         "hanzi_entry": "胜／腥",
         "wakun_elements": "モスノハカミ",
-        "wakun_form": "もすのはかみ",
-        "wakun_standard_hanzi": "モスノハカミ（腥）",
+        "wakun_form": "もずのはやにへ",
+        "wakun_standard_hanzi": "モズノハヤニヘ（腥）",
         "wakun_variant_in_hanzi": "",
-        "variant_hanzi_for_wakun": "モスノハカミ（胜）;モスノハカミ（鯹）",
-        "japan_knowledge_id": "null"
-    },
-    {
-        "wakun_id": "F05379_07b",
-        "definition_seq_id": "F05379_07",
-        "kazama_location": "K02117411",
-        "hanzi_entry": "胜／腥",
-        "wakun_elements": "モスノハカミ",
-        "wakun_form": "もすのやにへ",
-        "wakun_standard_hanzi": "モスノヤニヘ（腥）",
-        "wakun_variant_in_hanzi": "モスノハカミ（腥）",
-        "variant_hanzi_for_wakun": "",
+        "variant_hanzi_for_wakun": "モズノハヤニヘ（胜）",
         "japan_knowledge_id": "null"
     },
     {
@@ -159245,8 +159233,8 @@
         "kazama_location": "K04026830",
         "hanzi_entry": "分",
         "wakun_elements": "イサヽカハカリ",
-        "wakun_form": "いささかはかり",
-        "wakun_standard_hanzi": "イササカハカリ（分）",
+        "wakun_form": "いささかばかり",
+        "wakun_standard_hanzi": "イササカバカリ（分）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "null"
@@ -410536,40 +410524,16 @@
         "definition_seq_id": "F29622_02",
         "kazama_location": "K10003430",
         "hanzi_entry": "鮐",
-        "wakun_elements": "ウラ",
-        "wakun_form": "うら／うらさめ",
-        "wakun_standard_hanzi": "ウラ（鮐）",
+        "wakun_elements": "ウラサメ",
+        "wakun_form": "うらさめ",
+        "wakun_standard_hanzi": "",
         "wakun_variant_in_hanzi": "ウラサメ（鮐）",
-        "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": ""
-    },
-    {
-        "wakun_id": "F29622_02b",
-        "definition_seq_id": "F29622_02",
-        "kazama_location": "K10003430",
-        "hanzi_entry": "鮐",
-        "wakun_elements": "ウラ",
-        "wakun_form": "うら／うらさめ",
-        "wakun_standard_hanzi": "ウラサメ（鮐）",
-        "wakun_variant_in_hanzi": "ウラ（鮐）",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": ""
     },
     {
         "wakun_id": "F29622_03",
         "definition_seq_id": "F29622_03",
-        "kazama_location": "K10003430",
-        "hanzi_entry": "鮐",
-        "wakun_elements": "サメ",
-        "wakun_form": "さめ",
-        "wakun_standard_hanzi": "サメ（鮐）",
-        "wakun_variant_in_hanzi": "",
-        "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": "200201c485e7568mG651"
-    },
-    {
-        "wakun_id": "F29622_04",
-        "definition_seq_id": "F29622_04",
         "kazama_location": "K10003430",
         "hanzi_entry": "鮐",
         "wakun_elements": "*フク",
