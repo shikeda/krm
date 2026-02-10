@@ -95601,7 +95601,7 @@
         "wakun_standard_hanzi": "ハダヘ（肌）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": ""
+        "japan_knowledge_id": "2002035fa615t78n9767"
     },
     {
         "wakun_id": "F05595_03",
@@ -139869,7 +139869,7 @@
         "wakun_standard_hanzi": "モミ（樅）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": ""
+        "japan_knowledge_id": "2002042c0fd7rjL5nbDk"
     },
     {
         "wakun_id": "F08450_03",
@@ -143529,7 +143529,7 @@
         "wakun_standard_hanzi": "アフコ（朸）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": ""
+        "japan_knowledge_id": "200200052940AYGk1eB4"
     },
     {
         "wakun_id": "F08787_02",
@@ -153209,11 +153209,11 @@
         "kazama_location": "K04008142",
         "hanzi_entry": "𤗉",
         "wakun_elements": "マト",
-        "wakun_form": "まと",
-        "wakun_standard_hanzi": "マト（𤗉）",
+        "wakun_form": "まど",
+        "wakun_standard_hanzi": "マド（𤗉）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": ""
+        "japan_knowledge_id": "200203f405125QF8367u"
     },
     {
         "wakun_id": "F10029_01",
@@ -159269,11 +159269,11 @@
         "kazama_location": "K04026830",
         "hanzi_entry": "分",
         "wakun_elements": "ケチメ",
-        "wakun_form": "けちめ",
-        "wakun_standard_hanzi": "ケチメ（分）",
+        "wakun_form": "けぢめ",
+        "wakun_standard_hanzi": "ケヂメ（分）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": ""
+        "japan_knowledge_id": "20020159e193G4Ee2fnn"
     },
     {
         "wakun_id": "F10543_11",
@@ -393717,7 +393717,7 @@
         "wakun_standard_hanzi": "モミ（穀）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": ""
+        "japan_knowledge_id": "2002042c0e12vf8p0R9j"
     },
     {
         "wakun_id": "F27939_01",
@@ -420549,7 +420549,7 @@
         "wakun_standard_hanzi": "サケ（醍）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": ""
+        "japan_knowledge_id": "200201b9cb97RsxgZn0o"
     },
     {
         "wakun_id": "F30951_08",
@@ -420711,10 +420711,10 @@
         "wakun_id": "F30969_01",
         "definition_seq_id": "F30969_01",
         "kazama_location": "K10059141",
-        "hanzi_entry": "顔／ー（酏）",
+        "hanzi_entry": "顔／𨠑",
         "wakun_elements": "カホアカム",
         "wakun_form": "かほあかむ",
-        "wakun_standard_hanzi": "カホアカム（顔酏）",
+        "wakun_standard_hanzi": "カホアカム（顔𨠑）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": ""
