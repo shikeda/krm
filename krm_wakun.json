@@ -58602,9 +58602,9 @@
         "hanzi_entry": "舑／舕",
         "wakun_elements": "シタサシツ（LLLHRV）",
         "wakun_form": "したさしづ",
-        "wakun_standard_hanzi": "シタサシヅ（舑）",
+        "wakun_standard_hanzi": "シタサシヅ（舑舕）",
         "wakun_variant_in_hanzi": "",
-        "variant_hanzi_for_wakun": "シタサシヅ（舕）",
+        "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "null"
     },
     {
@@ -58614,9 +58614,9 @@
         "hanzi_entry": "舑／舕",
         "wakun_elements": "イタス（LLVH）",
         "wakun_form": "いだす",
-        "wakun_standard_hanzi": "イダス（舑）",
+        "wakun_standard_hanzi": "イダス（舑舕）",
         "wakun_variant_in_hanzi": "",
-        "variant_hanzi_for_wakun": "イダス（舕）",
+        "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "2002003da2e9E7QsM4D4"
     },
     {
@@ -58626,9 +58626,9 @@
         "hanzi_entry": "舑／舕",
         "wakun_elements": "シタヽル",
         "wakun_form": "したたる",
-        "wakun_standard_hanzi": "シタタル（舑）",
+        "wakun_standard_hanzi": "シタタル（舑舕）",
         "wakun_variant_in_hanzi": "",
-        "variant_hanzi_for_wakun": "シタタル（舕）",
+        "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "null"
     },
     {
@@ -69425,8 +69425,8 @@
         "kazama_location": "K02058120",
         "hanzi_entry": "名",
         "wakun_elements": "ルヽナイハ（__HHH）",
-        "wakun_form": "るるないは",
-        "wakun_standard_hanzi": "ルルナイハ（名）",
+        "wakun_form": "いはるるな",
+        "wakun_standard_hanzi": "イハルルナ（名）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "null"
@@ -70569,7 +70569,7 @@
         "wakun_standard_hanzi": "トク（𠮯）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": ""
+        "japan_knowledge_id": "20020302d43axIyzwAaS"
     },
     {
         "wakun_id": "F03861_01",
@@ -71861,8 +71861,8 @@
         "kazama_location": "K02064510",
         "hanzi_entry": "眵",
         "wakun_elements": "メクル",
-        "wakun_form": "めぐる",
-        "wakun_standard_hanzi": "メグル（眵）",
+        "wakun_form": "めくる",
+        "wakun_standard_hanzi": "メクル（眵）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "2002041969a5R6L8gtlW"
@@ -72257,8 +72257,8 @@
         "kazama_location": "K02065320",
         "hanzi_entry": "瞤",
         "wakun_elements": "*メマシロク",
-        "wakun_form": "めましろく",
-        "wakun_standard_hanzi": "メマシロク（瞤）",
+        "wakun_form": "めまじろく",
+        "wakun_standard_hanzi": "メマジロク（瞤）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
         "japan_knowledge_id": "200204207984P6mj3kFb"
@@ -72640,12 +72640,24 @@
         "definition_seq_id": "F03989_03",
         "kazama_location": "K02066230",
         "hanzi_entry": "瞖",
-        "wakun_elements": "俗云ヒメクラシ（R____）",
-        "wakun_form": "ひめくらし",
-        "wakun_standard_hanzi": "ヒメクラシ（瞖）",
+        "wakun_elements": "俗云ヒ（R）",
+        "wakun_form": "ひ",
+        "wakun_standard_hanzi": "ヒ（瞖）",
         "wakun_variant_in_hanzi": "",
         "variant_hanzi_for_wakun": "",
-        "japan_knowledge_id": ""
+        "japan_knowledge_id": "2002037c4c33BO5Klrp2"
+    },
+    {
+        "wakun_id": "F03989_04",
+        "definition_seq_id": "F03989_03",
+        "kazama_location": "K02066230",
+        "hanzi_entry": "瞖",
+        "wakun_elements": "メクラシ",
+        "wakun_form": "めくらし",
+        "wakun_standard_hanzi": "メクラシ（瞖）",
+        "wakun_variant_in_hanzi": "",
+        "variant_hanzi_for_wakun": "",
+        "japan_knowledge_id": "200204197e4aGs4YN53q"
     },
     {
         "wakun_id": "F03990_03",
