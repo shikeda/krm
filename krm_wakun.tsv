@@ -7,9 +7,9 @@
 # anonymous Buddhist monk, the latter half of the 12th century.
 #
 # krm_wakun.tsv
-# Version: 1.2.11
+# Version: 1.2.12
 # Date: June 11, 2024
-# Last update : February 13, 2026
+# Last update : February 14, 2026
 #
 # This file is a new version of KRM_wakun.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.97, and it was last updated on March 17, 2025.
@@ -7046,7 +7046,7 @@ F04823_03	F04823_03	K02095830	曀	クモル（LL_）	くもる	クモル（曀�
 F04823_04	F04823_04	K02095830	曀	ホノカナリ	ほのかなり	ホノカ（曀）			200203e19b0aS2G72RmI
 F04825_04	F04825_04	K02096120	昳	クル（HL）	くる	クル（昳）			2002014ba036vNPUFv0o
 F04830_03	F04830_03	K02096230	晢	アキラカナリ（LHH___）	あきらか	アキラカ（晢）			2002000bd3ab14YB8jV2
-F04830_04	F04830_04	K02096230	晢	サトル	さとる	サトル（晢）			
+F04830_04	F04830_04	K02096230	晢	サトル	さとる	サトル（晢）			200201c1ec8f8QrKR7OQ
 F04830_05	F04830_05	K02096230	晢	テラス（LLH）	てらす	テラス（晢）			200202ea18d8PviloTP4
 F04830_06	F04830_06	K02096230	晢	シラヽヽシ（LL___）	しらしらし	シラシラシ（晢）			2002022bd55179ulefTS
 F04831_02	F04831_02	K02096310	晣	アキラカナリ（L_H___、ナ-ニ）	あきらか	アキラカ（晣）			2002000bd3ab14YB8jV2
