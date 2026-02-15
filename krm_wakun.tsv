@@ -7,9 +7,9 @@
 # anonymous Buddhist monk, the latter half of the 12th century.
 #
 # krm_wakun.tsv
-# Version: 1.2.12
+# Version: 1.2.13
 # Date: June 11, 2024
-# Last update : February 14, 2026
+# Last update : February 15, 2026
 #
 # This file is a new version of KRM_wakun.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.97, and it was last updated on March 17, 2025.
@@ -7540,7 +7540,7 @@ F05194_03	F05194_03	K02110210	⿰田㕘	モトヲル	もとほる	モトホル�
 F05196_03	F05196_03	K02110230	畸	キコリノタ	のこりのた	ノコリノタ（畸）			null
 F05196_04	F05196_04	K02110230	畸	アラタ	あらた	アラタ（畸）			20020025793820YlSQ9Q
 F05198_04	F05198_04	K02110310	甿	カリ（LH）	かり	カリ（甿）			
-F05200_03	F05200_03	K02110330	⿰田𡉵	マナ	まな	マナ（⿰田𡉵）			
+F05200_03	F05200_03	K02110330	⿰田𡉵	マナ	あな	アナ（𤱩）			
 F05202_03	F05202_03	K02110410	畇	ハリヒラク（LH___）	はりひらく	ハリヒラク（畇）			20020372b7a17dd8Cl0e
 F05204_02	F05204_02	K02110430	累	カサヌ（HH_）	かさぬ	カサヌ（累）			200200ce1be24jmo621d
 F05204_03	F05204_03	K02110430	累	シキリ	しきり	シキリ（累）			200201db54c4Sx4nRtx3
