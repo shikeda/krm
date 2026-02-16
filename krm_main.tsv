@@ -8,9 +8,9 @@
 #
 # krm_main.tsv
 #
-# Version: 1.2.11
+# Version: 1.2.12
 # Date: March 11, 2022
-# Last update : February 13, 2026
+# Last update : February 16, 2026
 #
 # This file is a new version of KRM.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.347, and it was last updated on March 17, 2025.
@@ -5270,7 +5270,7 @@ F05216	S06515	K02110830	Ta228830	仏中	田	v2#19	⿰田牟	⿰田⿱厶干	ソ�
 F05217	S06516	K02110840	Ta228840	仏中	田	v2#19	毗	〇	裨時（L）反　タスク（LL_）　アツシ（HH_）　スケ　ネカフ　タノシ　ヤハラカナリ　ナラフ　モチ　ミツ　トモ　ヒロフ　𣬈字　和ヒイ（LVL）
 F05218	S06517	K02111130	Ta229130	仏中	田	v2#19	畕	〇	ナヘトルタ
 F05219	S06518	K02111140	Ta229140	仏中	田	v2#19	㽝	〇	タカシ
-F05220	S06519	K02111210	Ta229210	仏中	田	v2#19	⿱⿰巨又田	〇	タカシ
+F05220	S06519	K02111210	Ta229210	仏中	田	v2#19	𤲗	⿱⿰巨又田	タカシ
 F05221	S06520	K02111220	Ta229220	仏中	田	v2#19	卑	𤰞	補支反　イヤシ　ミシカシ（LLVL_）　ツタナシ　ヤハラカニ（LLH__）　クタル（HHV_）　アタフ（HH_）　スヘテ　タマフ　アタマ　和平
 F05222	S06521	K02111310	Ta229310	仏中	田	v2#19	畀	〇	正、　又必（SV）二反　上尊卑下ー与。　アタフ（HH_）
 F05223	S06522	K02111320	Ta229320	仏中	田	v2#19	畏	〇	音尉（R）　カシコマル（LL___）　ツヽシム　オソル　ハラ（LL）　弓也　オツ（HLV）

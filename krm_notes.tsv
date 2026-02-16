@@ -8,9 +8,9 @@
 #
 # krm_notes.tsv
 #
-# Version: 1.2.15 (latest, Newly released after the specification change)
+# Version: 1.2.16 (latest, Newly released after the specification change)
 # Date published: March 28, 2025
-# Last modified: February 12, 2026
+# Last modified: February 16, 2026
 #
 #
 # Copyright (c) 2025-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
@@ -19879,8 +19879,8 @@ F05218	F05218_00	K02111130	Ta229130	仏中	田	v2#19	畕	〇		100	見出し
 F05218	F05218_01	K02111130	Ta229130	仏中	田	v2#19	畕	〇	ナヘトルタ	421	和訓	説文・万象名義・宋本玉篇・広韻「比田也」（隣り合う二つの田の意）。
 F05219	F05219_00	K02111140	Ta229140	仏中	田	v2#19	㽝	〇		100	見出し	
 F05219	F05219_01	K02111140	Ta229140	仏中	田	v2#19	㽝	〇	タカシ	421	和訓	
-F05220	F05220_00	K02111210	Ta229210	仏中	田	v2#19	⿱⿰巨又田	〇		100	見出し	
-F05220	F05220_01	K02111210	Ta229210	仏中	田	v2#19	⿱⿰巨又田	〇	タカシ	421	和訓	
+F05220	F05220_00	K02111210	Ta229210	仏中	田	v2#19	𤲗	⿱⿰巨又田		100	見出し	
+F05220	F05220_01	K02111210	Ta229210	仏中	田	v2#19	𤲗	⿱⿰巨又田	タカシ	421	和訓	
 F05221	F05221_00	K02111220	Ta229220	仏中	田	v2#19	卑	𤰞		100	見出し	
 F05221	F05221_01	K02111220	Ta229220	仏中	田	v2#19	卑	𤰞	補支反	218	音注声点無_反切	広韻「府移切」（平声支韻）。
 F05221	F05221_02	K02111220	Ta229220	仏中	田	v2#19	卑	𤰞	イヤシ	421	和訓	高山寺本（105オ3）「イヤシ（HH_）」。中村文選（79頁・西京）「卑キニ／（上野）イヤシキニ」。
