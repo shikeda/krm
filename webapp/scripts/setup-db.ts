@@ -80,5 +80,51 @@ dst.exec(`CREATE INDEX IF NOT EXISTS idx_notes_entry_id ON krm_notes(entry_id)`)
 dst.exec(`CREATE INDEX IF NOT EXISTS idx_notes_def_seq ON krm_notes(definition_seq_id)`);
 dst.exec(`CREATE INDEX IF NOT EXISTS idx_wakun_def_seq ON krm_wakun(definition_seq_id)`);
 
+// Build itaiji_groups table from NIHU 異体漢字対応テーブル (CC-BY 4.0)
+const ITAIJI_TSV = path.join(__dirname, '..', '..', '異体漢字対応テーブル111220版_TSV221111.txt');
+if (fs.existsSync(ITAIJI_TSV)) {
+  console.log('Building itaiji_groups table...');
+  dst.exec(`DROP TABLE IF EXISTS itaiji_groups`);
+  dst.exec(`DROP INDEX IF EXISTS idx_itaiji_char`);
+  dst.exec(`
+    CREATE TABLE IF NOT EXISTS itaiji_groups (
+      group_id    TEXT NOT NULL,
+      char        TEXT NOT NULL,
+      unicode_hex TEXT NOT NULL
+    )
+  `);
+
+  const lines = fs.readFileSync(ITAIJI_TSV, 'utf-8').split('\n');
+  const insertItaiji = dst.prepare(
+    `INSERT INTO itaiji_groups (group_id, char, unicode_hex) VALUES (?, ?, ?)`
+  );
+  const insertAll = dst.transaction(() => {
+    let count = 0;
+    for (const line of lines) {
+      const cols = line.split('\t');
+      if (cols.length < 2) continue;
+      const groupId = cols[0].trim();
+      // Skip header row
+      if (groupId === '整理番号') continue;
+      if (!groupId) continue;
+      // Columns: [group_id, char1, unicode1, char2, unicode2, char3, unicode3, char4, unicode4]
+      for (let i = 0; i < 4; i++) {
+        const charVal = (cols[1 + i * 2] ?? '').trim();
+        const hexVal  = (cols[2 + i * 2] ?? '').trim();
+        if (charVal) {
+          insertItaiji.run(groupId, charVal, hexVal);
+          count++;
+        }
+      }
+    }
+    return count;
+  });
+  const inserted = insertAll();
+  dst.exec(`CREATE INDEX IF NOT EXISTS idx_itaiji_char ON itaiji_groups(char)`);
+  console.log(`  itaiji_groups: ${inserted} chars inserted`);
+} else {
+  console.warn(`  NIHU itaiji TSV not found, skipping: ${ITAIJI_TSV}`);
+}
+
 dst.close();
 console.log('Done! krm_app.db created at:', APP_DB);

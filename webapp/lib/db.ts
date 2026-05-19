@@ -31,6 +31,14 @@ export function searchEntries(query: string, limit = 50, offset = 0): SearchResu
   return stmt.all(query, limit, offset) as SearchResult[];
 }
 
+export function countEntries(query: string): number {
+  const db = getDb();
+  const row = db.prepare(
+    `SELECT COUNT(*) as cnt FROM krm_fts WHERE krm_fts MATCH ?`
+  ).get(query) as { cnt: number };
+  return row.cnt;
+}
+
 export function getEntry(entryId: string): EntryDetail | null {
   const db = getDb();
   const entry = db.prepare(`

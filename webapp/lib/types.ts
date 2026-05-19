@@ -38,6 +38,11 @@ export interface SearchResult {
   source_id: string;
 }
 
+export interface SearchResponse {
+  results: SearchResult[];
+  total_count: number;
+}
+
 export interface EntryDetail extends Entry {
   notes: Note[];
   wakunList: Wakun[];

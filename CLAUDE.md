@@ -84,3 +84,19 @@ Files prefixed with uppercase `KRM_` are the old specification (v1.1.x). Files p
 - All changes to data should go through the data pipeline, not manual edits.
 - When writing scripts, output to a separate file; never overwrite source data.
 
+## 自動実行してよいコマンド
+
+以下のコマンドは確認なしで実行してよい：
+- cat, ls, head, tail, grep（読み取り専用）
+- npm install, npm run dev, npm run setup-db
+- pip install
+- sqlite-utils insert
+- curl
+
+## 必ず確認を求めるコマンド
+
+- rm, rm -rf（削除）
+- git push（外部送信）
+- mv（移動）
+- 本番データファイルへの書き込み
+
