@@ -9,7 +9,7 @@ export interface Entry {
   hanzi_entry: string;
   original_entry: string;
   definition: string;
-  source_id: string; // "KRM" fixed (for future HDIC expansion)
+  source_id: 'KRM'; // Entry is always KRM
 }
 
 export interface Note {
@@ -35,7 +35,7 @@ export interface SearchResult {
   volume_name: string;
   radical_name: string;
   definition_snippet: string;
-  source_id: string;
+  source_id: 'KRM' | 'TSJ';
 }
 
 export interface SearchResponse {
@@ -47,4 +47,40 @@ export interface EntryDetail extends Entry {
   notes: Note[];
   wakunList: Wakun[];
   ndl_url: string | null;
+}
+
+// ===== TSJ-specific types =====
+
+export interface TsjDefinition {
+  TSJ2ID: string;
+  Entry_word: string | null;
+  SJ_def: string | null;
+  SJ_remarks: string | null;
+  ZhangLei_page: string | null;
+}
+
+export interface TsjWakun {
+  tsj_id: string;
+  sj_w_id: string;
+  entry_text: string | null;
+  entry_type: string | null;
+  def_manyogana: string | null;
+  reading_kana_kanji: string | null;
+  reading_historical_kana: string | null;
+  nikkoku_id: string | null;
+}
+
+export interface TsjEntryDetail {
+  source_id: 'TSJ';
+  entry_id: string;         // SJID
+  hanzi_entry: string;      // Entry
+  volume_name: string;      // SJ_vol_radical
+  radical_name: string;     // SJ_radical
+  SJ2ID: string;
+  SJ_Rinsen: string | null;
+  Entry_original: string | null;
+  definitions: TsjDefinition[];
+  wakunList: TsjWakun[];
+  ndl_url: string | null;
+  nijl_url: string | null;
 }

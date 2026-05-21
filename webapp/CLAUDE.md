@@ -20,7 +20,8 @@ KRM（観智院本類聚名義抄）データベースの検索・閲覧Webア�
 - `app/api/search/route.ts` — 全文検索API
 - `app/api/entry/[id]/route.ts` — エントリ詳細API
 - `lib/db.ts` — DB接続
-- `lib/types.ts` — 型定義（`source_id = "KRM"`で将来の他辞書追加に対応）
+- `lib/types.ts` — 型定義（`source_id: 'KRM' | 'TSJ'` で辞書を識別）
+- `app/page.tsx` — 検索UI。辞書ごとの itaiji フラグ制御は `runSearch()` と `pushUrl()` の2箇所をセットで修正すること（詳細は `AGENTS.md`）
 
 ## してはいけないこと
 

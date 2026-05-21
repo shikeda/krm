@@ -5,11 +5,26 @@ import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import type { SearchResult, SearchResponse } from '@/lib/types';
 
+type Source = 'KRM' | 'TSJ';
+
+const DICT_LABELS: Record<Source, string> = {
+  KRM: '類聚名義抄（KRM）',
+  TSJ: '新撰字鏡（TSJ）',
+};
+
+const BADGE_CLASS: Record<Source, string> = {
+  KRM: 'bg-blue-100 text-blue-700',
+  TSJ: 'bg-amber-100 text-amber-700',
+};
+
 function SearchPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
   const [query, setQuery] = useState(searchParams.get('q') ?? '');
+  const [source, setSource] = useState<Source>(
+    searchParams.get('source') === 'TSJ' ? 'TSJ' : 'KRM'
+  );
   const [itaiji, setItaiji] = useState(searchParams.get('itaiji') === '1');
   const [results, setResults] = useState<SearchResult[]>([]);
   const [totalCount, setTotalCount] = useState(0);
@@ -18,14 +33,15 @@ function SearchPage() {
   const [searched, setSearched] = useState(false);
   const [hintOpen, setHintOpen] = useState(false);
 
-  const runSearch = useCallback(async (q: string, useItaiji: boolean) => {
+  const runSearch = useCallback(async (q: string, useItaiji: boolean, src: Source) => {
     if (!q.trim()) return;
     setLoading(true);
     setError(null);
     setSearched(true);
     try {
-      const url = `/api/search?q=${encodeURIComponent(q)}${useItaiji ? '&itaiji=1' : ''}`;
-      const res = await fetch(url);
+      const params = new URLSearchParams({ q, source: src });
+      if (useItaiji) params.set('itaiji', '1');
+      const res = await fetch(`/api/search?${params}`);
       if (!res.ok) {
         const data = await res.json();
         throw new Error(data.error ?? 'Search failed');
@@ -44,36 +60,67 @@ function SearchPage() {
 
   // ページロード時に URL パラメータがあれば自動検索
   useEffect(() => {
-    const q = searchParams.get('q');
-    const it = searchParams.get('itaiji') === '1';
+    const q   = searchParams.get('q');
+    const it  = searchParams.get('itaiji') === '1';
+    const src = searchParams.get('source') === 'TSJ' ? 'TSJ' as const : 'KRM' as const;
     if (q) {
       setQuery(q);
       setItaiji(it);
-      runSearch(q, it);
+      setSource(src);
+      runSearch(q, it, src);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const pushUrl = useCallback((q: string, useItaiji: boolean, src: Source) => {
+    const params = new URLSearchParams({ q, source: src });
+    if (useItaiji) params.set('itaiji', '1');
+    router.push(`?${params.toString()}`, { scroll: false });
+  }, [router]);
+
   const handleSearch = useCallback(async (e?: React.FormEvent) => {
     if (e) e.preventDefault();
     if (!query.trim()) return;
-    // URL に検索状態を反映してリロード後も復元できるようにする
-    const params = new URLSearchParams();
-    params.set('q', query);
-    if (itaiji) params.set('itaiji', '1');
-    router.push(`?${params.toString()}`, { scroll: false });
-    await runSearch(query, itaiji);
-  }, [query, itaiji, router, runSearch]);
+    pushUrl(query, itaiji, source);
+    await runSearch(query, itaiji, source);
+  }, [query, itaiji, source, pushUrl, runSearch]);
+
+  // 辞書切替時に既存クエリを再検索
+  const handleSourceChange = useCallback((newSrc: Source) => {
+    setSource(newSrc);
+    if (query.trim() && searched) {
+      pushUrl(query, itaiji, newSrc);
+      runSearch(query, itaiji, newSrc);
+    }
+  }, [query, itaiji, searched, pushUrl, runSearch]);
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-8 w-full flex flex-col min-h-screen">
       <div className="flex-1">
         <h1 className="text-2xl font-bold mb-2 text-center">
-          観智院本類聚名義抄（KRM）検索
+          HDIC 辞書検索
         </h1>
         <p className="text-center text-sm text-gray-500 mb-6">
           見出し字・定義文・和訓を全文検索できます
         </p>
+
+        {/* 辞書選択タブ */}
+        <div className="flex rounded-lg border border-gray-200 mb-4 overflow-hidden text-sm">
+          {(['KRM', 'TSJ'] as const).map((src) => (
+            <button
+              key={src}
+              type="button"
+              onClick={() => handleSourceChange(src)}
+              className={`flex-1 py-2 px-4 font-medium transition-colors ${
+                source === src
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-white text-gray-600 hover:bg-gray-50'
+              }`}
+            >
+              {DICT_LABELS[src]}
+            </button>
+          ))}
+        </div>
 
         <form onSubmit={handleSearch} className="mb-6">
           <div className="flex gap-2 mb-2">
@@ -118,11 +165,11 @@ function SearchPage() {
                 見出し字・定義文・和訓を横断して全文検索します。検索フィールドの個別指定はできません。
               </li>
               <li>
-                二字以上の見出し字は「仿／佛」のように ／ で区切って格納されています。
+                KRM の二字以上の見出し字は「仿／佛」のように ／ で区切って格納されています。
                 複字見出しを検索するには、一字ずつ個別に検索するか、／ を挟んで「仿／佛」と入力してください。
               </li>
               <li>
-                「異体字を含めて検索」をチェックすると、新旧字体の違いを意識せず検索できます（例: 亜→亞）。
+                「異体字を含めて検索」をチェックすると、新旧字体の違いを意識せず検索できます（例: 亜→亞、学→學）。KRM・TSJ 両方に対応。
                 <br />
                 <span className="text-gray-400 text-xs">
                   異体字データ: 人間文化研究機構 異体漢字対応テーブル（CC-BY 4.0）
@@ -166,7 +213,7 @@ function SearchPage() {
             <table className="w-full text-sm">
               <thead className="bg-gray-50 text-gray-700">
                 <tr>
-                  <th className="text-left px-3 py-2 font-semibold border-b border-gray-200 w-24">ID</th>
+                  <th className="text-left px-3 py-2 font-semibold border-b border-gray-200 w-28">ID</th>
                   <th className="text-left px-3 py-2 font-semibold border-b border-gray-200 w-20">見出し字</th>
                   <th className="text-left px-3 py-2 font-semibold border-b border-gray-200 w-28">巻名・部首</th>
                   <th className="text-left px-3 py-2 font-semibold border-b border-gray-200">定義（先頭80字）</th>
@@ -179,22 +226,31 @@ function SearchPage() {
                     className={`hover:bg-blue-50 cursor-pointer transition-colors ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
                   >
                     <td className="px-3 py-2 border-b border-gray-100">
-                      <Link href={`/entry/${r.entry_id}`} className="text-blue-600 hover:underline font-mono text-xs">
+                      <Link
+                        href={`/entry/${r.entry_id}?source=${r.source_id}`}
+                        className="text-blue-600 hover:underline font-mono text-xs"
+                      >
                         {r.entry_id}
                       </Link>
+                      <span className={`ml-1.5 text-xs font-bold px-1 py-0.5 rounded ${BADGE_CLASS[r.source_id as Source] ?? ''}`}>
+                        {r.source_id}
+                      </span>
                     </td>
                     <td className="px-3 py-2 border-b border-gray-100">
-                      <Link href={`/entry/${r.entry_id}`} className="font-bold text-lg hover:text-blue-700">
+                      <Link
+                        href={`/entry/${r.entry_id}?source=${r.source_id}`}
+                        className="font-bold text-lg hover:text-blue-700"
+                      >
                         {r.hanzi_entry}
                       </Link>
                     </td>
                     <td className="px-3 py-2 border-b border-gray-100 text-gray-600 text-xs">
-                      <Link href={`/entry/${r.entry_id}`} className="block">
+                      <Link href={`/entry/${r.entry_id}?source=${r.source_id}`} className="block">
                         {r.volume_name}・{r.radical_name}
                       </Link>
                     </td>
                     <td className="px-3 py-2 border-b border-gray-100 text-gray-700">
-                      <Link href={`/entry/${r.entry_id}`} className="block truncate">
+                      <Link href={`/entry/${r.entry_id}?source=${r.source_id}`} className="block truncate">
                         {r.definition_snippet}
                       </Link>
                     </td>

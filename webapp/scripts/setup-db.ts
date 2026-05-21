@@ -126,5 +126,102 @@ if (fs.existsSync(ITAIJI_TSV)) {
   console.warn(`  NIHU itaiji TSV not found, skipping: ${ITAIJI_TSV}`);
 }
 
+// ===== TSJ Tables =====
+const HDIC_DIR = path.join(__dirname, '..', '..', '..', 'HDIC');
+
+function parseTsvFile(filePath: string): { headers: string[]; rows: string[][] } {
+  const lines = fs.readFileSync(filePath, 'utf-8').split('\n');
+  const nonComment = lines.filter(l => !l.startsWith('#'));
+  if (nonComment.length === 0) return { headers: [], rows: [] };
+  const headers = nonComment[0].split('\t').map(h => h.trim());
+  const rows = nonComment.slice(1).filter(l => l.trim()).map(l => l.split('\t'));
+  return { headers, rows };
+}
+
+function loadTsvToTable(db: Database.Database, tableName: string, filePath: string): number {
+  const { headers, rows } = parseTsvFile(filePath);
+  db.exec(`DROP TABLE IF EXISTS "${tableName}"`);
+  const colDefs = headers.map(h => `"${h}" TEXT`).join(', ');
+  db.exec(`CREATE TABLE "${tableName}" (${colDefs})`);
+  if (rows.length === 0) return 0;
+  const colNames = headers.map(h => `"${h}"`).join(', ');
+  const placeholders = headers.map(() => '?').join(', ');
+  const insert = db.prepare(`INSERT INTO "${tableName}" (${colNames}) VALUES (${placeholders})`);
+  const insertAll = db.transaction(() => {
+    for (const row of rows) {
+      const vals = headers.map((_, i) => (row[i] ?? '').trim() || null);
+      insert.run(vals);
+    }
+  });
+  insertAll();
+  return rows.length;
+}
+
+console.log('\nLoading TSJ tables...');
+
+const tsjFiles: { file: string; table: string }[] = [
+  { file: 'TSJ_entries.tsv',     table: 'tsj_entries' },
+  { file: 'TSJ_definitions.tsv', table: 'tsj_definitions' },
+  { file: 'TSJ_wakun.tsv',       table: 'tsj_wakun' },
+  { file: 'TSJ_ndl.tsv',         table: 'tsj_ndl' },
+];
+
+for (const { file, table } of tsjFiles) {
+  const count = loadTsvToTable(dst, table, path.join(HDIC_DIR, file));
+  console.log(`  TSJ: ${count} rows → ${table}`);
+}
+
+dst.exec(`CREATE INDEX IF NOT EXISTS idx_tsj_entries_sjid  ON tsj_entries(SJID)`);
+dst.exec(`CREATE INDEX IF NOT EXISTS idx_tsj_entries_sj2id ON tsj_entries(SJ2ID)`);
+dst.exec(`CREATE INDEX IF NOT EXISTS idx_tsj_def_tsj2id    ON tsj_definitions(TSJ2ID)`);
+dst.exec(`CREATE INDEX IF NOT EXISTS idx_tsj_wakun_tsj_id  ON tsj_wakun(tsj_id)`);
+
+// Build TSJ FTS5 (Entry + SJ_def + reading_historical_kana)
+console.log('Building TSJ FTS5 index...');
+dst.exec(`DROP TABLE IF EXISTS tsj_fts`);
+dst.exec(`
+  CREATE VIRTUAL TABLE tsj_fts USING fts5(
+    sjid       UNINDEXED,
+    entry,
+    definition,
+    wakun,
+    tokenize = 'unicode61'
+  )
+`);
+
+const tsjEntries = dst.prepare(
+  `SELECT SJID, SJ2ID, Entry FROM tsj_entries`
+).all() as { SJID: string; SJ2ID: string; Entry: string | null }[];
+
+// SJ2ID → aggregated SJ_def  (tsj_definitions.TSJ2ID = tsj_entries.SJ2ID)
+const tsjDefMap = new Map<string, string[]>();
+(dst.prepare(
+  `SELECT TSJ2ID, SJ_def FROM tsj_definitions WHERE SJ_def IS NOT NULL`
+).all() as { TSJ2ID: string; SJ_def: string }[]).forEach(d => {
+  if (!tsjDefMap.has(d.TSJ2ID)) tsjDefMap.set(d.TSJ2ID, []);
+  tsjDefMap.get(d.TSJ2ID)!.push(d.SJ_def);
+});
+
+// SJID → aggregated reading_historical_kana  (tsj_wakun.tsj_id = tsj_entries.SJID)
+const tsjWakunMap = new Map<string, string[]>();
+(dst.prepare(
+  `SELECT tsj_id, reading_historical_kana FROM tsj_wakun WHERE reading_historical_kana IS NOT NULL`
+).all() as { tsj_id: string; reading_historical_kana: string }[]).forEach(w => {
+  if (!tsjWakunMap.has(w.tsj_id)) tsjWakunMap.set(w.tsj_id, []);
+  tsjWakunMap.get(w.tsj_id)!.push(w.reading_historical_kana);
+});
+
+const insertTsjFts = dst.prepare(
+  `INSERT INTO tsj_fts(sjid, entry, definition, wakun) VALUES (?, ?, ?, ?)`
+);
+dst.transaction(() => {
+  for (const e of tsjEntries) {
+    const defs  = (tsjDefMap.get(e.SJ2ID)   ?? []).join(' ');
+    const wakun = (tsjWakunMap.get(e.SJID)   ?? []).join(' ');
+    insertTsjFts.run(e.SJID, e.Entry ?? '', defs, wakun);
+  }
+})();
+console.log(`  tsj_fts: ${tsjEntries.length} entries indexed`);
+
 dst.close();
 console.log('Done! krm_app.db created at:', APP_DB);
