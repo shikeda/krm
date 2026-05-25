@@ -90,7 +90,6 @@ function KrmEntryView({ entry }: { entry: EntryDetail }) {
                   <th className="text-left px-3 py-2 font-semibold border-b border-gray-200 w-32">連番 ID</th>
                   <th className="text-left px-3 py-2 font-semibold border-b border-gray-200 w-28">注記種別</th>
                   <th className="text-left px-3 py-2 font-semibold border-b border-gray-200">定義要素</th>
-                  <th className="text-left px-3 py-2 font-semibold border-b border-gray-200 w-36">備考</th>
                 </tr>
               </thead>
               <tbody>
@@ -104,11 +103,19 @@ function KrmEntryView({ entry }: { entry: EntryDetail }) {
                         {n.definition_type_name}
                       </span>
                     </td>
-                    <td className="px-3 py-2 border-b border-gray-100 break-all leading-relaxed">
-                      {n.definition_elements}
-                    </td>
-                    <td className="px-3 py-2 border-b border-gray-100 text-xs text-gray-500 break-all">
-                      {n.remarks ?? ''}
+                    <td className="px-3 py-2 border-b border-gray-100">
+                      <div className="break-all leading-relaxed">{n.definition_elements}</div>
+                      {n.remarks && (
+                        <details className="mt-1.5">
+                          <summary className="text-xs text-gray-400 cursor-pointer select-none hover:text-gray-600 list-none flex items-center gap-1 w-fit">
+                            <span className="inline-block bg-gray-200 text-gray-500 rounded px-1 py-0.5 text-xs font-medium">編者注</span>
+                            <span className="text-gray-300 text-xs">▶ 展開</span>
+                          </summary>
+                          <div className="mt-1 px-2 py-1.5 bg-gray-100 rounded text-xs text-gray-600 leading-relaxed break-all">
+                            {n.remarks}
+                          </div>
+                        </details>
+                      )}
                     </td>
                   </tr>
                 ))}

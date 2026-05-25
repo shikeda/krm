@@ -12,8 +12,11 @@ const APP_DB = path.join(__dirname, '..', 'data', 'krm_app.db');
 // Create data directory
 fs.mkdirSync(path.dirname(APP_DB), { recursive: true });
 
-// Remove existing DB and recreate
-if (fs.existsSync(APP_DB)) fs.unlinkSync(APP_DB);
+// Remove existing DB and WAL/SHM files to avoid stale lock state
+for (const ext of ['', '-wal', '-shm']) {
+  const f = APP_DB + ext;
+  if (fs.existsSync(f)) fs.unlinkSync(f);
+}
 
 const src = new Database(KRM_DB, { readonly: true });
 const dst = new Database(APP_DB);
@@ -47,6 +50,7 @@ dst.exec(`
     hanzi_entry,
     definition,
     wakun_forms,
+    remarks,
     tokenize = 'unicode61'
   );
 `);
@@ -64,11 +68,22 @@ for (const w of wakuns) {
   wakunMap.get(w.entry_id)!.push(w.wakun_form);
 }
 
-const insertFts = dst.prepare(`INSERT INTO krm_fts(entry_id, hanzi_entry, definition, wakun_forms) VALUES (?,?,?,?)`);
+const remarksMap = new Map<string, string[]>();
+const remarksList = dst.prepare(`
+  SELECT entry_id, remarks FROM krm_notes
+  WHERE remarks IS NOT NULL AND remarks != ''
+`).all() as { entry_id: string; remarks: string }[];
+for (const r of remarksList) {
+  if (!remarksMap.has(r.entry_id)) remarksMap.set(r.entry_id, []);
+  remarksMap.get(r.entry_id)!.push(r.remarks);
+}
+
+const insertFts = dst.prepare(`INSERT INTO krm_fts(entry_id, hanzi_entry, definition, wakun_forms, remarks) VALUES (?,?,?,?,?)`);
 const insertFtsMany = dst.transaction(() => {
   for (const e of entries) {
-    const wForms = (wakunMap.get(e.entry_id) ?? []).join(' ');
-    insertFts.run(e.entry_id, e.hanzi_entry, e.definition ?? '', wForms);
+    const wForms   = (wakunMap.get(e.entry_id) ?? []).join(' ');
+    const remarksText = (remarksMap.get(e.entry_id) ?? []).join(' ');
+    insertFts.run(e.entry_id, e.hanzi_entry, e.definition ?? '', wForms, remarksText);
   }
 });
 insertFtsMany();
