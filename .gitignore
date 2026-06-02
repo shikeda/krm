@@ -27,3 +27,4 @@ my_venv/
 
 # Jupyter
 .ipynb_checkpoints/
+krm_notes.json
