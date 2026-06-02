@@ -13,3 +13,17 @@ krm.db
 # OS・エディタ
 .DS_Store
 Thumbs.db
+
+# バックアップファイル（スクリプトが自動生成）
+*.bak
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+my_venv/
+
+# Jupyter
+.ipynb_checkpoints/

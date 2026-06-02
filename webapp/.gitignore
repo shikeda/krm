@@ -41,3 +41,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 /data/
+
+
+# ビルド成果物
+dist/
+build/
