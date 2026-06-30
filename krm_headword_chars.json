@@ -142877,7 +142877,7 @@
     {
         "hanzi_id": "S15864",
         "entry_id": "F12807",
-        "constituent_char": "⿳亠ニ匕",
+        "constituent_char": "⿳亠二匕",
         "character_order": "1",
         "kazama_location_id": "K05047610",
         "tenri_location_id": "Tb053610",
@@ -142886,7 +142886,7 @@
     {
         "hanzi_id": "S15865",
         "entry_id": "F12808",
-        "constituent_char": "⿳亠ニコ",
+        "constituent_char": "⿳亠二コ",
         "character_order": "1",
         "kazama_location_id": "K05047620",
         "tenri_location_id": "Tb053620",
@@ -374994,7 +374994,7 @@
         "img_file_name": "10107610.jpg"
     },
     {
-        "hanzi_id": "S41659\u000b",
+        "hanzi_id": "S41659",
         "entry_id": "F32076",
         "constituent_char": "⿰國介",
         "character_order": "1",
