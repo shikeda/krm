@@ -8,9 +8,9 @@
 #
 # krm_notes.tsv
 #
-# Version: 1.2.20 (latest, Newly released after the specification change)
+# Version: 1.2.21 (latest, Newly released after the specification change)
 # Date published: March 28, 2025
-# Last modified: July 8, 2026
+# Last modified: July 9, 2026
 #
 #
 # Copyright (c) 2025-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
@@ -28556,7 +28556,7 @@ F07556	F07556_02	K03059120	Ta321120	仏下本	手	v3#28	撾	〇	ウツ（LH）	4
 F07556	F07556_03	K03059120	Ta321120	仏下本	手	v3#28	撾	〇	ムチウツ（LL__）	411	和訓声点有	
 F07556	F07556_04	K03059120	Ta321120	仏下本	手	v3#28	撾	〇	又音科	219	音注声点無_類音注等	広韻になし。宋本玉篇「陟瓜切。打鼓也」。龍龕手鏡（巻2手部平声）「撾：陟瓜反ー捶也」。集韻「張瓜切」（平声麻韻、𥬸）。音注対応せず。
 F07556	F07556_05	K03059120	Ta321120	仏下本	手	v3#28	撾	〇	呉ー多	224	音注呉音	広韻になし。宋本玉篇「陟瓜切。打鼓也」。龍龕手鏡（巻2手部平声）「撾：陟瓜反ー捶也」。集韻「張瓜切」（平声麻韻、𥬸）。
-F07556	F07556_06	K03059120	Ta321120	仏下本	手	v3#28	撾	〇	又平	223	音注声調	広韻未確認。
+F07556	F07556_06	K03059120	Ta321120	仏下本	手	v3#28	撾	〇	又平	223	音注声調	前を見よ（龍龕手鏡手部平声、集韻平声麻韻に所掲）。
 F07557	F07557_00	K03059140	Ta321140	仏下本	手	v3#28	𢰸	〇		100	見出し	
 F07557	F07557_01	K03059140	Ta321140	仏下本	手	v3#28	𢰸	〇	俗	121	字体注	
 F07558	F07558_00	K03059211	Ta321211	仏下本	手	v3#28	𢴥／𢷊	⿰扌恵／〇		100	見出し	
