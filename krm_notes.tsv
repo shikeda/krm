@@ -8,9 +8,9 @@
 #
 # krm_notes.tsv
 #
-# Version: 1.2.24 (latest, Newly released after the specification change)
+# Version: 1.2.25 (latest, Newly released after the specification change)
 # Date published: March 28, 2025
-# Last modified: July 11, 2026
+# Last modified: July 12, 2026
 #
 #
 # Copyright (c) 2025-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
@@ -61681,7 +61681,7 @@ F16699	F16699_01	K06060632	Tb194632	法中	土	v6#56	⿰土⿳⿱亠⿰口口回
 F16700	F16700_00	K06060641	Tb194641	法中	土	v6#56	⿰土⿱山⿰山山／⿰土⿱止⿰止止／⿰土出	〇／〇／〇		100	見出し	
 F16700	F16700_01	K06060641	Tb194641	法中	土	v6#56	⿰土⿱山⿰山山／⿰土⿱止⿰止止／⿰土出	〇／〇／〇	俗𢙉字	121	字体注	
 F16701	F16701_00	K06060710	Tb194710	法中	土	v6#56	域	⿰土㦯		100	見出し	
-F16701	F16701_01	K06060710	Tb194710	法中	土	v6#56	域	⿰土㦯	栄逼（L）反	214	音注声点有_反切	広韻「雨逼切」（入声職韻）。
+F16701	F16701_01	K06060710	Tb194710	法中	土	v6#56	域	⿰土㦯	榮逼反	214	音注声点有_反切	広韻「雨逼切」（入声職韻）、王二・唐・S6013:「榮逼反」（同前）。
 F16701	F16701_02	K06060710	Tb194710	法中	土	v6#56	域	⿰土㦯	サカヒ（LL_）	411	和訓声点有	図書寮本（228・7）「サカヒ（LLL）選」。中村文選（18頁・西都）「域／（上野）域サカヒ」
 F16701	F16701_03	K06060710	Tb194710	法中	土	v6#56	域	⿰土㦯	カキル	421	和訓	
 F16701	F16701_04	K06060710	Tb194710	法中	土	v6#56	域	⿰土㦯	シナ（HH）	411	和訓声点有	字類抄同訓「品シナ」（シ・人事、略注1479頁）。
