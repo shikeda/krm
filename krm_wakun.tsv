@@ -7,9 +7,9 @@
 # anonymous Buddhist monk, the latter half of the 12th century.
 #
 # krm_wakun.tsv
-# Version: 1.2.14
+# Version: 1.2.15
 # Date: June 11, 2024
-# Last update : February 20, 2026
+# Last update : July 11, 2026
 #
 # This file is a new version of KRM_wakun.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.97, and it was last updated on March 17, 2025.
@@ -54,7 +54,7 @@
 # Acknowledgments:
 # We are grateful to Tenri Central Library and Yagi Shoten for permission to publishment of the decipherment text of KRM.
 #
-# This work was supported by JSPS KAKENHI Grant Number 16H03422, 19H00526, 23K17500 and 25K00466.
+# This work was supported by JSPS KAKENHI Grant Number 16H03422, 19H00526, 23K17500, 25K00466 and 26K21717.
 #
 #
 wakun_id	definition_seq_id	kazama_location	hanzi_entry	wakun_elements	wakun_form	wakun_standard_hanzi	wakun_variant_in_hanzi	variant_hanzi_for_wakun	japan_knowledge_id
@@ -11849,8 +11849,8 @@ F08585_03	F08585_03	K03096310	椽	ツラヌ	つらぬ	ツラヌ（椽）			20020
 F08585_04	F08585_04	K03096310	椽	ツカハシラ	つかはしら	ツカハシラ（椽）			
 F08587_01	F08587_01	K03096330	椂	トチ	とち	トチ（椂）			
 F08588_03	F08588_03	K03096340	櫞	カフチ	かぶち	カブチ（櫞）			200200e43a624Rl4mcqk
-F08589_03	F08589_03	K03096410	椓	アヒクヒ（__HH）	あひくひ	アヒクヒ（椓）			
-F08589_04	F08589_04	K03096410	椓	ウツ	うつ	ウツ（椓）			
+F08589_03	F08589_04	K03096410	椓	アヒクヒ（__HH）	あひくひ	アヒクヒ（椓）			
+F08589_04	F08589_05	K03096410	椓	ウツ	うつ	ウツ（椓）			
 F08591_01	F08591_01	K03096422	ー（㭬）／撃	アヒ（LH）	あひ	アヒ（㭬撃）			2002000054f0eVB59UZO
 F08594_02	F08594_02	K03096511	櫲／樟	クスノキ（LH__）	くすのき	クスノキ（櫲樟）			2002013c46ac05795h4x
 F08594_03	F08594_03	K03096511	櫲／樟	上クスノキ	くすのき	クスノキ（櫲）			2002013c46ac05795h4x
