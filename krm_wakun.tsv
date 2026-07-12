@@ -7,9 +7,9 @@
 # anonymous Buddhist monk, the latter half of the 12th century.
 #
 # krm_wakun.tsv
-# Version: 1.2.15
+# Version: 1.2.16
 # Date: June 11, 2024
-# Last update : July 11, 2026
+# Last update : July 12, 2026
 #
 # This file is a new version of KRM_wakun.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.97, and it was last updated on March 17, 2025.
@@ -18442,9 +18442,9 @@ F14841_18	F14841_18	K05118730	崇	ムネ	むね	ムネ（崇）			200204167e50JC
 F14841_19	F14841_19	K05118730	崇	イノル	いのる	イノル（崇）			2002004e6c83ueRh3rgF
 F14841_20	F14841_20	K05118730	崇	イハフ（LLH）	いはふ	イハフ（崇）			20020056948fz3vY79Sx
 F14841_21	F14841_21	K05118730	崇	タヽス	ただす	タダス（崇）			2002029ea2df9vXQqwq6
-F14854_03	F14854_03	K05119320	嵸	タカシ	たかし	タカシ（嵸）			200202965cbeqt1ti0Yy
-F14854_04	F14854_04	K05119320	嵸	ミネ	みね	ミネ（嵸）			20020408407dB3920G5V
-F14854_05	F14854_05	K05119320	嵸	サカシ	さがし	サガシ（嵸）			200201b545baBVeeW127
+F14854_04	F14854_04	K05119320	嵸	タカシ	たかし	タカシ（嵸）			200202965cbeqt1ti0Yy
+F14854_05	F14854_05	K05119320	嵸	ミネ	みね	ミネ（嵸）			20020408407dB3920G5V
+F14854_06	F14854_06	K05119320	嵸	サカシ	さがし	サガシ（嵸）			200201b545baBVeeW127
 F14865_03	F14865_03	K05119540	岥	マタ	また	マタ（岥）			200203effe06DZ1syYUc
 F14866_02	F14866_02	K05119611	⿱山者／𡺐	サカシ	さがし	サガシ（𡺐）			200201b545baBVeeW127
 F14874_01	F14874_01	K05119810	炭	スミ	すみ	スミ（炭）			2002024f7eebP74S10UQ
