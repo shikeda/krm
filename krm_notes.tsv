@@ -8,9 +8,9 @@
 #
 # krm_notes.tsv
 #
-# Version: 1.2.27 (latest, Newly released after the specification change)
+# Version: 1.2.28 (latest, Newly released after the specification change)
 # Date published: March 28, 2025
-# Last modified: July 13, 2026
+# Last modified: July 26, 2026
 #
 #
 # Copyright (c) 2025-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
@@ -101710,7 +101710,7 @@ F27489	F27489_06	K09046521	Tc200521	僧中	欠	v9#101	𣥁／歎	〇／〇	嘆�
 F27489	F27489_07	K09046521	Tc200521	僧中	欠	v9#101	𣥁／歎	〇／〇	和タン（_L）	212	音注和音声点有	広韻「他旦切」（去声翰韻、炭）。集韻「他案切…歎𣥁：説文吟也籕不省通作嘆」（去声換韻、炭）。
 F27490	F27490_00	K09046540	Tc200540	僧中	欠	v9#101	次	〇		100	見出し	
 F27490	F27490_01	K09046540	Tc200540	僧中	欠	v9#101	次	〇	七四反	218	音注声点無_反切	広韻「七四切」（去声至韻）。
-F27490	F27490_02	K09046540	Tc200540	僧中	欠	v9#101	次	〇	ツキ（LLV）	411	和訓声点有	
+F27490	F27490_02	K09046540	Tc200540	僧中	欠	v9#101	次	〇	ツキ（HLV）	411	和訓声点有	
 F27490	F27490_03	K09046540	Tc200540	僧中	欠	v9#101	次	〇	ツイテ-ツ（HH_-LV）	411	和訓声点有	蓮成院本（下1・62ウ3）「ツイテ-ツ（HHH-L）」。
 F27490	F27490_04	K09046540	Tc200540	僧中	欠	v9#101	次	〇	ヒヽル	421	和訓	
 F27490	F27490_05	K09046540	Tc200540	僧中	欠	v9#101	次	〇	トル	421	和訓	

@@ -7,9 +7,9 @@
 # anonymous Buddhist monk, the latter half of the 12th century.
 #
 # krm_wakun.tsv
-# Version: 1.2.16
+# Version: 1.2.17
 # Date: June 11, 2024
-# Last update : July 12, 2026
+# Last update : July 26, 2026
 #
 # This file is a new version of KRM_wakun.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.97, and it was last updated on March 17, 2025.
@@ -32266,7 +32266,7 @@ F27487_02	F27487_02	K09046431	ー（欵）／冬	一云ヤマフキ	やまふき
 F27488_01	F27488_01	K09046511	ー（欵）／東	訓同	やまふき	ヤマフキ（欵東）			2002043d8b93wXvv6OtQ
 F27489_04	F27489_04	K09046521	𣥁／歎	ホム（LH）	ほむ	ホム（歎）		ホム（𣥁）	200203e26396W0jNTim8
 F27489_05	F27489_05	K09046521	𣥁／歎	ナケク（LLVH）	なげく	ナゲク（歎）		ナゲク（𣥁）	20020320523a2BcR243z
-F27490_02	F27490_02	K09046540	次	ツキ（LLV）	つぎ	ツギ（次）			200202cf4710Iu3N1ci8
+F27490_02	F27490_02	K09046540	次	ツキ（HLV）	つぎ	ツギ（次）			200202cf4710Iu3N1ci8
 F27490_03	F27490_03	K09046540	次	ツイテ-ツ（HH_-LV）	ついで	ツイデ（次）	ツイヅ（次）		200202cc44bazXo37169
 F27490_03b	F27490_03	K09046540	次	ツイテ-ツ（HH_-LV）	ついづ	ツイヅ（次）	ツイデ（次）		200202cc12003vQ21WyG
 F27490_04	F27490_04	K09046540	次	ヒヽル	ひひる	ヒヒル（次）			
