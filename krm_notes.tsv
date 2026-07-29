@@ -8,9 +8,9 @@
 #
 # krm_notes.tsv
 #
-# Version: 1.2.28 (latest, Newly released after the specification change)
+# Version: 1.2.29 (latest, Newly released after the specification change)
 # Date published: March 28, 2025
-# Last modified: July 26, 2026
+# Last modified: July 29, 2026
 #
 #
 # Copyright (c) 2025-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
@@ -71838,7 +71838,8 @@ F19444	F19444_08	K07006430	Tb300430	法下	示	v7#61	禦	〇	トヽム（HHV_）
 F19444	F19444_09	K07006430	Tb300430	法下	示	v7#61	禦	〇	音語（HV）	215	音注声点有_類音注等	広韻「魚巨切」（上声語韻、語）。
 F19445	F19445_00	K07006510	Tb300510	法下	示	v7#61	祾	〇		100	見出し	
 F19445	F19445_01	K07006510	Tb300510	法下	示	v7#61	祾	〇	盧祭反	218	音注声点無_反切	広韻「力膺切」（平声蒸韻、陵）、「魯登切」（平声登韻、楞）。
-F19445	F19445_02	K07006510	Tb300510	法下	示	v7#61	祾	〇	威ー名祾	322	義注	
+F19445	F19445_02	K07006510	Tb300510	法下	示	v7#61	祾	〇	威ー	322	義注	
+F19445	F19445_03	K07006510	Tb300510	法下	示	v7#61	祾	〇	俗⿰示麦	121	字体注	
 F19446	F19446_00	K07006520	Tb300520	法下	示	v7#61	⿰示翕	〇		100	見出し	
 F19446	F19446_01	K07006520	Tb300520	法下	示	v7#61	⿰示翕	〇	俗榻字	121	字体注	
 F19447	F19447_00	K07006530	Tb300530	法下	示	v7#61	䄍	〇		100	見出し	
