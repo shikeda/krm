@@ -120,6 +120,8 @@ ikeda.shoju@gmail.com, liyuansapporo@yahoo.co.jp, toyjack@gmail.com, kleinekuma@
 ### ライセンス情報
 
 このサイトの内容はCC BY-SA 4.0ライセンスのもとに提供される。
+`scripts/` 以下のユーティリティスクリプトおよび `webapp/` 以下のWebアプリケーションのソースコードは、個別に明示された場合はMIT Licenseのもとに提供される。
+外部データセットについては、記載された個別のライセンス条件に従う。
 
 オープンアクセスデータです。
 

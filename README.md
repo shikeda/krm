@@ -145,6 +145,8 @@ ikeda.shoju@gmail.com, liyuansapporo@yahoo.co.jp, toyjack@gmail.com, kleinekuma@
 ### License Information
 
 The contents of this site are provided under the CC BY-SA 4.0 license.
+Utility scripts under `scripts/` and web application source code under `webapp/` are provided under the MIT License where separately marked.
+External datasets retain their own license terms where stated.
 This is open access data.
 
 ### List of Abbreviations of Cited Works
