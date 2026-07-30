@@ -170,4 +170,4 @@ Claude Codeで分析する場合はどちらでも構いません。TSVの方が
 
 - データ構造の詳細：[README_jp.md](../README_jp.md)
 - テーブル関係図：[images/krmer.drawio.png](../images/krmer.drawio.png)
-- ライセンス：CC BY-NC-SA 4.0
+- ライセンス：CC BY-SA 4.0

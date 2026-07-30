@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a **pure data repository** — no build system, test suite, or scripts. It contains the KRM (Kanchi-in manuscript of the *Ruijū Myōgishō*) database, a full-text digitization of a 12th-century Hanzi dictionary, part of the HDIC project (Integrated Database of Hanzi Dictionaries in Early Japan). All data is available in TSV and JSON formats. License: CC BY-NC-SA 4.0.
+This is a **pure data repository** — no build system, test suite, or scripts. It contains the KRM (Kanchi-in manuscript of the *Ruijū Myōgishō*) database, a full-text digitization of a 12th-century Hanzi dictionary, part of the HDIC project (Integrated Database of Hanzi Dictionaries in Early Japan). All data is available in TSV and JSON formats. License: CC BY-SA 4.0.
 
 ## Data Files
 

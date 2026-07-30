@@ -144,7 +144,7 @@ ikeda.shoju@gmail.com, liyuansapporo@yahoo.co.jp, toyjack@gmail.com, kleinekuma@
 
 ### License Information
 
-The contents of this site are provided under the CC BY-NC-SA 4.0 license.  
+The contents of this site are provided under the CC BY-SA 4.0 license.
 This is open access data.
 
 ### List of Abbreviations of Cited Works

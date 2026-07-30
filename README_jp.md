@@ -119,7 +119,7 @@ ikeda.shoju@gmail.com, liyuansapporo@yahoo.co.jp, toyjack@gmail.com, kleinekuma@
 
 ### ライセンス情報
 
-このサイトの内容はCC BY-NC-SA 4.0ライセンスのもとに提供される。
+このサイトの内容はCC BY-SA 4.0ライセンスのもとに提供される。
 
 オープンアクセスデータです。
 
