@@ -19,9 +19,12 @@ Dictionaries of Chinese characters compiled in Japan during the Heian period are
 
 ## Current Release and Citation
 
-The archived, citable release on Zenodo is **v1.2.6** (published 2025-06-12). The repository itself continues to receive incremental updates after that snapshot; see [Version History](#version-history) for how the two relate.
+| | |
+|---|---|
+| **Latest archived release** | v1.2.6 (2025-06-12) — DOI-assigned on Zenodo. Cite this version for academic work. |
+| **Current repository state (GitHub)** | unreleased — this repository has received incremental corrections and additions since v1.2.6 (see [Version History](#version-history)) that are not yet reflected in any archived Zenodo snapshot. |
 
-If you use KRM for academic purposes, please cite the following (Chicago style):
+If you use KRM for academic purposes, please cite the archived release (Chicago style):
 
 > Ikeda, Shōju. (2025). *KRM: Database of the Kanchi-in Manuscript of the Ruiju Myōgishō*. Version v1.2.6. Zenodo. https://doi.org/10.5281/zenodo.15638843
 
@@ -82,9 +85,9 @@ Full column-by-column specifications, old/new column-name mappings, and the ER d
 
 ## How to Use the Data
 
-- **TSV files** begin with `#`-prefixed comment lines (containing the file's own version, dates, license, and column descriptions) before the header row — skip these when parsing.
-- **JSON files** mirror the TSV data; `krm_notes.json` nests its records under each `krm_main` entry's `"definitions"` key rather than being a flat table (see [Data Model](#data-model)).
-- **`krm.db`** is a read-only SQLite build of the TSV files, used by `webapp/`. Do not edit it directly — it is not source data.
+- **TSV files are the authoritative source** for all data in this repository. They begin with `#`-prefixed comment lines (containing the file's own version, dates, license, and column descriptions) before the header row — skip these when parsing.
+- **JSON files are generated from the TSV files** (see `scripts/`, e.g. `tsv_to_json.py`, `gen_notes_json.py`) and are not edited by hand. They mirror the TSV data field-for-field, except `krm_notes.json`, which nests its records under each `krm_main` entry's `"definitions"` key rather than being a flat table (see [Data Model](#data-model)).
+- **`krm.db`** is also generated from the TSV files (not from the JSON) — a read-only SQLite build used by `webapp/`. Do not edit it directly; it is a derivative, not source data.
 - **Special notation** used across headword and definition fields (see [docs/data_specification.md](docs/data_specification.md#special-notation-conventions) for the full specification):
 
   | Symbol | Meaning |
