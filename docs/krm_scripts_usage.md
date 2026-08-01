@@ -12,7 +12,8 @@
 | `update_pronunciation.py` | 差分 Markdown で TSV を更新する |
 | `delete_pronunciation.py` | TSV から指定行を削除する |
 | `gen_pronunciation_json.py` | TSV から JSON を再生成する |
-| `tsv_to_json.py` | 任意の KRM TSV を JSON に変換する |
+| `gen_notes_json.py` | krm_notes.tsv から krm_notes.json を entry_id 単位の入れ子構造で再生成する |
+| `tsv_to_json.py` | 任意の KRM TSV を JSON に変換する（フラット形式） |
 
 ---
 
@@ -215,7 +216,60 @@ python3 scripts/gen_pronunciation_json.py
 
 ---
 
-## 5. tsv_to_json.py — 汎用 TSV → JSON 変換
+## 5. gen_notes_json.py — krm_notes.json の再生成（entry_id 単位の入れ子構造）
+
+### 概要
+
+`krm_notes.tsv` から `krm_notes.json` を再生成する。`krm_pronunciations.json` など他の
+JSON ファイルと異なり、`krm_notes.json` は `entry_id` ごとにまとめ、`kazama_location` や
+`hanzi_entry` などの項目レベルの列は1回だけ持たせ、注文の各要素
+（`definition_seq_id`・`definition_elements`・`definition_type_code`・
+`definition_type_name`・`remarks`）を `"definitions"` 配列としてその下に格納する
+（詳細は [docs/data_specification.md](data_specification.md#krm_notes) を参照）。
+
+このスクリプトは `krm_pronunciations.tsv` 専用の簡易変換器であり、
+コマンドラインオプションは持たない。リポジトリ直下の `krm_notes.tsv` を読み込み、
+同じくリポジトリ直下の `krm_notes.json` を上書きする。
+
+### 使い方
+
+```bash
+python3 scripts/gen_notes_json.py
+```
+
+### 出力 JSON の形式
+
+```json
+[
+  {
+    "entry_id": "F00001",
+    "kazama_location": "K01001310",
+    "tenri_location": "Ta023310",
+    "volume_name": "仏上",
+    "radical_name": "人",
+    "volume_radical_index": "v1#1",
+    "hanzi_entry": "人",
+    "original_entry": "〇",
+    "definitions": [
+      { "definition_seq_id": "F00001_00", "definition_elements": "", "definition_type_code": "100", "definition_type_name": "見出し", "remarks": "" },
+      { "definition_seq_id": "F00001_01", "definition_elements": "音仁（LV）「ニン」", "definition_type_code": "215", "definition_type_name": "音注声点有_類音注等", "remarks": "広韻「如鄰切」（平声眞韻、仁）。" }
+    ]
+  }
+]
+```
+
+### 注意事項
+
+- 既存の `krm_notes.json` を上書きする
+- コメント行（`#` 始まり）は JSON には出力しない
+- `--group-by entry_id` を指定した `tsv_to_json.py` とは出力形式が異なる。`tsv_to_json.py`
+  の `--group-by` は `{ "F00001": [各行...], ... }` という辞書形式になり、項目レベルの列が
+  各行に重複したまま残る。`gen_notes_json.py` は項目レベルの列を1回だけ持たせる点が異なる
+- `krm_notes.tsv` を修正・削除・追加した後は、このスクリプトを再実行して JSON を同期させること
+
+---
+
+## 6. tsv_to_json.py — 汎用 TSV → JSON 変換
 
 ### 概要
 

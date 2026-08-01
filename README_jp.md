@@ -1,471 +1,186 @@
-# 観智院本類聚名義抄データベース
+# 観智院本類聚名義抄データベース（KRM）
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15638843.svg)](https://doi.org/10.5281/zenodo.15638843)
 
-The latest release is v1.2.6 (June 2025). Please cite this version when using the dataset.
+*[English README (README.md)](README.md)* — このリポジトリの一次的な入口は英語版READMEであり、日本語版はその構成をそのまま反映したものである。
 
 ## 概要
 
-このデータベースは、観智院本類聚名義抄（略称KRM）の全文をテキストデータベース化し、所在情報、本文校勘、出典考証などを行ったものであり、
-平安時代漢字字書総合データベース（略称HDIC）を構成する漢字字書データベースのひとつである。
+このデータベースは、観智院本類聚名義抄（略称KRM）の全文をテキストデータベース化し、所在情報、本文校勘、出典考証などを行ったものであり、平安時代漢字字書総合データベース（略称HDIC）を構成する漢字字書データベースのひとつである。
 
-観智院本類聚名義抄は、十二世紀に成立した漢字の字書であり、真言宗の僧侶によって編纂された。
-アクセントを示した和訓、詳細な漢字音の注記、異体字の注記を大量に収録することから、日本語史研究の
-重要資料とされてきた。また、反切、意義注、字体注の漢文注記は、中国語学の資料としても注目されている。
+観智院本類聚名義抄は、十二世紀に成立した漢字の字書であり、真言宗の僧侶によって編纂された。アクセントを示した和訓、詳細な漢字音の注記、異体字の注記を大量に収録することから、日本語史研究の重要資料とされてきた。また、反切、意義注、字体注の漢文注記は、中国語学の資料としても注目されている。
 
-2022年3月から公開していたが、2025年3月に、仕様の変更を行い、詳細な説明を施して改訂版を公開するものである。
+KRMは2022年3月に初版を公開した。2025年3月に、仕様の変更（[バージョン履歴](#バージョン履歴)参照）と、より詳細な説明を施した改訂版を公開した。
 
+### Kanji と Hanzi
 
-## データファイル一覧
+平安時代に日本で編纂された漢字字書は、日本語学のみならず中国語学にとっても貴重な資料である。国際的な学術交流を促進するため、本プロジェクトでは "Hanzi" という用語を用いている。日本語研究を専門とする研究者は、この用語を「Kanji」と読み替えても差し支えない。これは、両分野の言語的多様性と学術的伝統を尊重しつつ、より広い学術交流を促すことを意図したものである。
 
-### 一覧と簡単な説明
+## 現行リリースと引用
 
-[https://github.com/shikeda/HDIC/tree/master/v1.2](https://github.com/shikeda/HDIC/tree/master/v1.2)
-で公開している観智院本類聚名義抄のデータは次のとおりである。
-一部公開準備中のものを含む。
+Zenodoにアーカイブされている引用可能なリリースは **v1.2.6**（2025年6月12日公開）である。リポジトリ自体はこのスナップショット以降も継続的に更新されている。両者の関係は[バージョン履歴](#バージョン履歴)を参照。
 
-- [krm_main](#krm_main): 基本データ。掲出字、注文全文、所在などに関する情報を含む。TSVファイルとJSONファイルを公開。
-- [krm_notes](#krm_notes): 注釈データ。掲出字、字体注、音注、意義注、和訓、その他に分類し、校勘と出典考証を行ったもの。TSVファイルとJSONファイルを公開。
-- [krm_headword_chars](#krm_headword_chars): すべての掲出字に関する詳細情報。風間版所在、天理版所在、画像ファイル名など。公開準備中。
-- [krm_wakun](#krm_wakun): 和訓データ。和訓の異形、漢字の異体字、『日本国語大辞典第二版』の表記欄との対応に関する情報を含む。TSVファイルとJSONファイルを公開。
-- [krm_definitions](#krm_definitions): 注文を字体注、音注、意義注、和訓、その他に分類したもの。TSVファイルを公開。公開済みの[KRM_definitions.tsv](https://github.com/shikeda/HDIC/KRM_definitions.tsv)に同じ。
-- [krm_pronunciations](#krm_pronunciations): 音注に関してDHSJRとの連携をとるためのデータ（準備中）。
-- [krm_ndl](#krm_ndl): 国会図書館デジタルコレクションへのリンク。TSVファイルを公開。公開済みの[KRM_ndl.tsv](https://github.com/shikeda/HDIC/KRM_ndl.tsv)に同じ。
+学術目的でKRMを利用する場合は、以下のように引用されたい（Chicago Style）：
 
-2025年3月に大幅な仕様変更を行った。従来の公開ファイルは、
-KRMを付していたが、仕様変更後のファイルは、krmを付すことに
-した。
+> Ikeda, Shōju. (2025). *KRM: Database of the Kanchi-in Manuscript of the Ruijū Myōgishō*. Version v1.2.6. Zenodo. https://doi.org/10.5281/zenodo.15638843
 
-## 仕様変更
+**BibTeX**
 
-仕様変更の要点は次のとおりである。
-
-- 仮名和訓の無声点を示す“@”を“_”に変更
-- 濁音の声点を示す“"”を半角英字“V”に変更
-- 有声点を示す半角()を全角（）に変更
-- 誤字の訂正案を示す半角()を全角〔〕に変更
-- 脱字を示す半角[]を全角［］に変更
-
-仕様変更後のファイルはv1.2のフォルダーに置いた。これは一時的なものである。
-
-## ER図
-
-krm_main、krm_notes、krm_wakunの三つのテーブルの関係を図示すれば 次のようになる。
-
-![ER図](/images/krmer.drawio.png)
-
-さらにkrm_notes.jsonは次に図示するような入れ子構造を持っている。
-
-![ER_notes図](/images/krm_notes_er.drawio.png)
-
-
-## 共通情報
-
-ここに公開するデータファイルに共通する情報を記す。
-
-### 最終更新日
-
-初版公開日：2025年3月30日  
-最終更新日：2026年1月18日
-
-### バージョン履歴
-
-#### krm_main 
-- Version: 1.2.7 (最新)  
-    初版公開日：2025年3月30日 
-    最終更新日：2026年1月18日
-- Version: 1.1.347  
-    初版公開日：2022年3月1日 
-    最終更新日：2025年3月17日
-
-### krm_notes
-- Version: 1.2.10 (最新, 仕様変更後に公開)  
-    初版公開日：2025年3月28日 
-    最終更新日：2026年1月18日
-
-### krm_headword_chars
-- Version: 1.2.2 (最新, 仕様変更後に公開) 
-    初版公開日：2025年5月11日 
-    最終更新日：2025年5月21日
-
-### krm_pronounciations
-- Version: 1.2.2 (最新, DHSJR format)  
-    初版公開日：2025年5月20日  
-    最終更新日：2025年6月13日
-
-### krm_wakun
-- Version: 1.2.4  (最新)  
-    初版公開日：2025年3月30日 
-    最終更新日：2026年1月18日
-- Version: 1.1.97  
-    初版公開日：2024年6月11日 
-    最終更新日：2025年3月17日
-
-### krm_ndl
-- Version: 1.1.5  (最新)  
-    初版公開日：2015年10月20日 
-    最終更新日：2025年6月14日
-
-### 作成者および著作権情報
-
-HDIC プロジェクト
-
-代表者：池田　証寿（北海道大学名誉教授）
-
-Copyright (c) 2022-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
-
-連絡先：
-ikeda.shoju@gmail.com, liyuansapporo@yahoo.co.jp, toyjack@gmail.com, kleinekuma@gmail.com
-
-### ライセンス情報
-
-このサイトの内容はCC BY-SA 4.0ライセンスのもとに提供される。
-`scripts/` 以下のユーティリティスクリプトおよび `webapp/` 以下のWebアプリケーションのソースコードは、個別に明示された場合はMIT Licenseのもとに提供される。
-外部データセットについては、記載された個別のライセンス条件に従う。
-
-オープンアクセスデータです。
-
-### 引用書の略称一覧
-
-- 正宗索引: 正宗敦夫編, 類聚名義抄 仮名索引, 日本古典全集刊行会, 1939-1940
-- 岡田研究: 岡田希雄, 類聚名義抄の研究, 一条書房, 1944
-- 望月和訓集成: 望月郁子編, 類聚名義抄: 四種声点付和訓集成, 笠間書院, 1974
-- 中村文選: 中村宗彦, 九条本文選古訓集, 風間書房, 1983
-- 草川和訓集成: 草川昇編, 五本対照類聚名義抄和訓集成, 汲古書院, 2000
-- 西端誤写考察: 西端幸雄, 類聚名義抄における誤写の考察, 訓点語と訓点資料45, 1971
-- 西端誤写諸例: 西端幸雄, 類聚名義抄における誤写の諸例, 訓点語と訓点資料52，1973
-- 略注: 佐藤喜代治，色葉字類抄略注，明治書院，1995
-- 群書治要: 小林芳規・原卓志・山本秀人・山本真吾・佐々木勇編, 宮内庁書陵部蔵本群書治要経部語彙索引, 汲古書院, 1996
-- 毛詩鄭箋: 毛詩鄭箋（一）（二）（三）, 古典研究会叢書漢籍之部１～３, 原本所蔵静嘉堂文庫, 汲古書院, 1992
-
-
-### 謝辞
-
-観智院本類聚名義抄の解読テキストの公開について、御許可を賜った
-天理図書館ならびに八木書店に感謝申し上げる。
-
-
-この研究は日本学術振興会科学研究費補助金（課題番号16H03422、 19H00526、23K17500、25K00466）の成果の一部である。記して感謝の意を表す。
-
-
-## krm_main
-
-### 概要とファイル形式
-
-観智院本類聚名義抄（以下、名義抄）デーベースの中核となるファイルを解説する。
-従来公開していたのは、`KRM.tsv` という名称のTSVファイルである。
-
-掲出字、注文、巻、部首、風間書房版と天理善本叢書版の所在などに関する情報を
-収録する。
-
-2025年3月に、カラム名、声点の表示法の仕様を変更した。仕様変更後の
-ファイルであることを明示するために、`krm_main.tsv` という名称にした。
-これにはJSON形式も用意した。
-
-### カラム名対照
-
-新旧のカラム名を対照すれば次のようになる。
-
-| New Column Name (v1.2.5) | Old Column Name (v1.1.347) |
-|--------------------------|----------------------------|
-| entry_id                 | KRID_n                     |
-| hanzi_id                 | KRID_sn                    |
-| -                        | KR2ID                      |
-| kazama_location          | KRID                       |
-| tenri_location           | KR_Tenri_p                 |
-| volume_name              | KR_vol_name                |
-| radical_name             | KR_radical                 |
-| volume_radical_index     | KR_vol_radical             |
-| hanzi_entry              | Entry                      |
-| original_entry           | Entry_original             |
-| definition               | Def                        |
-| -                        | Remarks                    |
-
-`KR2ID` は省略し、`kazama_location` を `KRID` に対応させた。
-
-`Remarks` は次の `krm_notes` にまとめることとして、省略した。
-
-
-### 各カラムの説明
-
-次に、カラム名の内容を日本語で説明する。ここでは `v1.2.5`の内容を
-記載する。
-
-| New Column Name (v1.2.5) | Japanese Explanation                    |
-|--------------------------|-------------------------------------------|
-| entry_id                 | Fで始まる5桁の数値からなる見出し項目ID。一部、追加した掲出項目にはb番号を付す。     |
-| hanzi_id                 | Sで始まる5桁の数値からなる見出し漢字ID。一部、追加した掲出項目にはb番号を付す。     |
-| kazama_location    | K・巻数（2桁）・風間版頁数（3桁）・行数（1桁）、段数（1桁）、字順（1桁）を示すID。字順付与のルールの詳細は別に定める。    |
-| tenri_location           | T・巻数（a/b/c）・天理版頁数（3桁）・行数（1桁）・段数（1桁）・字順（1桁）を示す。字順付与のルールの詳細は別に定める。     |
-| volume_name              | 巻名。「仏上」「仏中」「仏下本」「仏下末」「法上」「法中」「法下」「僧上」「僧中」「僧下」の10 巻を示す。                              |
-| radical_name             | 部首名。「人、彳、辵」から「風、酉、雑」までの120部を示す。       |
-| volume_radical_index     | 巻。v・巻数（1-10）#・部首番号（1-120）を示す。v1#1(第1帖第1)〜v10#120(第10帖第120)。第1帖(仏上)〜第10帖(僧下)。            |
-| hanzi_entry              | 校訂漢字は原則、康熙字典体（Unicodeの新字体（通用字体・俗字体）を含む）を用いる。Unicodeに収録されていない漢字については、以下の方法で表現する。漢字の部品の組み合わせで表現可能な場合は、IDS（漢字構成記述文字列）で入力する。特定の漢字やその部品で、IDSまたは標準Unicodeで表現が困難な場合は、CHISEおよびGlyphWikiの実体参照方式に基づいた簡略表記（例：CDP-8C55, koseki-00001）を用いる。上記のいずれの方法でも表現できない文字や、原典で判読不能な文字（虫損等）は、「■」（黒い四角）で入力する。複数漢字の見出しは「／」（全角スラッシュ）で区切る。省略符号「｜」は「ー」（長音符）で示し、全角括弧（）内に該当字を付記する。 |
-| original_entry           | 原字形に準拠した見出し字。誤字はそのまま。Unicode外の漢字の表現はhanzi_entryに準じる。原字形の掲出字が不要なら「〇」。  |
-| definition               | 注文は、字体注、音注、義注、和訓、その他からなる。これらをスペース区切りで入力。原則として「康熙字典体」に含まれる字形を入力。                 |
-
-
-## krm_notes
-
-### 概要とファイル形式
-
-`KRM_definitions.tsv` ファイルに詳細な注釈情報を追加したファイル `krm_notes.tsv` を作成した。
-これは、TSV形式とJSON形式で用意した。
-2025年3月の仕様変更後のファイル名であることを明示的に示すため、
-大文字の KRM ではなく小文字の krm を用いて
-`krm_notes.tsv` と `krm_notes.json` という名称とした。
-
-
-### カラム名対照
-
-
-#### Comparison with KRM_definitions.tsv (v1.1.55)
-
-`krm_notes.tsv` を新とし、`KRM_definitions.tsv` を旧として、両者のカラム名を対照すれば次のようになる。
-
-| New Column Name (krm_notes v1.2.6) | Old Column Name (KRM_definitions v1.1.55) |
-|--------------------------|----------------------------|
-| definition_seq_id        | KRID_no                    |
-| kazama_location          | KRID                       |
-| hanzi_entry              | Entry                      |
-| definition_elements      | Def                        |
-| definition_type_code     | Def_code                   |
-| definition_type_name     | Def_name                   |
-| remarks                  | Remarks                    |
-
-#### KRM.tsv (v1.1.347) の内容の取り込み
-
-さらに `KRM.tsv` の内容を `krm_notes` に取り込むことにした。両者のカラム名を対照すれば次のようになる。
-
-
-| New Column Name (krm_notes v1.2.6) | Old Column Name (KRM v1.1.347) |
-|--------------------------|----------------------------|
-| entry_id                 | KRID_n                     |
-| tenri_location           | KR_Tenri_p                 |
-| volume_name              | KR_vol_name                |
-| radical_name             | KR_radical                 |
-| volume_radical_index     | KR_vol_radical             |
-| original_entry           | Entry_original             |
-
-
-
-### データ構造：ER図とJSONにおける実装
-
-前述したように、
-`krm_notes` の内部は次のような入れ子構造となっている。
-
-![ER_notes diagram](/images/krm_notes_er.drawio.png)
-
-ER図においては、`krm_notes` テーブルは `krm_main` テーブルと `entry_id` によって関連づけられた子テーブルとして表現されている。一方、実際の JSON データでは、この `krm_notes` に相当する情報は平坦なテーブル構造ではなく、各 `krm_main` オブジェクト内に `"definitions"` というキーでまとめられた**入れ子の配列**として実装されている。
-
-この `"definitions"` 配列には、以下のフィールドをもつ定義オブジェクトが複数格納されている：
-
-- definition_seq_id
-- definition_elements
-- definition_type_code
-- definition_type_name
-- remarks
-
-この構造は、ER図において次のように概念的に対応づけることができる。
-
-**`krm_main` テーブル**は、概念上**複数の定義（notes）をもつ一対多の関係**を形成している。
-
-ただし、**実際の JSON 実装では定義項目は別テーブルとして独立しておらず**、`krm_main` の各レコード内に `"definitions"` というキーの下でまとめて**入れ子構造**で保持されている。
-
-#### JSONデータ構造の例
-```
-{
-  "entry_id": "F00001",
-  ...
-  "definitions": [
-    {
-      "definition_seq_id": "F00001_01",
-      "definition_elements": "音仁（LV）「ニン」",
-      "definition_type_code": 215,
-      "definition_type_name": "音注声点有_類音注等",
-      "remarks": "広韻「如鄰切」..."
-    },
-    ...
-  ]
+```bibtex
+@misc{krm2025,
+  author    = {Ikeda, Shōju},
+  title     = {{KRM: Database of the Kanchi-in Manuscript of the Ruijū Myōgishō}},
+  year      = 2025,
+  month     = jun,
+  version   = {v1.2.6},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.15638843},
+  url       = {https://doi.org/10.5281/zenodo.15638843}
 }
 ```
 
-### 各カラムの説明
+機械可読な引用情報は[CITATION.cff](CITATION.cff)にも用意している。
 
-次に、カラム名の内容を日本語で説明する。
+## リポジトリ構成
 
-| New Column Name (v1.2.6) | Japanese Explanation                  |
-|--------------------------|---------------------------------------------------------------------------|
-| entry_id                 | Fで始まる5桁の数値からなる見出し項目ID。一部、追加した掲出項目にはb番号を付す。        |
-| definition_seq_id        | 連番で与えられるFで始まる5桁の見出しの数値IDに加えて、見出しの下に記される注文の各要素を出現順に区分し、出現の順番に_01、_02のように追加したもの。見出しには_00を追加する。            |
-| kazama_location          | K・巻数（2桁）・風間版頁数（3桁）・行数（1桁）、段数（1桁）、字順（1桁）を示すID。字順付与のルールの詳細は別に定める。     |
-| tenri_location           | T・巻数（a/b/c）・天理版頁数（3桁）・行数（1桁）・段数（1桁）・字順（1桁）を示す。字順付与のルールの詳細は別に定める。  |
-| volume_name              | 巻名。「仏上」「仏中」「仏下本」「仏下末」「法上」「法中」「法下」「僧上」「僧中」「僧下」の10 巻を示す。     |
-| radical_name             | 部首名。「人、彳、辵」から「風、酉、雑」までの120部を示す。       |
-| volume_radical_index     | 巻。v・巻数（1-10）#・部首番号（1-120）を示す。v1#1（第1帖第1）〜v10#120（第10帖第120）。第1帖（仏上）〜第10帖（僧下）。    |
-| hanzi_entry              | 校訂漢字は原則、康熙字典体（Unicodeの新字体（通用字体・俗字体）を含む）を用いる。Unicodeに収録されていない漢字については、以下の方法で表現する。漢字の部品の組み合わせで表現可能な場合は、IDS（漢字構成記述文字列）で入力する。特定の漢字やその部品で、IDSまたは標準Unicodeで表現が困難な場合は、CHISEおよびGlyphWikiの実体参照方式に基づいた簡略表記（例：CDP-8C55, koseki-00001）を用いる。上記のいずれの方法でも表現できない文字や、原典で判読不能な文字（虫損等）は、「■」（黒い四角）で入力する。複数漢字の見出しは「／」（全角スラッシュ）で区切る。省略符号「｜」は「ー」（長音符）で示し、全角括弧（）内に該当字を付記する。 |
-| original_entry           | 原字形に準拠した見出し字。誤字はそのまま。Unicode外の漢字の表現はhanzi_entryに準じる。原字形の掲出字が不要なら「〇」。    |
-| definition_elements      | 注文の全文から、字体注、音注、意義注、和訓、その他の5種に区分し、それぞれの要素を一つずつ抜き出したもの。       |
-| definition_type_code     | 注文の種類を分類した3桁の数値。      |
-| definition_type_name     | 注文の種類を字体注、音注、意義注、和訓、その他の5種に区分して、そのいずれに該当するかを示したもの。    |
-| remarks                  | 編集者による追加の文脈や情報を提供する注記。  |
+```
+krm/
+├── krm_main.tsv / .json              ← データファイル本体（リポジトリ直下）
+├── krm_notes.tsv / .json                （詳細は下記「データファイル一覧」）
+├── krm_headword_chars.tsv / .json
+├── krm_wakun.tsv / .json
+├── krm_pronunciations.tsv / .json
+├── krm_ndl.tsv
+├── krm.db                            ← TSVから生成した読み取り専用SQLite（直接編集禁止）
+├── docs/                             ← 詳細仕様・作業メモ
+├── scripts/                          ← データパイプライン用ツール（MIT License）
+├── examples/                         ← AIを使ったデータ分析ガイド
+├── webapp/                           ← 検索Webアプリ（MIT License）
+├── images/                           ← ER図
+├── diff/                             ← scripts/による修正ワークフローのログ
+├── CITATION.cff, LICENSE, README.md, README_jp.md
+└── AGENTS.md, CLAUDE.md              ← AIコーディングアシスタント向けの運用ルール
+```
 
+`dataset/`という独立ディレクトリはなく、TSV/JSONデータファイルはリポジトリ直下に置かれている。`output/`・`work/`は`scripts/`が使用するローカルの`.gitignore`対象作業ディレクトリであり、配布データには含まれない。
 
-### Compiler's Remarks (remarks カラム) の内容と意義
+## データファイル一覧
 
-この `remarks` カラムに、データベース作成者による注釈（`Compiler's Remarks`）が格納される点に注意してください。
+| ファイル | 説明 | 形式 |
+|------|-------------|---------|
+| [`krm_main`](docs/data_specification_jp.md#krm_main) | 基本データ。掲出字、注文全文、巻・部首、所在IDを含む。 | TSV, JSON |
+| [`krm_notes`](docs/data_specification_jp.md#krm_notes) | 注釈データ。各項目の注文を種類別（字体注・音注・意義注・和訓・その他）の要素に分解し、編者注記を付したもの。 | TSV, JSON |
+| [`krm_headword_chars`](docs/data_specification_jp.md#krm_headword_chars) | すべての掲出字を構成する文字ごとのデータ。1文字単位の検索を可能にする。 | TSV, JSON |
+| [`krm_wakun`](docs/data_specification_jp.md#krm_wakun) | 和訓データ。異形、および『日本国語大辞典第二版』（ジャパンナレッジ版）へのリンクを含む。 | TSV, JSON |
+| [`krm_pronunciations`](docs/data_specification_jp.md#krm_pronunciations) | DHSJRのカラム仕様に合わせた音注データ。 | TSV, JSON |
+| [`krm_ndl`](docs/data_specification_jp.md#krm_ndl) | 国立国会図書館デジタルコレクションの画像へのリンク。 | TSVのみ |
 
-`remarks`カラムは、次の情報を提供している。
+`krm_notes.json`は約45MBあり、**このGitリポジトリには含まれていない**（`.gitignore`参照）。Zenodoにアーカイブされたリリースには含まれるほか、`scripts/gen_notes_json.py`でローカルに再生成できる（[ツール・アプリケーション](#ツールアプリケーション)参照）。上記のその他のファイルはすべてGit管理下にある。
 
-- 追加的な文脈 : 名義抄の記述を理解する上で助けとなるような、補足的な背景情報や関連情報。
-- 学術的な考察 : 特定の記述に対する、文献学的、言語学的などの専門的観点からの考察や見解。先行研究の紹介を含む。
-- 本文校勘の結果: 異本や関連資料との比較検討（校勘）を行った結果判明したことや、それに基づく本文解釈など。
-- 出典調査: 名義抄の記述が、どのような文献を典拠としているかの調査結果や、その考察。先行研究での指摘も紹介。
+各ファイルのカラムレベルの詳細仕様、新旧カラム名対照、ER図は[docs/data_specification_jp.md](docs/data_specification_jp.md)を参照。
 
+## データの使い方
 
-そして、これらの注釈は、それぞれ名義抄の次のいずれかの特定の部分に関連付けられている。
+- **TSVファイル**は、ヘッダー行の前に`#`で始まるコメント行（そのファイル自身のバージョン・日付・ライセンス・カラム説明を含む）がある。パース時はこれを読み飛ばすこと。
+- **JSONファイル**はTSVと同内容を反映するが、`krm_notes.json`は平坦なテーブルではなく、各`krm_main`エントリの`"definitions"`キー以下に入れ子で格納されている（[データモデル](#データモデル)参照）。
+- **`krm.db`**は、TSVファイルから生成した読み取り専用のSQLiteデータベースで、`webapp/`が使用する。ソースデータではないため、直接編集しないこと。
+- 掲出字・注文に用いられる**特殊表記**（詳細は[CLAUDE.md](CLAUDE.md)を参照）：
 
-- 特定の `definition_element`（注文の個別要素）: `krm_notes` ファイル内で個々の行として扱われる、名義抄の「注文」を構成する具体的な要素（たとえば、ある特定の字体注、音注、義注、和訓など）一つ一つ。
-- または、`Headword`（掲出字）: その項目全体の主題である掲出字そのもの。
+  | 記号 | 意味 |
+  |--------|---------|
+  | `_` | 声点のない仮名和訓 |
+  | `V` | 濁音の声点 |
+  | `（）`（全角） | 声点の存在 |
+  | `〔〕`（全角） | 誤字の訂正案 |
+  | `［］`（全角） | 脱字 |
+  | `／`（全角） | 複数漢字の見出しの区切り |
+  | `■` | 表現不能・判読不能な文字 |
+  | `〇` | `original_entry`で原字形の掲出字が不要な場合に使用 |
 
-つまり、この `remarks` カラムは、名義抄の本文テキストだけでは読み取れない、より深い理解や研究に繋がるような、データベース作成者による専門的な付加情報を提供する役割を持っている。
+  Unicode外の漢字は、IDS（漢字構成記述文字列）またはCHISE/GlyphWikiの実体参照（例：`CDP-8C55`、`koseki-00001`）で表現する。
 
+## データモデル
 
-## krm_headword_chars
+`krm_main`が起点となるテーブルであり、主キーは`entry_id`（例：`F00001`）である。
 
-### 概要とファイル形式
+- `krm_notes`は`entry_id`で`krm_main`と連結する。その`definition_seq_id`（例：`F00001_01`）は`entry_id`に接尾辞を追加したもの（`_00`＝見出し、`_01`、`_02`…＝注文要素を出現順に並べたもの）である。
+- `krm_wakun`・`krm_pronunciations`は`definition_seq_id`で`krm_notes`と連結する。
+- `krm_headword_chars`は`entry_id`で`krm_main`と連結し、個々の文字IDには`hanzi_id`（例：`S00001`）を用いる。
+- `krm_ndl`はこのキー体系以前に公開されたファイルであり、頁数の照合によって`krm_main`と対応づける（[docs/data_specification_jp.md](docs/data_specification_jp.md#krm_ndl)参照）。
 
-名義抄の掲出字は、単字からなるものと、複字（多字）からなるものがある。
-`krm_headword_chars` は、名義抄のすべての掲出字を、名義抄の項目順および各項目内の文字の出現順に一覧したデータである。
+![ER図](/images/krmer.drawio.png)
 
-名義抄データベースの基本データとなる `krm_main` はもとより、
-注釈データである `krm_notes`、さらに和訓データである `krm_wakun` は、
-いずれも項目を単位としている。そのため、複数の文字で構成される掲出字の
-2字目以降の文字はこれらのデータからは直接参照できない。
+JSON形式では、`krm_notes`は独立した平坦なテーブルではなく、各`krm_main`レコードの`"definitions"`キー以下に入れ子で格納される。
 
-名義抄の掲出字を1字ごとに検索し、その原本画像を表示したり、各文字レベルでの分析を行ったりするには、2字目以降の文字を含めたすべての掲出字のリストが必要である。
+![ER_notes図](/images/krm_notes_er.drawio.png)
 
-このような目的のために作成したのが `krm_headword_chars` である。
-このデータは、TSV 形式と JSON 形式で提供される。各行（またはエントリ）は掲出字1文字に対応し、その文字が属する名義抄の掲出字（見出し語全体）の出現順を示すID (`hanzi_id`)、その文字が属する名義抄の項目を示すID (`entry_id`)、項目内での文字の順序 (`character_order`)、文字そのもの (`constituent_char`)、1文字ごとに切り出された画像ファイルの名称 (`img_file_name`)、そして風間版および天理版それぞれにおけるその文字の所在情報（`kazama_location_id`, `tenri_location_id`）などを含んでいる。これにより、`krm_main` などの項目単位のデータと連携しつつ、個々の文字レベルでの情報アクセスが可能となる。
+ER図の詳しい説明とJSONレコードの例は[docs/data_specification_jp.md](docs/data_specification_jp.md)を参照。
 
-### 各カラムの説明
+## ドキュメント
 
-`krm_headword_chars` のカラム名とその説明は次のとおりである。
+詳細な参考資料は[docs/](docs/)にまとめている。
 
-| Column Name | Japanese Explanation           |
-|----------------------|-----------------------------------------------|
-| hanzi_id                | 単字、複字を問わず、名義抄の出現順に与えられたSで始まる5桁の数値からなる掲出字の通しID。     |
-| entry_id               | この文字が属する掲出字（見出し語）の項目（krm_mainにおける項目）のID（Fで始まる5桁の数値）。一部、追加した掲出項目にはb番号を付す。      |
-|  constituent_char              | 見出しを構成する文字そのもの。省略符号（ー）と踊り字（〻）は当該の文字に改める。校訂漢字は原則、康熙字典体。Unicodeの新字体（通用字体・俗字体）の扱いについては別途規定。詳細な校訂注記は krm_notes 参照。         |
-| character_order              | それが属する掲出字（見出し語）内で何字目に出現するかを数値で示す。        |
-| kazama_location_id            | K・巻数（2桁）・風間版頁数（3桁）・行数（1桁）、段数（1桁）、字順（1桁）で構成される、この文字の風間版における所在ID。字順付与ルール詳細は別途定める。        |
-| tenri_location_id              | T・巻数（a/b/c）・天理版頁数（3桁）・行数（1桁）・段数（1桁）、字順（1桁）で構成される、この文字の天理版における所在ID。字順付与ルール詳細は別途定める。       |
-| img_file_name       | 掲出字の画像ファイル名（拡張子.jpgを含む）。ファイル名の本体は、巻1から巻9の画像では7桁の数値、巻10の画像では8桁の数値となる。7桁の場合、最初の1桁が巻数を、8桁の場合、最初の2桁が巻10を示す。下6桁の数値は出現順に基づいているが、その割り当ては独自の規則による。20年以上前の作業のため、詳細な命名規則に関するドキュメントは現存しない。画像がない場合はnull。 |
+- [docs/data_specification_jp.md](docs/data_specification_jp.md) — 各データファイルのカラムレベルの詳細仕様、新旧カラム名対照、編者注記で用いる引用書略称一覧。（[English version](docs/data_specification.md)）
+- [docs/krm_scripts_usage.md](docs/krm_scripts_usage.md) — `scripts/`内のデータパイプラインツールの使い方。
+- [docs/remarks_pronunciation_summary.md](docs/remarks_pronunciation_summary.md) — `krm_pronunciations`の`remarks_pronunciation`カラムの値を分類したまとめ。
+- [docs/manual_exclusion_list.md](docs/manual_exclusion_list.md) — 上声全濁字の声点異例に関する手動補正・除外の記録。
 
+## ツール・アプリケーション
 
-## krm_wakun
+データセット本体の上に構築されたツール群。**Utility Scripts**はメンテナ向け（データそのものの生成・修正に使用）、**Web Application**と**Examples**は利用者向け（公開データの検索・分析に使用）である。
 
-### 概要とファイル形式
+### Utility Scripts
 
-これは、名義抄デーベースの `KRM.tsv` から和訓を抜き出して、
-和訓の異形を整理し、異体字との対応を調整したデータである。
+[`scripts/`](scripts/)には、`krm_pronunciations`のメンテナンス、`krm_notes.json`の再生成（`gen_notes_json.py`）、任意のKRM TSVをJSONに変換する（`tsv_to_json.py`）ためのデータパイプラインツールが含まれる。[CLAUDE.md](CLAUDE.md)にあるとおり、データへの変更はすべてこのパイプライン経由で行い、手動編集は行わない。[MIT License](scripts/LICENSE)のもとで提供。使い方の詳細は[docs/krm_scripts_usage.md](docs/krm_scripts_usage.md)を参照。
 
-和訓に関する校勘と出典考証は `krm_notes` に記載したので省略している。
+### Web Application
 
-和訓には、異なる読み方を傍書して併記する場合がある。
+[`webapp/`](webapp/)は、Next.js + SQLite FTS5によるKRMの検索・閲覧Webアプリである（見出し字・定義文・和訓の全文検索に加え、異体字の曖昧検索機能を持つ）。[MIT License](webapp/LICENSE)のもとで提供。セットアップと構成の詳細は[webapp/README.md](webapp/README.md)を参照。
 
-たとえば「倍」に「マサル」という和訓を付すが、「ル」の右に小さい片仮名で「ス」を傍書する。
-これは「マサル」に加えて「マス」という和訓を注記したものである。
+**外部データ**: webappの異体字曖昧検索は、任意でNIHU（人間文化研究機構）の異体漢字対応テーブルを利用する。これはKRMデータセットの一部ではなく、**CC-BY 4.0**の第三者データであり、本リポジトリには同梱していない。[NIHUの研究データページ](https://www.bridge.nihu.jp/researchdata/file/20221125_ITOBYb)から別途入手し、[webapp/README.md](webapp/README.md#4-異体字テーブルを配置任意推奨)の説明に従ってリポジトリ直下に配置する。このデータがなくてもwebappは動作し、異体字検索のみが無効になる。
 
-和訓にはジャパンナレッジ版『日本国語大辞典第二版』の情報を追加するので、
-和訓の異形を併記する場合に対応する必要がある。
+### Examples
 
-異体字との対応は、掲出字に異体字を示すことがあり、これを調整したものである。
+[`examples/README.md`](examples/README.md)は、[Claude Code](https://claude.ai/code)を使い、日本語の自然言語だけでKRMを分析する手引きである。プログラミングの知識は不要。質問例（データ整合性の確認、巻別・部首別の集計、複数テーブルにまたがる照会など）とその実行結果例を示し、繰り返し使う集計をスクリプトとして保存する方法も説明している。
 
-たとえば、「ヤツカレ」という和訓は、掲出字「㒒／僕」の注文に見える。
-和訓「ヤツカレ」は、「僕」に対する和訓であると同時に「㒒」に対する和訓となっている。
-「爲」と「為」、「來」と「来」との関係も同様である。
+## バージョン履歴
 
-ジャパンナレッジ版『日本国語大辞典第二版』には「表記」欄があり、名義抄の
-漢字表記を収録しているので、これとの対応をとるための措置である。
+各データファイルの正確なバージョン番号・公開日・最終更新日は、そのファイル自身の`#`で始まるコメントヘッダーに記録されている。現在のバージョン状態については、本READMEではなくそのヘッダーを正典として参照すること。
 
-2025年3月の仕様変更後のファイル名であることを明示的に示すため、
-大文字の KRM ではなく小文字の krm を用いて
-`krm_wakun.tsv` と `krm_wakun.json`という名称とした。
+- **2022年3月**：初版公開（`KRM.tsv`ほか、v1.1.x）。
+- **2025年3月**：現行の`krm_*`ファイル群（v1.2.x）への仕様変更（下記参照）。
+- **2025年6月12日**：`v1.2.6`をZenodoにアーカイブし、引用可能なDOIを付与（[現行リリースと引用](#現行リリースと引用)参照）。
+- それ以降、リポジトリは継続的な修正・追加を重ねている（例：`krm_headword_chars`と`krm_pronunciations`はv1.2初版公開後に追加された）。これらは個別にはZenodoへ再アーカイブしていない。
 
-### カラム名対照
+### 2025年3月仕様変更
 
-新旧のカラム名を対照すれば次のようになる。
+従来の公開ファイルは`KRM`を接頭辞としていたが、この変更以降のファイルは`krm`を接頭辞とする。主な変更点：
 
-| New Column Name (v1.2.0) | Old Column Name (v1.1.97) |
-|-------------------------|---------------|
-| wakun_id                | KRID_wakun_no |
-| definition_seq_id       | KRID_no       |
-| kazama_location   | KR2ID         |
-| hanzi_entry             | Entry         |
-| wakun_elements          | Def           |
-| wakun_form              | Word_form     |
-| wakun_standard_hanzi    | Wakun_Hanzi   |
-| wakun_variant_in_hanzi  | Wakun_variant |
-| variant_hanzi_for_wakun | Hanzi_variant |
-| japan_knowledge_id      | JK_URL        |
-| -           | Remarks       |
+- 仮名和訓の無声点を示す"@"を"_"に変更。
+- 濁音の声点を示す`"`を半角英字"V"に変更。
+- 声点の存在を示す半角`()`を全角`（）`に変更。
+- 誤字の訂正案を示す半角`()`を全角`〔〕`に変更。
+- 脱字を示す半角`[]`を全角`［］`に変更。
+- `KRM_definitions.tsv`を廃止し、そのデータと機能を新設の`krm_notes`に統合（[docs/data_specification_jp.md](docs/data_specification_jp.md#旧krm_definitionsファイルについて)参照）。
 
-`Remarks` は `krm_notes` にまとめることとして、省略した。
+## ライセンス
 
-### 各カラムの説明
+- **データおよびドキュメント**（リポジトリ直下の各ファイルおよび`docs/`）：[CC BY-SA 4.0](LICENSE)。
+- **`scripts/`**および**`webapp/`**のソースコード：[MIT License](scripts/LICENSE)（[webapp/LICENSE](webapp/LICENSE)）。
+- **外部データセット**（webappが使用するNIHU異体字テーブルなど）は、それぞれ個別のライセンス条件に従う — [ツール・アプリケーション](#ツールアプリケーション)参照。
 
-次に、カラム名の内容を説明する。
+オープンアクセスデータである。
 
-| New Column Name (v1.2.0)           | Japanese Explanation            |
-|-------------------------|-------------|
-| wakun_id                | 和訓ID。kr_definition_sequence_idから、注文の種類が和訓のものだけを取り出したもの。変異形を追加したものには末尾にb, c, dを付した。        |
-| definition_seq_id        | 連番で与えられるFで始まる5桁の見出しの数値IDに加えて、見出しの下に記される注文の各要素を出現順に区分し、出現の順番に_01、_02のように追加したもの。見出しには_00を追加する。 |
-| kazama_location   | 位置情報（風間版：K、冊子（巻）、ページ（xxx）、行（y）、列（zz））を含むID。列に複数のエントリがある場合は、1、2、...、n の順位になる。                 |
-| hanzi_entry                | 原文の漢字を校訂したもの。康熙字典体とするのを原則としたが、Unicodeで入力できる新字体（通用字体、俗字体）を残すこともある。                            |
-| wakun_elements          | 注文の全文から、和訓の要素を一つずつ抜き出したもの。             |
-| wakun_form           | 和訓の語形。活用のあるものは、助詞助動詞を除いて終止形とする。文選読みの「の」「と」は省略する。            |
-| wakun_standard_hanzi         | 標準的な漢字による和訓表記。                            |
-| wakun_variant_in_hanzi | 標準的な漢字による和訓の異形の表記。                |
-| variant_hanzi_for_wakun    | 異体字による和訓の表記。                           |
-| japan_knowledge_id      | ジャパンナレッジ版『日本国語大辞典第二版』にこの和訓が見出しとして存在する場合に、そのURLの後半、20020から末尾までの英数字を記載する。見出しとして存在しない場合は null と入力する。  |
+## 作成者および連絡先
 
+HDICプロジェクト
+代表者：池田　証寿（北海道大学名誉教授）
+Copyright (c) 2022-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
 
-## krm_definitions
+連絡先：ikeda.shoju@gmail.com, liyuansapporo@yahoo.co.jp, toyjack@gmail.com, kleinekuma@gmail.com
 
+## 謝辞
 
-名義抄の注文には、和訓だけではなく、字体注、音注、意義注などの要素を含んでいる。
-これらの校勘と出典考証を行うために、注文の各要素を出現順に区分し、出現の順番に
-番号を与えたレコードを作成し、注文種類の分類を行ったファイルである。
-従来公開していたのは、`KRM_definitions.tsv` である。
-2025年3月の仕様変更後は、`krm_notes` に統合したので、
-説明は省略する。
+観智院本類聚名義抄の解読テキストの公開について、御許可を賜った天理図書館ならびに八木書店に感謝申し上げる。
 
-
-## krm_pronunciations
-
-
-名義抄の音注は、反切、類音注、仮名注があり、それらに声点が施されることも多い。
-日本漢字音のデータベースとしては、加藤大鶴氏らによる
-「資料横断的な漢字音・漢語音データベース」（略称DHSJR）が非常に充実した
-内容を持っている。またその仕様も詳細に公開されている。
-DHSJRの仕様に合わせたデータ公開を検討中である。
-
-## krm_ndl
-国会図書館デジタルコレクションで公開している
-観智院本類聚名義抄の画像へのリンクを整理したものである。
-観智院本類聚名義抄の所在と国会図書館デジタルコレクションのURLとを対照させたデータである。
-ファイル名は、`krm_ndl.tsv` である。
-
-
-巻名（帖名）、部首字、風間版頁数、天理版頁数、国会図書館デジタルコレクションのURL、を示すデータである。
-
-次にサンプルとしてデータの冒頭部分を示す。
-
-| Book | Radical | Kazama | Tenri | NDL_url                                       |
-|------|---------|--------|-------|-----------------------------------------------|
-| 仏上   | 人       | 1      | 23    | https://dl.ndl.go.jp/info:ndljp/pid/2586891/6 |
-| 仏上   | 人       | 2      | 24    | https://dl.ndl.go.jp/info:ndljp/pid/2586891/7 |
-
-
-`krm_main` との連携がとりやすいようするため、改良を加える予定である。
+この研究は日本学術振興会科学研究費補助金（課題番号16H03422、19H00526、23K17500、25K00466、26K21717）の成果の一部である。記して感謝の意を表す。
