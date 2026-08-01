@@ -85,7 +85,7 @@ Full column-by-column specifications, old/new column-name mappings, and the ER d
 - **TSV files** begin with `#`-prefixed comment lines (containing the file's own version, dates, license, and column descriptions) before the header row — skip these when parsing.
 - **JSON files** mirror the TSV data; `krm_notes.json` nests its records under each `krm_main` entry's `"definitions"` key rather than being a flat table (see [Data Model](#data-model)).
 - **`krm.db`** is a read-only SQLite build of the TSV files, used by `webapp/`. Do not edit it directly — it is not source data.
-- **Special notation** used across headword and definition fields (see [CLAUDE.md](CLAUDE.md) for the full specification):
+- **Special notation** used across headword and definition fields (see [docs/data_specification.md](docs/data_specification.md#special-notation-conventions) for the full specification):
 
   | Symbol | Meaning |
   |--------|---------|

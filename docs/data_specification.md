@@ -6,6 +6,7 @@ This document gives the full column-level specification for every KRM data file.
 
 ## Contents
 
+- [Special Notation Conventions](#special-notation-conventions)
 - [ER Diagram](#er-diagram)
 - [krm_main](#krm_main)
 - [krm_notes](#krm_notes)
@@ -15,6 +16,23 @@ This document gives the full column-level specification for every KRM data file.
 - [krm_ndl](#krm_ndl)
 - [Former krm_definitions file](#former-krm_definitions-file)
 - [Appendix: Abbreviations of Cited Works](#appendix-abbreviations-of-cited-works)
+
+## Special Notation Conventions
+
+The following symbols appear across headword and definition fields (`hanzi_entry`, `original_entry`, `definition`, `definition_elements`, `wakun_*`, etc.) in multiple files. This is the v1.2 specification (in effect since the [March 2025 Specification Change](../README.md#march-2025-specification-change)).
+
+| Symbol | Meaning |
+|--------|---------|
+| `_` | Kana *wakun* without tone marks |
+| `V` | Voiced-sound tone mark |
+| `（）` (full-width) | Presence of tone marks |
+| `〔〕` (full-width) | Correction proposal for a typo |
+| `［］` (full-width) | Missing characters |
+| `／` (full-width) | Separator for multi-character headwords |
+| `■` | Unrepresentable or unreadable character |
+| `〇` | Used in `original_entry` when no original-form headword is needed |
+
+Hanzi outside Unicode are represented via IDS (Ideographic Description Sequence) or CHISE/GlyphWiki entity references (e.g., `CDP-8C55`, `koseki-00001`).
 
 ## ER Diagram
 
