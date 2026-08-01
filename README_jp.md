@@ -22,14 +22,14 @@ Zenodoにアーカイブされている引用可能なリリースは **v1.2.6**
 
 学術目的でKRMを利用する場合は、以下のように引用されたい（Chicago Style）：
 
-> Ikeda, Shōju. (2025). *KRM: Database of the Kanchi-in Manuscript of the Ruijū Myōgishō*. Version v1.2.6. Zenodo. https://doi.org/10.5281/zenodo.15638843
+> Ikeda, Shōju. (2025). *KRM: Database of the Kanchi-in Manuscript of the Ruiju Myōgishō*. Version v1.2.6. Zenodo. https://doi.org/10.5281/zenodo.15638843
 
 **BibTeX**
 
 ```bibtex
 @misc{krm2025,
   author    = {Ikeda, Shōju},
-  title     = {{KRM: Database of the Kanchi-in Manuscript of the Ruijū Myōgishō}},
+  title     = {{KRM: Database of the Kanchi-in Manuscript of the Ruiju Myōgishō}},
   year      = 2025,
   month     = jun,
   version   = {v1.2.6},

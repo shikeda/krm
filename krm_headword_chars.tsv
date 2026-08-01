@@ -1,19 +1,19 @@
 # HDIC Project
 # HDIC is an abbreviation of the Integrated Database of Hanzi Dictionaries in Early Japan
 #
-# KRM: Database of the Kanchi-in Manuscript of Ruijū Myōgishō
+# KRM: Database of the Kanchi-in Manuscript of Ruiju Myōgishō
 #
 # Ruiju myogishō 類聚名義抄, Kanchi-in manuscript 観智院本, reorganized edition 改編本.
 # anonymous Buddhist monk, the latter half of the 12th century.
 #
 # krm_headword_chars.tsv
 #
-# Version: 1.2.4 (latest, Newly released after the specification change)
-# Date published: 11 May 2025
-# Last modified: 2 July 2026
+# Version: 1.2.5 (latest, Newly released after the specification change)
+# Date published: May 11, 2025
+# Last modified: August 1, 2026
 #
 #
-# Copyright (c) 2025 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
+# Copyright (c) 2025-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
 # Contact: ikeda.shoju@gmail.com, liyuansapporo@yahoo.co.jp, toyjack@gmail.com, kleinekuma@gmail.com
 #
 # Data License Information and Access Rights
