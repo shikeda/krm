@@ -90300,8 +90300,8 @@
         "japan_knowledge_id": "2002014bac99J5T5246Y"
     },
     {
-        "wakun_id": "F05214_07",
-        "definition_seq_id": "F05214_07",
+        "wakun_id": "F05214_06b",
+        "definition_seq_id": "F05214_06",
         "kazama_location": "K02110740",
         "hanzi_entry": "畔",
         "wakun_elements": "クロ（LH）〈和ー〉",
@@ -90312,8 +90312,8 @@
         "japan_knowledge_id": "2002014bac99J5T5246Y"
     },
     {
-        "wakun_id": "F05214_08",
-        "definition_seq_id": "F05214_08",
+        "wakun_id": "F05214_07",
+        "definition_seq_id": "F05214_07",
         "kazama_location": "K02110740",
         "hanzi_entry": "畔",
         "wakun_elements": "一云アセ",
@@ -90324,8 +90324,8 @@
         "japan_knowledge_id": "20020015a46750d8TVul"
     },
     {
-        "wakun_id": "F05214_09",
-        "definition_seq_id": "F05214_09",
+        "wakun_id": "F05214_08",
+        "definition_seq_id": "F05214_08",
         "kazama_location": "K02110740",
         "hanzi_entry": "畔",
         "wakun_elements": "カタハラ",
@@ -208848,8 +208848,8 @@
         "japan_knowledge_id": ""
     },
     {
-        "wakun_id": "F13615_04",
-        "definition_seq_id": "F13615_04",
+        "wakun_id": "F13615_03",
+        "definition_seq_id": "F13615_03",
         "kazama_location": "K05077140",
         "hanzi_entry": "跼",
         "wakun_elements": "クヽマル",
@@ -208860,8 +208860,8 @@
         "japan_knowledge_id": "20020138181b6TumOmz4"
     },
     {
-        "wakun_id": "F13615_05",
-        "definition_seq_id": "F13615_05",
+        "wakun_id": "F13615_04",
+        "definition_seq_id": "F13615_04",
         "kazama_location": "K05077140",
         "hanzi_entry": "跼",
         "wakun_elements": "セクヽマル（HH___）",
@@ -322032,8 +322032,8 @@
         "japan_knowledge_id": "2002003b17b9YYrJ5iA0"
     },
     {
-        "wakun_id": "F22917b_0",
-        "definition_seq_id": "F22917_0",
+        "wakun_id": "F22917b_01",
+        "definition_seq_id": "F22917b_01",
         "kazama_location": "K07143743",
         "hanzi_entry": "六／ー（射）",
         "wakun_elements": "ムツマシ",
@@ -322044,8 +322044,8 @@
         "japan_knowledge_id": "null"
     },
     {
-        "wakun_id": "F22917c_0",
-        "definition_seq_id": "F22917_0",
+        "wakun_id": "F22917c_01",
+        "definition_seq_id": "F22917c_01",
         "kazama_location": "K07143745",
         "hanzi_entry": "賭／ー（射）",
         "wakun_elements": "ノリユミ",
@@ -331464,8 +331464,8 @@
         "japan_knowledge_id": "200200e6ab07f648mEgB"
     },
     {
-        "wakun_id": "F23426_03",
-        "definition_seq_id": "F23426_03",
+        "wakun_id": "F23426_02",
+        "definition_seq_id": "F23426_02",
         "kazama_location": "K08020211",
         "hanzi_entry": "茖／ー（葱）",
         "wakun_elements": "同",
@@ -346128,8 +346128,8 @@
         "japan_knowledge_id": "200200a1bf08ltLDK9iN"
     },
     {
-        "wakun_id": "F24764_02",
-        "definition_seq_id": "F24764_02",
+        "wakun_id": "F24764_01b",
+        "definition_seq_id": "F24764_01",
         "kazama_location": "K08069821",
         "hanzi_entry": "鬼／ー（箭）",
         "wakun_elements": "同上",
@@ -370092,8 +370092,8 @@
         "japan_knowledge_id": "2002014c31500Pf63sJ9"
     },
     {
-        "wakun_id": "F26439_02",
-        "definition_seq_id": "F26439_02",
+        "wakun_id": "F26439_01b",
+        "definition_seq_id": "F26439_01",
         "kazama_location": "K08138721",
         "hanzi_entry": "ー（䥫）／液",
         "wakun_elements": "同訓",
@@ -416040,8 +416040,8 @@
         "japan_knowledge_id": "200202d70ef7gOu49y36"
     },
     {
-        "wakun_id": "F30256_05",
-        "definition_seq_id": "F30256_05",
+        "wakun_id": "F30256_04",
+        "definition_seq_id": "F30256_04",
         "kazama_location": "K10027731",
         "hanzi_entry": "蚌／蛤",
         "wakun_elements": "上下倶ハマクリ",
@@ -424200,8 +424200,8 @@
         "japan_knowledge_id": "200201c25880C921sb9O"
     },
     {
-        "wakun_id": "F31399_03",
-        "definition_seq_id": "F31399_03",
+        "wakun_id": "F31399_02",
+        "definition_seq_id": "F31399_02",
         "kazama_location": "K10077611",
         "hanzi_entry": "𣚊／ー（棗）",
         "wakun_elements": "ノナツメ（_HHH）",
