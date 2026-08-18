@@ -1882,7 +1882,7 @@
     },
     {
         "hanzi_id": "S00209",
-        "entry_id": "#N/A",
+        "entry_id": "F00161",
         "constituent_char": "息",
         "character_order": "2",
         "kazama_location_id": "K01007810",
@@ -62344,7 +62344,7 @@
     },
     {
         "hanzi_id": "S06923",
-        "entry_id": "#N/A",
+        "entry_id": "F05541",
         "constituent_char": "⿰⺼⿱夫小",
         "character_order": "2",
         "kazama_location_id": "K02123431",
@@ -62353,7 +62353,7 @@
     },
     {
         "hanzi_id": "S06924",
-        "entry_id": "#N/A",
+        "entry_id": "F05541",
         "constituent_char": "⿰⺼𭕇",
         "character_order": "3",
         "kazama_location_id": "K02123432",
@@ -62362,7 +62362,7 @@
     },
     {
         "hanzi_id": "S06925",
-        "entry_id": "#N/A",
+        "entry_id": "F05541",
         "constituent_char": "⿰⺼絭",
         "character_order": "4",
         "kazama_location_id": "K02123433",
@@ -62371,7 +62371,7 @@
     },
     {
         "hanzi_id": "S06926",
-        "entry_id": "#N/A",
+        "entry_id": "F05541",
         "constituent_char": "⿰⺼⿱𡗗小",
         "character_order": "5",
         "kazama_location_id": "K02123434",
@@ -84115,7 +84115,7 @@
     },
     {
         "hanzi_id": "S09336",
-        "entry_id": "#N/A",
+        "entry_id": "F07492",
         "constituent_char": "行",
         "character_order": "2",
         "kazama_location_id": "K03056413",
@@ -85672,9 +85672,9 @@
     },
     {
         "hanzi_id": "S09508",
-        "entry_id": "#N/A",
+        "entry_id": "F07628b",
         "constituent_char": "捏",
-        "character_order": "2",
+        "character_order": "1",
         "kazama_location_id": "K03061722",
         "tenri_location_id": "Ta323722",
         "img_file_name": "3063722.jpg"
@@ -86122,7 +86122,7 @@
     },
     {
         "hanzi_id": "S09558",
-        "entry_id": "#N/A",
+        "entry_id": "F07673",
         "constituent_char": "⿰扌⿱弓心",
         "character_order": "2",
         "kazama_location_id": "K03063431",
@@ -86131,7 +86131,7 @@
     },
     {
         "hanzi_id": "S09559",
-        "entry_id": "#N/A",
+        "entry_id": "F07673",
         "constituent_char": "𢪕",
         "character_order": "3",
         "kazama_location_id": "K03063432",
@@ -98002,7 +98002,7 @@
     },
     {
         "hanzi_id": "S10878",
-        "entry_id": "#N/A",
+        "entry_id": "F08701",
         "constituent_char": "朼",
         "character_order": "2",
         "kazama_location_id": "K03100324",
@@ -100351,7 +100351,7 @@
     },
     {
         "hanzi_id": "S11139",
-        "entry_id": "#N/A",
+        "entry_id": "F08900",
         "constituent_char": "㭩",
         "character_order": "2",
         "kazama_location_id": "K03107132",
@@ -100360,7 +100360,7 @@
     },
     {
         "hanzi_id": "S11140",
-        "entry_id": "#N/A",
+        "entry_id": "F08900",
         "constituent_char": "𣞱",
         "character_order": "3",
         "kazama_location_id": "K03107133",
@@ -100378,7 +100378,7 @@
     },
     {
         "hanzi_id": "S11142",
-        "entry_id": "#N/A",
+        "entry_id": "F08901",
         "constituent_char": "〓",
         "character_order": "2",
         "kazama_location_id": "K03107141",
@@ -130654,7 +130654,7 @@
     },
     {
         "hanzi_id": "S14508",
-        "entry_id": "#N/A",
+        "entry_id": "F11634",
         "constituent_char": "⿲氵免力",
         "character_order": "2",
         "kazama_location_id": "K05013312",
@@ -131077,7 +131077,7 @@
     },
     {
         "hanzi_id": "S14555",
-        "entry_id": "#N/A",
+        "entry_id": "F11664",
         "constituent_char": "⿰氵⿱冖己",
         "character_order": "2",
         "kazama_location_id": "K05014242",
@@ -131086,7 +131086,7 @@
     },
     {
         "hanzi_id": "S14556",
-        "entry_id": "#N/A",
+        "entry_id": "F11664",
         "constituent_char": "萢",
         "character_order": "3",
         "kazama_location_id": "K05014243",
@@ -131581,7 +131581,7 @@
     },
     {
         "hanzi_id": "S14611",
-        "entry_id": "#N/A",
+        "entry_id": "F11715",
         "constituent_char": "澹γ",
         "character_order": "2",
         "kazama_location_id": "K05015723",
@@ -131590,7 +131590,7 @@
     },
     {
         "hanzi_id": "S14612",
-        "entry_id": "#N/A",
+        "entry_id": "F11715",
         "constituent_char": "澹δ",
         "character_order": "3",
         "kazama_location_id": "K05015724",
@@ -178925,7 +178925,7 @@
         "constituent_char": "𨼇",
         "character_order": "1",
         "kazama_location_id": "K06040441",
-        "tenri_location_id": "Tb1744411",
+        "tenri_location_id": "Tb174441",
         "img_file_name": "6040441.jpg"
     },
     {
@@ -223394,7 +223394,7 @@
         "constituent_char": "斉",
         "character_order": "1",
         "kazama_location_id": "K07039131",
-        "tenri_location_id": "Tb3331311",
+        "tenri_location_id": "Tb333131",
         "img_file_name": "7039131.jpg"
     },
     {
@@ -255241,7 +255241,7 @@
     },
     {
         "hanzi_id": "S28359",
-        "entry_id": "#N/A",
+        "entry_id": "F22917",
         "constituent_char": "射",
         "character_order": "2",
         "kazama_location_id": "K07143742",
@@ -257320,7 +257320,7 @@
     },
     {
         "hanzi_id": "S28589",
-        "entry_id": "#N/A",
+        "entry_id": "F23041",
         "constituent_char": "䔢",
         "character_order": "2",
         "kazama_location_id": "K08005121",
@@ -267031,7 +267031,7 @@
     },
     {
         "hanzi_id": "S29666",
-        "entry_id": "#N/A",
+        "entry_id": "F23763",
         "constituent_char": "蓯",
         "character_order": "2",
         "kazama_location_id": "K08032412",
@@ -304210,7 +304210,7 @@
     },
     {
         "hanzi_id": "S33799",
-        "entry_id": "#N/A",
+        "entry_id": "F26659",
         "constituent_char": "⿱𠕀叕",
         "character_order": "2",
         "kazama_location_id": "K09008713",
@@ -344300,7 +344300,7 @@
         "constituent_char": "䱟",
         "character_order": "1",
         "kazama_location_id": "K10008720",
-        "tenri_location_id": "Tc30672",
+        "tenri_location_id": "Tc306720",
         "img_file_name": "10008720.jpg"
     },
     {

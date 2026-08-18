@@ -8,9 +8,9 @@
 #
 # krm_main.tsv
 #
-# Version: 1.2.21
+# Version: 1.2.22
 # Date: March 11, 2022
-# Last update : August 1, 2026
+# Last update : August 19, 2026
 #
 # This file is a new version of KRM.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.347, and it was last updated on March 17, 2025.
@@ -7679,7 +7679,7 @@ F07625	S09503	K03061540	Ta323540	仏下本	手	v3#28	撍	⿰扌替	在丸（L）
 F07626	S09504	K03061641	Ta323641	仏下本	手	v3#28	攅／揺	〇／〇	モミフルフ（HLHHL）
 F07627	S09506	K03061710	Ta323710	仏下本	手	v3#28	⿰扌⿳龷灬貝	〇	俗
 F07628	S09507	K03061721	Ta323721	仏下本	手	v3#28	⿰扌水	〇	スクフ
-F07628b	S09507	K03061722	Ta323722	仏下本	手	v3#28	捏	⿰扌⿱口土	二奴結反　下又音張　舉也　刾也　又勅貞反
+F07628b	S09508	K03061722	Ta323722	仏下本	手	v3#28	捏	⿰扌⿱口土	二奴結反　下又音張　舉也　刾也　又勅貞反
 F07629	S09509	K03061810	Ta323810	仏下本	手	v3#28	抐	〇	奴骨反　又奴鈍反　搵ー也　女六反　甬也　爯生也
 F07630	S09510	K03061840	Ta323840	仏下本	手	v3#28	抦	〇	或秉字　音丙　トル（H_）　カヒ（HHV）　柄歟
 F07631	S09511	K03062110	Ta324110	仏下本	手	v3#28	㨀	〇	俗
