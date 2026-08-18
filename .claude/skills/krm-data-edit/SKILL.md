@@ -38,11 +38,21 @@ description: krm_main.tsv・krm_notes.tsv・krm_wakun.tsv・krm_headword_chars.t
      対応するJSONを再生成する（対応表は `docs/krm_scripts_usage.md` 参照）。
    - このスクリプトを複数回実行しても、コミット前なら同じ結果に収束する（安全に再実行可）。
 
-4. **diffを提示する**
+4. **整合性チェックを実行する（任意だが推奨）**
+   ```bash
+   python3 scripts/validate_integrity.py --tsv <今回変更したTSVファイル名...>
+   ```
+   - 2026-08時点で、このリポジトリには本Skillとは無関係な既知の不整合が
+     約84件（`git log`で未修正のまま残っている過去データの問題）ある。
+     終了コード非ゼロ＝今回の変更が原因、とは限らない。
+   - 出力の中に、**今回編集した`entry_id`/`definition_seq_id`が新たに含まれていないか**
+     を確認する。含まれていれば、今回の編集が原因の可能性が高いのでユーザーに報告する。
+
+5. **diffを提示する**
    - `git diff --stat` と、データ行の変更部分の `git diff` を要約してユーザーに見せる。
    - ヘッダーのVersion/Last update行の変化も一言添える。
 
-5. **コミットメッセージ案を提示し、確認を待つ**
+6. **コミットメッセージ案を提示し、確認を待つ**
    - 既存の履歴の書式に合わせる（例: `fix: revise remarks for 域 (F16701)`、
      `fix: correct original gloss for 祾 (F19445)`）。件名は英語、変更内容が
      `entry_id`/`definition_seq_id` で特定できるようカッコ書きで添える。

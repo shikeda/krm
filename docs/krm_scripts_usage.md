@@ -15,6 +15,7 @@
 | `gen_notes_json.py` | krm_notes.tsv から krm_notes.json を entry_id 単位の入れ子構造で再生成する |
 | `tsv_to_json.py` | 任意の KRM TSV を JSON に変換する（フラット形式） |
 | `finalize_krm_edit.py` | TSV編集後、Version/Last update欄の更新とJSON再生成をまとめて行う |
+| `validate_integrity.py` | クロステーブルFK整合性・ID書式・重複を検証する（読み取り専用） |
 
 ---
 
@@ -413,6 +414,47 @@ python3 scripts/finalize_krm_edit.py --skip-json
 - 未対応のファイル名を渡した場合はエラーで終了する。
 - 実行後は `git diff` で内容を確認し、問題なければ `git add` / `git commit` する
   （このスクリプト自身はコミットしない）。
+
+---
+
+## 8. validate_integrity.py — クロステーブル整合性検証
+
+### 概要
+
+`krm_main.tsv`・`krm_notes.tsv`・`krm_wakun.tsv`・`krm_pronunciations.tsv`・
+`krm_headword_chars.tsv` の間のFK整合性、各IDの書式、主キー重複、列数、
+`definition_type_code`/`definition_type_name` の対応一貫性を検証する。**読み取り専用**。
+
+### 使い方
+
+```bash
+# 全チェックを実行
+python3 scripts/validate_integrity.py
+
+# チェック種別を絞る（column_count / id_format / duplicate_pk / fk / type_code）
+python3 scripts/validate_integrity.py --only fk
+
+# 対象ファイルを絞る（krm_notes.tsv/krm_wakun.tsvを編集した後の高速チェックなど）
+python3 scripts/validate_integrity.py --tsv krm_notes.tsv krm_wakun.tsv
+
+# 機械可読なJSON出力
+python3 scripts/validate_integrity.py --json
+```
+
+### 終了コード
+
+- `0`: エラーなし（警告のみ、または問題なし）
+- `1`: エラーあり
+- `2`: 引数エラー（未対応のファイル名を指定した場合など）
+
+### 注意事項
+
+- `--tsv` は「その列自体のチェック（列数・ID書式・主キー重複）」の対象を絞る。
+  FK検証の参照先テーブル（例: `krm_wakun.tsv`のFK検証における`krm_notes.tsv`）は
+  絞り込みに関わらず常に全体を読み込む。
+- TSVの一部の列（`remarks`等）は値に改行やタブを含む場合 `"..."` で囲むCSV形式の
+  引用が使われているため、`csv`モジュール（`update_pronunciation.py`と同方式）で
+  解釈する。出力の「レコード#N」は元ファイルの行番号ではなく、データ部分での通し番号。
 
 ---
 
