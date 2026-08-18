@@ -27,6 +27,12 @@ WAKUN_PRON_ID_RE = re.compile(r"^F\d{5}[a-z]?_\d{2}[a-z]*$")
 KAZAMA_RE = re.compile(r"^K\d{8}$")
 TENRI_RE = re.compile(r"^T[abc]\d{6}$")
 
+# krm_headword_chars.entry_id で使われる正規のプレースホルダ値。
+# 原本上で抹消（見せ消ち）された文字で、対応する krm_main/krm_notes の
+# 項目が存在しないことを示す（docs/data_specification.md 参照）。
+# id_format・fk のいずれの検証からも除外する。
+CANCELLED_ENTRY_MARKER = "〔抹消〕"
+
 # ファイル名 -> {id_patterns: {列名: 正規表現}, pk: 主キー列名}
 FILES = {
     "krm_main.tsv": {
@@ -139,6 +145,8 @@ def check_id_format(name, rows, id_patterns, findings):
     for lineno, row in rows:
         for column, pattern in id_patterns.items():
             value = row.get(column, "")
+            if value == CANCELLED_ENTRY_MARKER:
+                continue
             if not pattern.match(value):
                 findings.append(Finding(
                     "error", "id_format", name, lineno,
@@ -161,6 +169,8 @@ def check_duplicate_pk(name, rows, pk, findings):
 def check_fk(source_name, source_rows, source_column, target_name, target_ids, findings):
     for lineno, row in source_rows:
         value = row.get(source_column, "")
+        if value == CANCELLED_ENTRY_MARKER:
+            continue
         if value not in target_ids:
             findings.append(Finding(
                 "error", "fk", source_name, lineno,

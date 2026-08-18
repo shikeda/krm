@@ -31,6 +31,7 @@ The following symbols appear across headword and definition fields (`hanzi_entry
 | `／` (full-width) | Separator for multi-character headwords |
 | `■` | Unrepresentable or unreadable character |
 | `〇` | Used in `original_entry` when no original-form headword is needed |
+| `〔抹消〕` | Used in `krm_headword_chars.entry_id` when the character was cancelled/struck through in the original manuscript and has no corresponding `krm_main`/`krm_notes` entry (see [krm_headword_chars](#krm_headword_chars)) |
 
 Hanzi outside Unicode are represented via IDS (Ideographic Description Sequence) or CHISE/GlyphWiki entity references (e.g., `CDP-8C55`, `koseki-00001`).
 
@@ -201,7 +202,7 @@ Each remark is associated with either a specific `definition_element` (an indivi
 | Column Name          | Explanation      |
 | :------------------- | :------------------------------------------------------ |
 | hanzi_id             | A sequential ID assigned to each **`Headword`** (single or multi-character) in the order of its appearance in the *Myōgishō*. A 5-digit numeric ID starting with 'S'. |
-| entry_id             | The ID of the **`Entry`** (from `krm_main`) to which the headword containing this character belongs. A 5-digit numeric value starting with 'F'; some added entries have a 'b' suffix. |
+| entry_id             | The ID of the **`Entry`** (from `krm_main`) to which the headword containing this character belongs. A 5-digit numeric value starting with 'F'; some added entries have a 'b' suffix. A small number of rows use `〔抹消〕` instead: these document a character that was cancelled/struck through in the original manuscript and therefore has no corresponding `krm_main`/`krm_notes` entry. The row is kept (rather than deleted) so the character sequence on the page is not misread as missing data. |
 | constituent_char     | The constituent character itself. Abbreviation marks (ー) and iteration marks (〻) are converted to the actual characters they represent. Collated characters are, in principle, Kangxi Dictionary forms. For detailed collation notes, see `krm_notes`. |
 | character_order      | The numerical order of appearance of the character within its headword. |
 | kazama_location_id   | K + Volume (2 digits) + Page (3 digits) + Line (1 digit) + Segment (1 digit) + Character Order in Segment (1 digit) — this character's location in the Kazama Edition. |

@@ -50,6 +50,7 @@ These conventions apply across all current files (lowercase `krm_` prefix):
 | `／` full-width | Separator for multi-character headwords |
 | `■` | Unrepresentable or unreadable character |
 | `〇` | Used in `original_entry` when no original-form headword is needed |
+| `〔抹消〕` | Used in `krm_headword_chars.entry_id` when the character was cancelled/struck through in the original manuscript and has no corresponding `krm_main`/`krm_notes` entry |
 
 Hanzi outside Unicode are represented via IDS (Ideographic Description Sequence), CHISE/GlyphWiki entity references (e.g., `CDP-8C55`, `koseki-00001`), or `■`.
 
