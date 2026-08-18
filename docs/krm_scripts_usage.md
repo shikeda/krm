@@ -14,6 +14,7 @@
 | `gen_pronunciation_json.py` | TSV から JSON を再生成する |
 | `gen_notes_json.py` | krm_notes.tsv から krm_notes.json を entry_id 単位の入れ子構造で再生成する |
 | `tsv_to_json.py` | 任意の KRM TSV を JSON に変換する（フラット形式） |
+| `finalize_krm_edit.py` | TSV編集後、Version/Last update欄の更新とJSON再生成をまとめて行う |
 
 ---
 
@@ -363,6 +364,58 @@ python3 scripts/tsv_to_json.py krm_pronunciations.tsv \
 
 ---
 
+## 7. finalize_krm_edit.py — TSV編集後の後始末（Version更新 + JSON再生成）
+
+### 概要
+
+`krm_pronunciations.tsv` 以外（`krm_main.tsv`・`krm_notes.tsv`・`krm_wakun.tsv`・
+`krm_headword_chars.tsv`・`krm_ndl.tsv`）は、`diff/` 雛形方式のパイプラインを持たず、
+`Edit` 等でデータ行を直接書き換える運用になっている。このスクリプトは、その**後始末**
+（コメントヘッダーの `Version:` インクリメントと `Last update`/`Last modified` の日付更新、
+対応する JSON の再生成）だけをまとめて行う。**データ行そのものは変更しない。**
+
+### 使い方
+
+```bash
+# 1. 先に Edit などで対象TSVのデータ行を直接書き換えておく
+
+# 2. 変更されたTSVを git diff から自動検出して後始末する
+python3 scripts/finalize_krm_edit.py
+
+# 対象を明示する場合
+python3 scripts/finalize_krm_edit.py krm_main.tsv krm_notes.tsv
+
+# JSON再生成を省略する場合
+python3 scripts/finalize_krm_edit.py --skip-json
+```
+
+### 挙動
+
+- 引数省略時は `git diff --name-only`（未ステージ＋ステージ済み）から、変更のあった
+  KRM TSV を自動検出する。
+- `Version:` は **git HEAD時点のバージョン** を基準に patch を +1 する（作業ツリー上の
+  現在値ではない）。これにより、コミット前に複数回実行しても二重加算されず、
+  常に「HEAD+1」に収束する。
+- `Last update`/`Last modified` は実行日（例: `August 18, 2026`）に更新する。
+- 対応する JSON は下表のコマンドで再生成する（`krm_ndl.tsv` は対応JSONなし）。
+
+| TSV | JSON再生成 |
+|---|---|
+| `krm_main.tsv` | `tsv_to_json.py krm_main.tsv --output krm_main.json` |
+| `krm_wakun.tsv` | `tsv_to_json.py krm_wakun.tsv --output krm_wakun.json` |
+| `krm_headword_chars.tsv` | `tsv_to_json.py krm_headword_chars.tsv --output krm_headword_chars.json` |
+| `krm_pronunciations.tsv` | `gen_pronunciation_json.py` |
+| `krm_notes.tsv` | `gen_notes_json.py`（`krm_notes.json` は `.gitignore` 対象。ローカル確認用） |
+
+### 注意事項
+
+- Version/Last update の両ヘッダーが見つからない場合はエラーで終了する。
+- 未対応のファイル名を渡した場合はエラーで終了する。
+- 実行後は `git diff` で内容を確認し、問題なければ `git add` / `git commit` する
+  （このスクリプト自身はコミットしない）。
+
+---
+
 ## よくある作業手順
 
 ### 既存レコードを修正する
@@ -402,4 +455,22 @@ python3 scripts/update_pronunciation.py diff/diff_F30909_01b.md
 python3 scripts/update_pronunciation.py diff/diff_F30909_02.md
 # まとめて1回だけ再生成
 python3 scripts/gen_pronunciation_json.py
+```
+
+### krm_main.tsv / krm_notes.tsv 等を直接修正する
+
+`diff/` 雛形パイプラインを持たないTSVは、Editツール等でデータ行を直接書き換えた後、
+`finalize_krm_edit.py` で後始末する。
+
+```bash
+# 1. Edit等で krm_main.tsv / krm_notes.tsv のデータ行を直接書き換える
+#    （old_stringの一意一致を確認しながら1行単位で置換するのが安全）
+
+# 2. Version/Last update更新 + JSON再生成をまとめて実行
+python3 scripts/finalize_krm_edit.py
+
+# 3. 内容を確認してからコミット
+git diff
+git add krm_main.tsv krm_main.json krm_notes.tsv
+git commit -m "fix: revise remarks for ... (F#####)"
 ```
