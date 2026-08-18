@@ -23724,18 +23724,6 @@
         "japan_knowledge_id": "200202ce6490US4Gl5ir"
     },
     {
-        "wakun_id": "F00923_13",
-        "definition_seq_id": "F00923_13",
-        "kazama_location": "K01040141",
-        "hanzi_entry": "従／従／從",
-        "wakun_elements": "*コノム",
-        "wakun_form": "このむ",
-        "wakun_standard_hanzi": "コノム（從）",
-        "wakun_variant_in_hanzi": "",
-        "variant_hanzi_for_wakun": "コノム（従）",
-        "japan_knowledge_id": "2002019ced708AFaCmK0"
-    },
-    {
         "wakun_id": "F00923_13b",
         "definition_seq_id": "F00923_13",
         "kazama_location": "K01040141",
@@ -23764,6 +23752,18 @@
         "definition_seq_id": "F00923_14",
         "kazama_location": "K01040141",
         "hanzi_entry": "従／従／從",
+        "wakun_elements": "*コノム",
+        "wakun_form": "このむ",
+        "wakun_standard_hanzi": "コノム（從）",
+        "wakun_variant_in_hanzi": "",
+        "variant_hanzi_for_wakun": "コノム（従）",
+        "japan_knowledge_id": "2002019ced708AFaCmK0"
+    },
+    {
+        "wakun_id": "F00923_15",
+        "definition_seq_id": "F00923_15",
+        "kazama_location": "K01040141",
+        "hanzi_entry": "従／従／從",
         "wakun_elements": "トモ",
         "wakun_form": "とも",
         "wakun_standard_hanzi": "トモ（從）",
@@ -23772,8 +23772,8 @@
         "japan_knowledge_id": ""
     },
     {
-        "wakun_id": "F00923_15",
-        "definition_seq_id": "F00923_15",
+        "wakun_id": "F00923_16",
+        "definition_seq_id": "F00923_16",
         "kazama_location": "K01040141",
         "hanzi_entry": "従／従／從",
         "wakun_elements": "*アレイツ",
@@ -23784,8 +23784,8 @@
         "japan_knowledge_id": ""
     },
     {
-        "wakun_id": "F00923_15b",
-        "definition_seq_id": "F00923_15",
+        "wakun_id": "F00923_16b",
+        "definition_seq_id": "F00923_16",
         "kazama_location": "K01040141",
         "hanzi_entry": "従／従／從",
         "wakun_elements": "*アレイツ",
