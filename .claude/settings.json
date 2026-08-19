@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/validate_integrity.py*)",
+      "Bash(awk -F'\\t' *)"
+    ]
+  }
+}
