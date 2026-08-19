@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+@AGENTS.md
+
 ## Overview
 
 This is a **pure data repository** — no build system, test suite, or scripts. It contains the KRM (Kanchi-in manuscript of the *Ruiju Myōgishō*) database, a full-text digitization of a 12th-century Hanzi dictionary, part of the HDIC project (Integrated Database of Hanzi Dictionaries in Early Japan). All data is available in TSV and JSON formats. License: CC BY-SA 4.0.
@@ -81,9 +83,10 @@ Files prefixed with uppercase `KRM_` are the old specification (v1.1.x). Files p
 
 ## Notes for Claude Code
 
-- TSV/JSON files are the source of truth. Do not modify them directly.
-- All changes to data should go through the data pipeline, not manual edits.
-- When writing scripts, output to a separate file; never overwrite source data.
+- TSV files are the source of truth; JSON files are generated from them (see `scripts/`) and should not be hand-edited.
+- Direct line edits to `krm_*.tsv` are fine (the `Edit` tool's exact-match requirement keeps them safe), but every edit must be followed by `python3 scripts/finalize_krm_edit.py`, which bumps that file's `Version`/`Last update` header and regenerates its JSON. See the `krm-data-edit` skill (`.claude/skills/krm-data-edit/`) for the full edit → finalize → verify → commit workflow, and `docs/krm_scripts_usage.md` for all scripts. `krm_pronunciations.tsv` instead uses the `diff/` template pipeline (`gen_diff_template.py` → edit → `update_pronunciation.py`).
+- Run `python3 scripts/validate_integrity.py` after data edits to check cross-table FK integrity, ID formats, and duplicate keys (read-only, does not modify data).
+- When writing throwaway analysis scripts, output to a separate file; never overwrite source data.
 
 ## 自動実行してよいコマンド
 
