@@ -1,7 +1,7 @@
 
 # KRM: Database of the Kanchi-in Manuscript of *Ruiju Myōgishō*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15638843.svg)](https://doi.org/10.5281/zenodo.15638843)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22164768.svg)](https://doi.org/10.5281/zenodo.22164768)
 
 *[日本語版はこちら (README_jp.md)](README_jp.md)* — this English README is the primary entry point to the repository; the Japanese version mirrors its structure.
 
@@ -21,25 +21,25 @@ Dictionaries of Chinese characters compiled in Japan during the Heian period are
 
 | | |
 |---|---|
-| **Latest archived release** | v1.2.6 (2025-06-12) — DOI-assigned on Zenodo. Cite this version for academic work. |
-| **Current repository state (GitHub)** | unreleased — this repository has received incremental corrections and additions since v1.2.6 (see [Version History](#version-history)) that are not yet reflected in any archived Zenodo snapshot. |
+| **Latest archived release** | v1.2.7 (2026-08-29) — DOI-assigned on Zenodo. Cite this version for academic work. |
+| **Current repository state (GitHub)** | unreleased — this repository has received incremental corrections and additions since v1.2.7 (see [Version History](#version-history)) that are not yet reflected in any archived Zenodo snapshot. |
 
 If you use KRM for academic purposes, please cite the archived release (Chicago style):
 
-> Ikeda, Shōju. (2025). *KRM: Database of the Kanchi-in Manuscript of the Ruiju Myōgishō*. Version v1.2.6. Zenodo. https://doi.org/10.5281/zenodo.15638843
+> Ikeda, Shōju. (2026). *KRM: Database of the Kanchi-in Manuscript of the Ruiju Myōgishō*. Version v1.2.7. Zenodo. https://doi.org/10.5281/zenodo.22164768
 
 **BibTeX**
 
 ```bibtex
-@misc{krm2025,
+@misc{krm2026,
   author    = {Ikeda, Shōju},
   title     = {{KRM: Database of the Kanchi-in Manuscript of the Ruiju Myōgishō}},
-  year      = 2025,
-  month     = jun,
-  version   = {v1.2.6},
+  year      = 2026,
+  month     = aug,
+  version   = {v1.2.7},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.15638843},
-  url       = {https://doi.org/10.5281/zenodo.15638843}
+  doi       = {10.5281/zenodo.22164768},
+  url       = {https://doi.org/10.5281/zenodo.22164768}
 }
 ```
 
@@ -153,7 +153,8 @@ Each data file's exact version number, publication date, and last-modified date 
 
 - **March 2022**: initial public release (`KRM.tsv` and related files, v1.1.x).
 - **March 2025**: specification change to the current `krm_*` file set (v1.2.x) — see below.
-- **2025-06-12**: `v1.2.6` archived and assigned a citable DOI on Zenodo (see [Current Release and Citation](#current-release-and-citation)).
+- **2025-06-12**: `v1.2.6` archived on Zenodo.
+- **2026-08-29**: `v1.2.7` archived on Zenodo and assigned the current citable DOI (see [Current Release and Citation](#current-release-and-citation)).
 - Since then, the repository has continued with incremental corrections and additions (e.g., `krm_headword_chars` and `krm_pronunciations` were added after the initial v1.2 release); these are not individually re-archived on Zenodo.
 
 ### March 2025 Specification Change

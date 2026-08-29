@@ -4,10 +4,14 @@ authors:
   - family-names: "Ikeda"
     given-names: "Shoju"
 title: "KRM: Database of the Kanchi-in Manuscript of Ruiju Myōgishō"
-version: 1.2.6
-date-released: 2025-06-12
+version: 1.2.7
+date-released: 2026-08-29
 repository-code: "https://github.com/shikeda/krm"
 license: "CC-BY-SA-4.0"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22164768
+    description: "Archived release v1.2.7 on Zenodo"
 abstract: |
   This release includes:
   - Character-level data (krm_main.tsv)

@@ -1,6 +1,6 @@
 # 観智院本類聚名義抄データベース（KRM）
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15638843.svg)](https://doi.org/10.5281/zenodo.15638843)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22164768.svg)](https://doi.org/10.5281/zenodo.22164768)
 
 *[English README (README.md)](README.md)* — このリポジトリの一次的な入口は英語版READMEであり、日本語版はその構成をそのまま反映したものである。
 
@@ -20,25 +20,25 @@ KRMは2022年3月に初版を公開した。2025年3月に、仕様の変更（[
 
 | | |
 |---|---|
-| **最新のアーカイブ済みリリース** | v1.2.6（2025年6月12日）— ZenodoでDOIを付与済み。学術利用ではこのバージョンを引用すること。 |
-| **現在のリポジトリの状態（GitHub）** | 未リリース — v1.2.6以降も継続的な修正・追加（[バージョン履歴](#バージョン履歴)参照）を行っているが、これらはまだいずれのZenodoスナップショットにも反映されていない。 |
+| **最新のアーカイブ済みリリース** | v1.2.7（2026年8月29日）— ZenodoでDOIを付与済み。学術利用ではこのバージョンを引用すること。 |
+| **現在のリポジトリの状態（GitHub）** | 未リリース — v1.2.7以降も継続的な修正・追加（[バージョン履歴](#バージョン履歴)参照）を行っているが、これらはまだいずれのZenodoスナップショットにも反映されていない。 |
 
 学術目的でKRMを利用する場合は、アーカイブ済みリリースを以下のように引用されたい（Chicago Style）：
 
-> Ikeda, Shōju. (2025). *KRM: Database of the Kanchi-in Manuscript of the Ruiju Myōgishō*. Version v1.2.6. Zenodo. https://doi.org/10.5281/zenodo.15638843
+> Ikeda, Shōju. (2026). *KRM: Database of the Kanchi-in Manuscript of the Ruiju Myōgishō*. Version v1.2.7. Zenodo. https://doi.org/10.5281/zenodo.22164768
 
 **BibTeX**
 
 ```bibtex
-@misc{krm2025,
+@misc{krm2026,
   author    = {Ikeda, Shōju},
   title     = {{KRM: Database of the Kanchi-in Manuscript of the Ruiju Myōgishō}},
-  year      = 2025,
-  month     = jun,
-  version   = {v1.2.6},
+  year      = 2026,
+  month     = aug,
+  version   = {v1.2.7},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.15638843},
-  url       = {https://doi.org/10.5281/zenodo.15638843}
+  doi       = {10.5281/zenodo.22164768},
+  url       = {https://doi.org/10.5281/zenodo.22164768}
 }
 ```
 
@@ -152,7 +152,8 @@ ER図の詳しい説明とJSONレコードの例は[docs/data_specification_jp.m
 
 - **2022年3月**：初版公開（`KRM.tsv`ほか、v1.1.x）。
 - **2025年3月**：現行の`krm_*`ファイル群（v1.2.x）への仕様変更（下記参照）。
-- **2025年6月12日**：`v1.2.6`をZenodoにアーカイブし、引用可能なDOIを付与（[現行リリースと引用](#現行リリースと引用)参照）。
+- **2025年6月12日**：`v1.2.6`をZenodoにアーカイブ。
+- **2026年8月29日**：`v1.2.7`をZenodoにアーカイブし、現行の引用可能なDOIを付与（[現行リリースと引用](#現行リリースと引用)参照）。
 - それ以降、リポジトリは継続的な修正・追加を重ねている（例：`krm_headword_chars`と`krm_pronunciations`はv1.2初版公開後に追加された）。これらは個別にはZenodoへ再アーカイブしていない。
 
 ### 2025年3月仕様変更
