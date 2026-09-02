@@ -7,9 +7,9 @@
 # anonymous Buddhist monk, the latter half of the 12th century.
 #
 # krm_wakun.tsv
-# Version: 1.2.20
+# Version: 1.2.21
 # Date: June 11, 2024
-# Last update : August 19, 2026
+# Last update : September 3, 2026
 #
 # This file is a new version of KRM_wakun.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.97, and it was last updated on March 17, 2025.
@@ -18196,7 +18196,7 @@ F14454_05	F14454_05	K05106140	齬	キカフ	きかふ	キカフ（齬）			20020
 F14466_01	F14466_01	K05106510	⿰齒木	クフ	くふ	クフ（⿰齒木）			200201359cd8875m9694
 F14467_01	F14467_01	K05106520	⿰齒刃	物カム	ものかむ	モノカム（⿰齒刃）			null
 F14468_01	F14468_01	K05106530	⿱𢪛齒	ヌカハ	ぬかは	ヌカハ（⿱𢪛齒）			2002033c1f48NL9U97MO
-F14469_01	F14469_01	K05106540	齪	チヽク	ちちく	チチク（齪）			200202b7303f0Fg84SV9
+F14469_01	F14469_01	K05106540	齪	チヽク	ちぢく	チヂク（齪）			200202b7303f0Fg84SV9
 F14471_02	F14471_02	K05106710	山	ヤマ（LL）	やま	ヤマ（山）			2002043a95a0v0YkfZO9
 F14471_03	F14471_03	K05106710	山	ウム（HL）	うむ	ウム（山）			2002006f793b5E236VLV
 F14471_04	F14471_04	K05106710	山	コウム	こうむ	コウム（山）			null
