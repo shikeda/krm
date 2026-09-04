@@ -8,9 +8,9 @@
 #
 # krm_headword_chars.tsv
 #
-# Version: 1.2.7 (latest, Newly released after the specification change)
+# Version: 1.2.8 (latest, Newly released after the specification change)
 # Date published: May 11, 2025
-# Last modified: August 19, 2026
+# Last modified: September 5, 2026
 #
 #
 # Copyright (c) 2025-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
@@ -11005,8 +11005,8 @@ S10951	F08762	折	1	K03102331	Ta364331	3104331.jpg
 S10952	F08762	櫃	2	K03102332	Ta364332	3104332.jpg
 S10953	F08763	小	1	K03102341	Ta364341	3104341.jpg
 S10954	F08763	櫃	2	K03102342	Ta364342	3104342.jpg
-S10955	F08763	膳	3	K03102343	Ta364343	3104343.jpg
-S10956	F08763	櫃	4	K03102344	Ta364344	3104344.jpg
+S10955	F08763b	膳	1	K03102343	Ta364343	3104343.jpg
+S10956	F08763b	櫃	2	K03102344	Ta364344	3104344.jpg
 S10957	F08764	桾	1	K03102411	Ta364411	3104411.jpg
 S10958	F08764	櫏	2	K03102412	Ta364412	3104412.jpg
 S10959	F08765	𣔴	1	K03102420	Ta364420	3104420.jpg
