@@ -16,6 +16,7 @@
 | `tsv_to_json.py` | 任意の KRM TSV を JSON に変換する（フラット形式） |
 | `finalize_krm_edit.py` | TSV編集後、Version/Last update欄の更新とJSON再生成をまとめて行う |
 | `validate_integrity.py` | クロステーブルFK整合性・ID書式・重複を検証する（読み取り専用） |
+| `headword_count_by_radical.py` | 部首別の掲出項目数・掲出字数を集計し、05-02b の「まとめ」表と突き合わせる（読み取り専用） |
 
 ---
 
@@ -455,6 +456,52 @@ python3 scripts/validate_integrity.py --json
 - TSVの一部の列（`remarks`等）は値に改行やタブを含む場合 `"..."` で囲むCSV形式の
   引用が使われているため、`csv`モジュール（`update_pronunciation.py`と同方式）で
   解釈する。出力の「レコード#N」は元ファイルの行番号ではなく、データ部分での通し番号。
+
+---
+
+## 9. headword_count_by_radical.py — 部首別 掲出項目数・掲出字数の集計
+
+### 概要
+
+`krm_main.tsv`（項目）と `krm_headword_chars.tsv`（掲出字）から、名義抄120部
+それぞれの掲出項目数・掲出字数を集計する。**読み取り専用**。
+
+- 項目数 … 部首ごとの `krm_main.tsv` 行数
+- 1字〜6字以上 … 項目を構成字数で分類したヒストグラム
+- 字数 … 部首ごとの構成字数の総和（6字以上の項目は実字数を加算）
+- 部首番号は `volume_radical_index`（`vN#M` の `M`）から取る
+- `krm_headword_chars.tsv` の `entry_id` が `〔抹消〕` の行は除外する
+
+`--against` を付けると、site リポジトリの
+`content/docs/krm/05-annotation-policy/05-02b-headword-count-by-fascicle.ja.md`
+の「部首毎の掲出項目数と掲出字数のまとめ」表を読み取り、集計結果と突き合わせて
+差分を表示する。まとめ表・巻別詳細表・現行DBの三者がずれている箇所の検出に使う。
+
+### 使い方
+
+```bash
+# 集計結果のみ（全120部）
+python3 scripts/headword_count_by_radical.py --all
+
+# 05-02b のまとめ表と突き合わせ、差分のある部首だけ表示
+python3 scripts/headword_count_by_radical.py --against
+
+# まとめ表の場所を明示する場合
+python3 scripts/headword_count_by_radical.py \
+    --against ../shikeda.github.io/content/docs/krm/05-annotation-policy/05-02b-headword-count-by-fascicle.ja.md
+```
+
+### 終了コード
+
+- `0`: まとめ表と一致（`--against` 未指定時は常に `0`）
+- `1`: まとめ表と差分あり
+
+### 注意事項
+
+- 既定では site リポジトリが krm リポジトリの隣（`../shikeda.github.io/`）にある前提。
+- 集計値はあくまで**現時点の DB の機械的な数値**であり、05-02b のまとめ表に
+  含まれる項目認定の学術判断（境界例を1項目とするか2項目とするか等）や、
+  「明白な脱字を補った字数」は反映しない。差分の解釈には本文の説明が必要。
 
 ---
 

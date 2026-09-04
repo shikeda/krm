@@ -98695,18 +98695,18 @@
     },
     {
         "hanzi_id": "S10955",
-        "entry_id": "F08763",
+        "entry_id": "F08763b",
         "constituent_char": "膳",
-        "character_order": "3",
+        "character_order": "1",
         "kazama_location_id": "K03102343",
         "tenri_location_id": "Ta364343",
         "img_file_name": "3104343.jpg"
     },
     {
         "hanzi_id": "S10956",
-        "entry_id": "F08763",
+        "entry_id": "F08763b",
         "constituent_char": "櫃",
-        "character_order": "4",
+        "character_order": "2",
         "kazama_location_id": "K03102344",
         "tenri_location_id": "Ta364344",
         "img_file_name": "3104344.jpg"
@@ -255247,6 +255247,42 @@
         "kazama_location_id": "K07143742",
         "tenri_location_id": "Tb437742",
         "img_file_name": "7143642.jpg"
+    },
+    {
+        "hanzi_id": "S28359b",
+        "entry_id": "F22917b",
+        "constituent_char": "六",
+        "character_order": "1",
+        "kazama_location_id": "K07143743",
+        "tenri_location_id": "Tb437743",
+        "img_file_name": ""
+    },
+    {
+        "hanzi_id": "S28359c",
+        "entry_id": "F22917b",
+        "constituent_char": "射",
+        "character_order": "2",
+        "kazama_location_id": "K07143744",
+        "tenri_location_id": "Tb437744",
+        "img_file_name": ""
+    },
+    {
+        "hanzi_id": "S28359d",
+        "entry_id": "F22917c",
+        "constituent_char": "賭",
+        "character_order": "1",
+        "kazama_location_id": "K07143745",
+        "tenri_location_id": "Tb437745",
+        "img_file_name": ""
+    },
+    {
+        "hanzi_id": "S28359e",
+        "entry_id": "F22917c",
+        "constituent_char": "射",
+        "character_order": "2",
+        "kazama_location_id": "K07143746",
+        "tenri_location_id": "Tb437746",
+        "img_file_name": ""
     },
     {
         "hanzi_id": "S28360",
