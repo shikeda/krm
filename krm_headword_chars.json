@@ -375194,11 +375194,20 @@
     {
         "hanzi_id": "S41669",
         "entry_id": "F32086",
-        "constituent_char": "⿱陟厘",
+        "constituent_char": "陟",
         "character_order": "1",
         "kazama_location_id": "K10108221",
         "tenri_location_id": "Tc406221",
         "img_file_name": "10108221.jpg"
+    },
+    {
+        "hanzi_id": "S41670",
+        "entry_id": "F32086",
+        "constituent_char": "厘",
+        "character_order": "2",
+        "kazama_location_id": "K10108222",
+        "tenri_location_id": "Tc406222",
+        "img_file_name": ""
     },
     {
         "hanzi_id": "S41671",
