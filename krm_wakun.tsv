@@ -7,9 +7,9 @@
 # anonymous Buddhist monk, the latter half of the 12th century.
 #
 # krm_wakun.tsv
-# Version: 1.2.21
+# Version: 1.2.22
 # Date: June 11, 2024
-# Last update : September 3, 2026
+# Last update : September 5, 2026
 #
 # This file is a new version of KRM_wakun.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.97, and it was last updated on March 17, 2025.
@@ -15799,7 +15799,7 @@ F12576_10	F12576_10	K05039630	流	ウカフ	うかぶ	ウカブ（流）			20020
 F12576_11	F12576_11	K05039630	流	ユク（HL）	ゆく	ユク（流）			20020447be39Z4Y8rP88
 F12576_12	F12576_12	K05039630	流	シク（HL）	しく	シク（流）			200201dbaf9avpoo5EN5
 F12580_01	F12580_01	K05039741	人／𣴑	ヒトカス	ひとかず	ヒトカズ（人𣴑）			2002038c2ba23k3v7Q3w
-F12581_01	F12581_01	K05039810	風／[流]	オモシロシ	おもしろし	オモシロシ（風流）			200200abaf07Im0OpZ08
+F12581_01	F12581_01	K05039811	風／[流]	オモシロシ	おもしろし	オモシロシ（風流）			200200abaf07Im0OpZ08
 F12582_01	F12582_01	K05039821	周／ー（流）	トメクル	めぐる	メグル（周流）			2002041d8ec6p58eI7oW
 F12590_01	F12590_01	K05040230	𭱨	シタヽル	したたる	シタタル（𭱨）			
 F12590_02	F12590_02	K05040230	𭱨	シルタル	しるたる	シルタル（𭱨）			

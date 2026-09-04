@@ -2124,6 +2124,15 @@
         "img_file_name": "1015422.jpg"
     },
     {
+        "hanzi_id": "S00235b",
+        "entry_id": "F00176",
+        "constituent_char": "何",
+        "character_order": "3",
+        "kazama_location_id": "K01008423",
+        "tenri_location_id": "Ta030423",
+        "img_file_name": ""
+    },
+    {
         "hanzi_id": "S00236",
         "entry_id": "F00177",
         "constituent_char": "云",
@@ -8757,6 +8766,15 @@
         "img_file_name": "1038112.jpg"
     },
     {
+        "hanzi_id": "S00972b",
+        "entry_id": "F00719",
+        "constituent_char": "便",
+        "character_order": "3",
+        "kazama_location_id": "K01031113",
+        "tenri_location_id": "Ta053113",
+        "img_file_name": ""
+    },
+    {
         "hanzi_id": "S00973",
         "entry_id": "F00720",
         "constituent_char": "将",
@@ -9943,6 +9961,15 @@
         "kazama_location_id": "K01035310",
         "tenri_location_id": "Ta057310",
         "img_file_name": "1042310.jpg"
+    },
+    {
+        "hanzi_id": "S01105b",
+        "entry_id": "F00814",
+        "constituent_char": "侈",
+        "character_order": "2",
+        "kazama_location_id": "K01035311",
+        "tenri_location_id": "Ta057311",
+        "img_file_name": ""
     },
     {
         "hanzi_id": "S01106",
@@ -40851,28 +40878,10 @@
         "img_file_name": "2053210.jpg"
     },
     {
-        "hanzi_id": "S04537",
-        "entry_id": "F03580",
-        "constituent_char": "𠰍",
-        "character_order": "1",
-        "kazama_location_id": "K02051221",
-        "tenri_location_id": "Ta169221",
-        "img_file_name": "2053221.jpg"
-    },
-    {
-        "hanzi_id": "S04538",
-        "entry_id": "F03580",
-        "constituent_char": "𠰍",
-        "character_order": "2",
-        "kazama_location_id": "K02051222",
-        "tenri_location_id": "Ta169222",
-        "img_file_name": "2053222.jpg"
-    },
-    {
         "hanzi_id": "S04539",
         "entry_id": "F03580",
         "constituent_char": "咥",
-        "character_order": "3",
+        "character_order": "1",
         "kazama_location_id": "K02051223",
         "tenri_location_id": "Ta169223",
         "img_file_name": "2053223.jpg"
@@ -43713,6 +43722,15 @@
         "img_file_name": "2062310.jpg"
     },
     {
+        "hanzi_id": "S04854b",
+        "entry_id": "F03831",
+        "constituent_char": "囉",
+        "character_order": "2",
+        "kazama_location_id": "K02060311",
+        "tenri_location_id": "Ta178311",
+        "img_file_name": ""
+    },
+    {
         "hanzi_id": "S04855",
         "entry_id": "F03832",
         "constituent_char": "𠺽",
@@ -44773,6 +44791,15 @@
         "kazama_location_id": "K02063720",
         "tenri_location_id": "Ta181720",
         "img_file_name": "2065720.jpg"
+    },
+    {
+        "hanzi_id": "S04972b",
+        "entry_id": "F03923",
+        "constituent_char": "目",
+        "character_order": "2",
+        "kazama_location_id": "K02063721",
+        "tenri_location_id": "Ta181721",
+        "img_file_name": ""
     },
     {
         "hanzi_id": "S04973",
@@ -78957,6 +78984,15 @@
         "img_file_name": "3041530.jpg"
     },
     {
+        "hanzi_id": "S08763b",
+        "entry_id": "F07046",
+        "constituent_char": "指",
+        "character_order": "2",
+        "kazama_location_id": "K03039531",
+        "tenri_location_id": "Ta301531",
+        "img_file_name": ""
+    },
+    {
         "hanzi_id": "S08764",
         "entry_id": "F07047",
         "constituent_char": "母",
@@ -81268,6 +81304,15 @@
         "kazama_location_id": "K03047140",
         "tenri_location_id": "Ta309140",
         "img_file_name": "3049140.jpg"
+    },
+    {
+        "hanzi_id": "S09020b",
+        "entry_id": "F07249",
+        "constituent_char": "控",
+        "character_order": "2",
+        "kazama_location_id": "K03047141",
+        "tenri_location_id": "Ta309141",
+        "img_file_name": ""
     },
     {
         "hanzi_id": "S09021",
@@ -103966,15 +104011,6 @@
         "kazama_location_id": "K03117830",
         "tenri_location_id": "Ta379830",
         "img_file_name": "3119831.jpg"
-    },
-    {
-        "hanzi_id": "S11540",
-        "entry_id": "F09215",
-        "constituent_char": "木",
-        "character_order": "2",
-        "kazama_location_id": "K03117832",
-        "tenri_location_id": "Ta379832",
-        "img_file_name": "3119832.jpg"
     },
     {
         "hanzi_id": "S11541",
@@ -127899,10 +127935,19 @@
         "img_file_name": "5002841.jpg"
     },
     {
+        "hanzi_id": "S14201",
+        "entry_id": "F11447",
+        "constituent_char": "洞",
+        "character_order": "1",
+        "kazama_location_id": "K05003131",
+        "tenri_location_id": "Tb009131",
+        "img_file_name": "5003131.jpg"
+    },
+    {
         "hanzi_id": "S14201b",
         "entry_id": "F11447",
         "constituent_char": "逹",
-        "character_order": "1",
+        "character_order": "2",
         "kazama_location_id": "K05003132",
         "tenri_location_id": "Tb009132",
         "img_file_name": "5003132.jpg"
@@ -133513,6 +133558,15 @@
         "kazama_location_id": "K05017720",
         "tenri_location_id": "Tb023720",
         "img_file_name": "5017720.jpg"
+    },
+    {
+        "hanzi_id": "S14824b",
+        "entry_id": "F11905",
+        "constituent_char": "⿰氵敞",
+        "character_order": "2",
+        "kazama_location_id": "K05017721",
+        "tenri_location_id": "Tb023721",
+        "img_file_name": ""
     },
     {
         "hanzi_id": "S14825",
@@ -140474,11 +140528,20 @@
     {
         "hanzi_id": "S15596",
         "entry_id": "F12581",
-        "constituent_char": "？風",
+        "constituent_char": "風",
         "character_order": "1",
-        "kazama_location_id": "K05039810",
-        "tenri_location_id": "Tb045810",
+        "kazama_location_id": "K05039811",
+        "tenri_location_id": "Tb045811",
         "img_file_name": "5039810.jpg"
+    },
+    {
+        "hanzi_id": "S15596b",
+        "entry_id": "F12581",
+        "constituent_char": "流",
+        "character_order": "2",
+        "kazama_location_id": "K05039812",
+        "tenri_location_id": "Tb045812",
+        "img_file_name": ""
     },
     {
         "hanzi_id": "S15597",
@@ -156978,6 +157041,15 @@
         "img_file_name": "5095640.jpg"
     },
     {
+        "hanzi_id": "S17431b",
+        "entry_id": "F14157",
+        "constituent_char": "豆",
+        "character_order": "2",
+        "kazama_location_id": "K05095641",
+        "tenri_location_id": "Tb101641",
+        "img_file_name": ""
+    },
+    {
         "hanzi_id": "S17432",
         "entry_id": "F14158",
         "constituent_char": "珂",
@@ -169891,6 +169963,15 @@
         "kazama_location_id": "K06012742",
         "tenri_location_id": "Tb146742",
         "img_file_name": "6012742.jpg"
+    },
+    {
+        "hanzi_id": "S18871b",
+        "entry_id": "F15331",
+        "constituent_char": "石",
+        "character_order": "3",
+        "kazama_location_id": "K06012743",
+        "tenri_location_id": "Tb146743",
+        "img_file_name": ""
     },
     {
         "hanzi_id": "S18872",
@@ -203528,28 +203609,19 @@
     {
         "hanzi_id": "S22615",
         "entry_id": "F18425",
-        "constituent_char": "四",
+        "constituent_char": "罘",
         "character_order": "1",
         "kazama_location_id": "K06121611",
         "tenri_location_id": "Tb255611",
         "img_file_name": "6121611.jpg"
     },
     {
-        "hanzi_id": "S22616",
-        "entry_id": "F18425",
-        "constituent_char": "不",
-        "character_order": "2",
-        "kazama_location_id": "K06121612",
-        "tenri_location_id": "Tb255612",
-        "img_file_name": "6121612.jpg"
-    },
-    {
         "hanzi_id": "S22617",
         "entry_id": "F18425",
         "constituent_char": "䋄",
-        "character_order": "3",
-        "kazama_location_id": "K06121613",
-        "tenri_location_id": "Tb255613",
+        "character_order": "2",
+        "kazama_location_id": "K06121612",
+        "tenri_location_id": "Tb255612",
         "img_file_name": "6121613.jpg"
     },
     {
@@ -212920,6 +212992,15 @@
         "kazama_location_id": "K07001830",
         "tenri_location_id": "Tb295730",
         "img_file_name": "7001730.jpg"
+    },
+    {
+        "hanzi_id": "S23656b",
+        "entry_id": "F19319",
+        "constituent_char": "神",
+        "character_order": "2",
+        "kazama_location_id": "K07001831",
+        "tenri_location_id": "Tb295731",
+        "img_file_name": ""
     },
     {
         "hanzi_id": "S23657",
@@ -283097,28 +283178,19 @@
     {
         "hanzi_id": "S31448",
         "entry_id": "F25019",
-        "constituent_char": "竹",
+        "constituent_char": "𥲄",
         "character_order": "1",
         "kazama_location_id": "K08079831",
         "tenri_location_id": "Tc085831",
-        "img_file_name": "8079831.jpg"
-    },
-    {
-        "hanzi_id": "S31449",
-        "entry_id": "F25019",
-        "constituent_char": "淡",
-        "character_order": "2",
-        "kazama_location_id": "K08079832",
-        "tenri_location_id": "Tc085832",
-        "img_file_name": "8079832.jpg"
+        "img_file_name": ""
     },
     {
         "hanzi_id": "S31450",
         "entry_id": "F25019",
         "constituent_char": "竹",
-        "character_order": "3",
-        "kazama_location_id": "K08079833",
-        "tenri_location_id": "Tc085833",
+        "character_order": "2",
+        "kazama_location_id": "K08079832",
+        "tenri_location_id": "Tc085832",
         "img_file_name": "8079833.jpg"
     },
     {
