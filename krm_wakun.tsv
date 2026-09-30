@@ -7,9 +7,9 @@
 # anonymous Buddhist monk, the latter half of the 12th century.
 #
 # krm_wakun.tsv
-# Version: 1.2.22
+# Version: 1.2.23
 # Date: June 11, 2024
-# Last update : September 5, 2026
+# Last update : September 30, 2026
 #
 # This file is a new version of KRM_wakun.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.97, and it was last updated on March 17, 2025.
@@ -4072,7 +4072,7 @@ F02081_04	F02081_04	K01084630	在	マシマス（_HL_）	まします	マシマ�
 F02081_05	F02081_05	K01084630	在	ハムヘリ（LL__）	はむべり	ハムベリ（在）			2002037ad899frE23W8p
 F02081_06	F02081_06	K01084630	在	ツハヒラカ（HLVLHL）	つばひらか	ツバヒラカ（在）			200202d6ecc1mYrAOsbB
 F02081_08	F02081_08	K01084630	在	アキラカニナリ（LLHL___）	あきらか	アキラカ（在）			2002000bd3ab14YB8jV2
-F02081_10	F02081_10	K01084630	在	オキテ（HLH）	おきて	オキテ（在）			200200966f7dP06HB3jU
+F02081_10	F02081_10	K01084630	在	オキテ（HLH）	おきて	オキテ（在）			
 F02082_01	F02082_01	K01084721	自／ー（在）	ワカマムマナリ（LHV_____）	わがまむまなり	ワガマムマナリ（自在）			
 F02083_01	F02083_01	K01084731	在／ー（在）	トコロヽヽヽ（HHH___）	ところどころ	トコロドコロ（在〻）			20020306d725d29e5ezV
 F02084_01	F02084_01	K01084741	平／ー（在）	タヒラケク（LHLHL）	たひらけく	タヒラケク（平在）			20020294df1d6D7X5Pt5
