@@ -8,9 +8,9 @@
 #
 # krm_notes.tsv
 #
-# Version: 1.2.56 (latest, Newly released after the specification change)
+# Version: 1.2.57 (latest, Newly released after the specification change)
 # Date published: March 28, 2025
-# Last modified: October 3, 2026
+# Last modified: October 4, 2026
 #
 #
 # Copyright (c) 2025-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
@@ -34005,7 +34005,7 @@ F08914	F08914_00	K03107441	Ta369441	仏下本	木	v3#29	琵／琶／ー（槽）
 F08914	F08914_01	K03107441	Ta369441	仏下本	木	v3#29	琵／琶／ー（槽）	〇／〇／〇	（無）	998		
 F08915	F08915_00	K03107510	Ta369510	仏下本	木	v3#29	棖	〇		100	見出し	
 F08915	F08915_01	K03107510	Ta369510	仏下本	木	v3#29	棖	〇	音唐	219	音注声点無_類音注等	広韻「直庚切」（平声庚韻）。
-F08915	F08915_02	K03107510	Ta369510	仏下本	木	v3#29	棖	〇	ホコタチ（LHHVL）	411	和訓声点有	
+F08915	F08915_02	K03107510	Ta369510	仏下本	木	v3#29	棖	〇	ホコタチ（LHHVL）	411	和訓声点有	「棖」は『廣韻』『宋本玉篇』に「門兩旁木」とあり、門の両側に立てる木をいう。和訓「ホコタチ」は「ほこだち・ほうだて」の意とみられる。『新撰字鏡』の「門乃与利立（カドノヨリタチ）」も同義と考えられる。
 F08916	F08916_00	K03107520	Ta369520	仏下本	木	v3#29	榯	〇		100	見出し	
 F08916	F08916_01	K03107520	Ta369520	仏下本	木	v3#29	榯	〇	音時	219	音注声点無_類音注等	広韻「市之切」（平声之韻、時）。
 F08916	F08916_02	K03107520	Ta369520	仏下本	木	v3#29	榯	〇	トクラ（HHVH）	411	和訓声点有	
