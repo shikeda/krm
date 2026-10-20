@@ -7,9 +7,9 @@
 # anonymous Buddhist monk, the latter half of the 12th century.
 #
 # krm_wakun.tsv
-# Version: 1.2.24
+# Version: 1.2.25
 # Date: June 11, 2024
-# Last update : October 16, 2026
+# Last update : October 20, 2026
 #
 # This file is a new version of KRM_wakun.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.97, and it was last updated on March 17, 2025.
@@ -13742,7 +13742,7 @@ F10844_03	F10844_03	K04038110	炷	俗訛云トウシミ（_LLVL）	とうじみ	
 F10844_04	F10844_04	K04038110	炷	トモス（LL_）	ともす	トモス（炷）			20020310719dQoHzmObX
 F10844_05	F10844_05	K04038110	炷	トモシヒ（LLL_）	ともしび	トモシビ（炷）			20020310682d6ShQ65mi
 F10845_01	F10845_01	K04038131	𤇺	トフヒ（LHV_）	とぶひ	トブヒ（𤇺）			2002030e8fb67xOnkW82
-F10847_03	F10847_03	K04038141	㶿／⿰火⿳朩冖子／⿰火⿱十子	サカリ	さかり	サカリ（㶿）			
+F10847_03	F10847_03	K04038141	㶿／⿰火⿳朩冖子／⿰火⿱十子	サカリ	さかり	サカリ（㶿）			200201b67bfcT81pKcWz
 F10848_04	F10848_04	K04038220	煖	アタヽカナリ	あたたかなり	アタタカ（煖）			20020017192f03Nqw74b
 F10849_02	F10849_02	K04038241	𤌢／𤏙	ヤハラカナリ	やはらか	ヤハラカ（𤏙）		ヤハラカ（𤌢）	200204401d40m860e9yd
 F10853_01	F10853_01	K04038340	𤍐	キコリ	きこり	キコリ（𤍐）			2002010a9162oU3PS7M1
