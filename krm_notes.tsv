@@ -8,9 +8,9 @@
 #
 # krm_notes.tsv
 #
-# Version: 1.2.65 (latest, Newly released after the specification change)
+# Version: 1.2.66 (latest, Newly released after the specification change)
 # Date published: March 28, 2025
-# Last modified: October 24, 2026
+# Last modified: October 25, 2026
 #
 #
 # Copyright (c) 2025-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
@@ -20396,7 +20396,7 @@ F05356	F05356_00	K02116430	Ta234430	仏中	肉	v2#20	肬	〇		100	見出し	高�
 F05356	F05356_01	K02116430	Ta234430	仏中	肉	v2#20	肬	〇	疣	121	字体注	
 F05356	F05356_02	K02116430	Ta234430	仏中	肉	v2#20	肬	〇	羽求（H）反	214	音注声点有_反切	広韻「羽求切」（平声尤韻、尤）。
 F05356	F05356_03	K02116430	Ta234430	仏中	肉	v2#20	肬	〇	フスへ（LLHV）	411	和訓声点有	
-F05356	F05356_04	K02116430	Ta234430	仏中	肉	v2#20	肬	〇	シヽノシリ	421	和訓	日国未収。
+F05356	F05356_04	K02116430	Ta234430	仏中	肉	v2#20	肬	〇	シヽノシリ	421	和訓	「シシ」は「宍（しし）」で肉の意。「シリ」は臀部ではなく、物の末端・後（あと）の意。『説文解字』に「肬、贅也」とあるように、本来の肉から突き出た余剰部分を「肉の末端（シシノシリ）」と表現したものと考えられる。
 F05357	F05357_00	K02116441	Ta234441	仏中	肉	v2#20	ー（肬）／目	〇／〇		100	見出し	
 F05357	F05357_01	K02116441	Ta234441	仏中	肉	v2#20	ー（肬）／目	〇／〇	イヒホ（LLH）	411	和訓声点有	道円本和名抄（巻3形体部）「肬目　和名以比保又以乎女」。
 F05357	F05357_02	K02116441	Ta234441	仏中	肉	v2#20	ー（肬）／目	〇／〇	又イホメ（HHH）	411	和訓声点有	前を見よ。
