@@ -7,9 +7,9 @@
 # anonymous Buddhist monk, the latter half of the 12th century.
 #
 # krm_wakun.tsv
-# Version: 1.2.35
+# Version: 1.2.36
 # Date: June 11, 2024
-# Last update : November 5, 2026
+# Last update : November 6, 2026
 #
 # This file is a new version of KRM_wakun.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.97, and it was last updated on March 17, 2025.
@@ -20077,7 +20077,7 @@ F16896_01	F16896_01	K06066840	⿰土⿳⿱𠂉一冖巾	クツル	くづる	ク�
 F16896_02	F16896_02	K06066840	⿰土⿳⿱𠂉一冖巾	ウスラク	うすらく	ウスラク（𡏚）			2002006496cf1SE94kAZ
 F16896_03	F16896_03	K06066840	⿰土⿳⿱𠂉一冖巾	オツ	おつ	オツ（𡏚）			
 F16896_04	F16896_04	K06066840	⿰土⿳⿱𠂉一冖巾	ウハフ	うばふ	ウバフ（𡏚）			2002006ca99f9TNQlLtk
-F16896_05	F16896_05	K06066840	⿰土⿳⿱𠂉一冖巾	アハク（LLV_）	あばく	アバク（𡏚）			
+F16896_05	F16896_05	K06066840	⿰土⿳⿱𠂉一冖巾	アハク（LLV_）	あばく	アバク（𡏚）			2002001ccab05i48nr69
 F16897_02	F16897_02	K06067110	壜	モタヒ	もたひ	モタヒ（壜）			2002042706713D8Z8JB6
 F16898_01	F16898_01	K06067120	切	ツチ	つち	ツチ（切）			
 F16899_01	F16899_01	K06067130	塕	チリ	ちり	チリ（塕）			200202c8f6e4S6utw588
