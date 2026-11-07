@@ -7,9 +7,9 @@
 # anonymous Buddhist monk, the latter half of the 12th century.
 #
 # krm_wakun.tsv
-# Version: 1.2.38
+# Version: 1.2.39
 # Date: June 11, 2024
-# Last update : November 6, 2026
+# Last update : November 7, 2026
 #
 # This file is a new version of KRM_wakun.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.97, and it was last updated on March 17, 2025.
@@ -33615,7 +33615,7 @@ F28813_07	F28813_07	K09105531	䮦／⿰馬𠳮／驕	サハク	さわぐ	サワ�
 F28813_08	F28813_08	K09105531	䮦／⿰馬𠳮／驕	カタマシ	かだまし	カダマシ（驕）		カダマシ（䮦）	200200d8dc1810wn66X5
 F28817_03	F28817_03	K09105710	駾	ツク（HL）	つく	ツク（駾）			200202d103ceAV2d8e9i
 F28820_04	F28820_04	K09105740	馹	ツタフ（HH_）	つたふ	ツタフ（馹）			200202d380d62157L8A2
-F28824_04	F28824_04	K09105841	⿰馬⿸尸冊／騙	ノリムマ	のりむま	ノリムマ（騙）			
+F28824_04	F28824_04	K09105841	⿰馬⿸尸冊／騙	ノリムマ	のりむま	ノリムマ（騙）			2002034df9fb6Al636V5
 F28828_03	F28828_03	K09106210	𩥇	マロハス（HH__）	まろばす	マロバス（𩥇）			200203f95961c1vfW88m
 F28834_04	F28834_04	K09106430	駽	クロミトリノムマ（LLLHVLLLL）	くろみどりのむま	クロミドリノムマ（駽）			2002014db6058QaneinT
 F28845_04	F28845_04	K09106741	驓／驓	アシフチ（LLHL）	あしぶち	アシブチ（驓）			20020013e71293iK07q5
