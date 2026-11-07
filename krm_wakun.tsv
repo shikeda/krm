@@ -7,9 +7,9 @@
 # anonymous Buddhist monk, the latter half of the 12th century.
 #
 # krm_wakun.tsv
-# Version: 1.2.40
+# Version: 1.2.41
 # Date: June 11, 2024
-# Last update : November 7, 2026
+# Last update : November 8, 2026
 #
 # This file is a new version of KRM_wakun.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.97, and it was last updated on March 17, 2025.
@@ -1923,7 +1923,7 @@ F00895_15	F00895_15	K01038620	微	カシコマル	かしこまる	カシコマ�
 F00895_16	F00895_16	K01038620	微	ツヒユ（_HL）	つひゆ	ツヒユ（微）			200202cbb8ef45XH8bKX
 F00895_17	F00895_17	K01038620	微	ヲホツカナシ	おぼつかなし	オボツカナシ（微）			200200a8b0d2pI94aB1E
 F00895_18	F00895_18	K01038620	微	ウカメク	うかめく	ウカメク（微）			
-F00895_19	F00895_19	K01038620	微	ヲサナシ	をさなし	ヲサナシ（微）			
+F00895_19	F00895_19	K01038620	微	ヲサナシ	をさなし	ヲサナシ（微）			2002009a85df64wP48MW
 F00895_20	F00895_20	K01038620	微	イヤシ	いやし	イヤシ（微）			200200523aef8JJ65DL8
 F00895_21	F00895_21	K01038620	微	トモシ	ともし	トモシ（微）			200203106082UM3T12j3
 F00895_22	F00895_22	K01038620	微	ヨロシ	よろし	ヨロシ（微）			2002045b4c3a88bY48Ue
