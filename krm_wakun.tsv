@@ -7,9 +7,9 @@
 # anonymous Buddhist monk, the latter half of the 12th century.
 #
 # krm_wakun.tsv
-# Version: 1.2.41
+# Version: 1.2.42
 # Date: June 11, 2024
-# Last update : November 8, 2026
+# Last update : November 10, 2026
 #
 # This file is a new version of KRM_wakun.tsv with updated specifications.
 # The version number of KRM.tsv was 1.1.97, and it was last updated on March 17, 2025.
@@ -35088,7 +35088,7 @@ F30925_02	F30925_02	K10057410	醻	ムクユ	むくゆ	ムクユ（醻）			20020
 F30926_03	F30926_03	K10057420	酣	タケナハナリ（LLLH__、ナ-ニ）	たけなは	タケナハ（酣）			2002029b7c8eE6zA602X
 F30927_02	F30927_02	K10057430	醅	カスコメ（LHHVH）	かすごめ	カスゴメ（醅）			200200d30605T489MB2N
 F30927_04	F30927_04	K10057430	醅	コサケ	こさけ	コサケ（醅）			2002018da46adwnlM3es
-F30927_05	F30927_05	K10057430	醅	アマサケ	あまさけ	アマサケ（醅）			
+F30927_05	F30927_05	K10057430	醅	アマサケ	あまさけ	アマサケ（醅）			2002001fc0a3RTeCSfwd
 F30927_06	F30927_06	K10057430	醅	サケ（HH）	さけ	サケ（醅）			200201b9cb97RsxgZn0o
 F30928_03	F30928_03	K10057511	酗／酒	*サカヤモヒ	さかやもひ	サカヤモヒ（酗酒）			200201b66a4afQpy50H0
 F30932_02	F30932_02	K10057540	醫	クスシ（LHH）	くすし	クスシ（醫）			2002013c09eb3FGokjs9
