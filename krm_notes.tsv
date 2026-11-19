@@ -8,9 +8,9 @@
 #
 # krm_notes.tsv
 #
-# Version: 1.2.98 (latest, Newly released after the specification change)
+# Version: 1.2.99 (latest, Newly released after the specification change)
 # Date published: March 28, 2025
-# Last modified: November 11, 2026
+# Last modified: November 20, 2026
 #
 #
 # Copyright (c) 2025-2026 HDIC project, IKEDA Shoju (Chair, Professor Emeritus, Hokkaido University)
@@ -3759,7 +3759,7 @@ F00851	F00851_00	K01036440	Ta058440	仏上	人	v1#1	⿰亻弱	〇		100	見出し
 F00851	F00851_01	K01036440	Ta058440	仏上	人	v1#1	⿰亻弱	〇	イヤシ（HLL）	411	和訓声点有	日国「いやし・い 【賤・卑・鄙】」の表記に未収。高山寺本（19ウ5）「イヤシ（LHL）」。
 F00852	F00852_00	K01036510	Ta058510	仏上	人	v1#1	𠌵	〇		100	見出し	
 F00852	F00852_01	K01036510	Ta058510	仏上	人	v1#1	𠌵	〇	ウカリ	421	和訓	
-F00852	F00852_02	K01036510	Ta058510	仏上	人	v1#1	𠌵	〇	キサ	421	和訓	高山寺本（19ウ5）「キサ」。西端誤写諸例37頁①誤字225。𠌵は褭の俗字。
+F00852	F00852_02	K01036510	Ta058510	仏上	人	v1#1	𠌵	〇	キサ	421	和訓	高山寺本（19ウ5）「キサ」。西端誤写諸例37頁①誤字225に高山寺本「キ介」とするは不審。𠌵は褭の俗字。
 F00853	F00853_00	K01036520	Ta058520	仏上	人	v1#1	⿰亻⿱亠鳥	〇		100	見出し	
 F00853	F00853_01	K01036520	Ta058520	仏上	人	v1#1	⿰亻⿱亠鳥	〇	タカリ	421	和訓	日国未収。
 F00854	F00854_00	K01036530	Ta058530	仏上	人	v1#1	僨	〇		100	見出し	
